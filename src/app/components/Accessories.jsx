@@ -188,24 +188,7 @@ const Accessories = () => {
 
             {/* Trending Products */}
             <div>
-
-
-                {/* Tabs */}
-                <div className="flex justify-center gap-8 mb-8 border-b border-gray-200">
-                    {['FEATURED', 'NEW ARRIVALS', 'BEST SELLER'].map((tab) => (
-                        <button
-                            key={tab}
-                            onClick={() => setActiveTab(tab)}
-                            className={`pb-2 text-sm font-medium transition-colors ${activeTab === tab
-                                ? 'text-red-500 border-b-2 border-red-500'
-                                : 'text-gray-500 hover:text-gray-700'
-                                }`}
-                        >
-                            {tab}
-                        </button>
-                    ))}
-                </div>
-
+<h1 className='text-center text-5xl'>Product grid </h1>
                 {/* Products Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {products.map((product) => (
