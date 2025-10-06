@@ -4,17 +4,19 @@ import HeroPage from './components/HeroPage';
 import OutfitsCollection from './components/OutfitsCollection';
 import FootwearCollection from './components/FootwearCollection';
 import Accessories from './components/Accessories';
+import Footer from './components/Footer';
 
 
 
 const page = () => {
   return (
-    <div>
+    <div className='bg-gradient-to-b from-rose-300 to-white'>
       <Navbar />
       <HeroPage />
       <OutfitsCollection />
-      <FootwearCollection/>
-      <Accessories/>
+      <FootwearCollection />
+      <Accessories />
+      <Footer />
     </div>
 
   );

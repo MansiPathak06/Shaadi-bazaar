@@ -110,10 +110,12 @@ const Accessories = () => {
     ];
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 py-12 ">
             {/* Popular Categories */}
             <div className="mb-16">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-600 text-center mb-8">Popular Categories</h2>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-center mb-2 font-serif text-gray-900 uppercase">Popular <span className='text-rose-500'>Categories</span></h2>
+                <p className="text-gray-600 text-center text-xl mb-12">Step into a world where timeless elegance meets modern sophistication, and every outfit tells a story of luxury.</p>
+
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     {categories.map((category, index) => (
                         <div key={index} className="flex flex-col items-center group cursor-pointer">
@@ -129,35 +131,59 @@ const Accessories = () => {
 
             {/* Special Offers */}
             <div className="grid md:grid-cols-2 gap-6 mb-16">
-                <div className="bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg overflow-hidden">
+                <div className="bg-gradient-to-br from-rose-50 to-rose-50 rounded-lg overflow-hidden">
                     <div className="flex items-center h-48">
                         <div className="p-8 flex-1">
-                            <p className="text-xs text-gray-600 mb-1">SPECIAL OFFER</p>
-                            <h3 className="text-2xl font-light text-gray-800 mb-4 uppercase">watches<br /> </h3>
-                            <button className="text-xs font-medium text-gray-800 border-b border-gray-800 hover:text-gray-600 transition-colors">
+                            <p className="text-xs text-gray-600 mb-1 uppercase">special offer</p>
+                            <h3 className="text-2xl font-light text-gray-800 mb-4 uppercase">
+                                watches <br />
+                                tie <br />
+                                belt
+                            </h3>
+                            <button className="text-xs font-medium text-gray-800 border-b border-gray-800 hover:text-gray-600 transition-colors cursor-pointer">
                                 SHOP NOW
                             </button>
                         </div>
                         <div className="flex-1 h-full bg-white flex items-center justify-center">
-                            <span className="text-6xl">🦋</span>
+                            <img
+                                src="https://i.pinimg.com/736x/3c/52/18/3c52189603c215e3a2b221413aad655b.jpg"
+                                alt="Elegant jewelry collection"
+                                className="h-full w-full object-cover"
+                                onError={(e) => {
+                                    e.target.src = 'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+                                }}
+                            />
                         </div>
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg overflow-hidden">
+
+                <div className="bg-gradient-to-br from-rose-50 to-rose-50 rounded-lg overflow-hidden">
                     <div className="flex items-center h-48">
                         <div className="p-8 flex-1">
                             <p className="text-xs text-gray-600 mb-1 uppercase">special offer</p>
-                            <h3 className="text-2xl font-light text-gray-800 mb- uppercase">pendant <br />BRACELETS <br />purse</h3>
-                            <button className="text-xs font-medium text-gray-800 border-b border-gray-800 hover:text-gray-600 transition-colors">
+                            <h3 className="text-2xl font-light text-gray-800 mb-4 uppercase">
+                                pendant <br />
+                                BRACELETS <br />
+                                purse
+                            </h3>
+                            <button className="text-xs font-medium text-gray-800 border-b border-gray-800 hover:text-gray-600 transition-colors cursor-pointer">
                                 SHOP NOW
                             </button>
                         </div>
                         <div className="flex-1 h-full bg-white flex items-center justify-center">
-                            <span className="text-6xl">⭐</span>
+                            <img
+                                src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Elegant jewelry collection"
+                                className="h-full w-full object-cover"
+                                onError={(e) => {
+                                    e.target.src = 'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+                                }}
+                            />
                         </div>
                     </div>
                 </div>
+
             </div>
 
             {/* Trending Products */}
@@ -186,9 +212,11 @@ const Accessories = () => {
                         <div key={product.id} className="group cursor-pointer">
                             <div className="relative bg-gray-100 rounded-lg overflow-hidden mb-3 aspect-square flex items-center justify-center hover:bg-gray-200 transition-colors">
                                 {product.badge && (
-                                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="" />
+                                    <span className={`absolute top-2 left-2 ${product.badgeColor} text-white text-xs px-2 py-1 rounded`}>
+                                        {product.badge}
+                                    </span>
                                 )}
-                                <span className="text-6xl">{product.image}</span>
+                                <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                             </div>
                             <h3 className="text-xs font-medium text-gray-800 mb-1">{product.name}</h3>
                             <p className="text-xs text-gray-600 mb-2 line-clamp-1">{product.subtitle}</p>

@@ -29,12 +29,12 @@ const FootwearCollection = () => {
   ];
 
   return (
-    <div className="w-full bg-gradient-to-b from-rose-50 to-white py-10 px-4 sm:px-6 lg:px-8">
+    <div className="w-full py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif text-gray-900 mb-4">
-            Footwear Collection
+        <div className="text-center mt-12 mb-16">
+          <h2 className="text-5xl font-serif text-gray-900 ">
+            Footwear <span className="text-rose-500">Collection</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Step into elegance with our curated collection of premium footwear
@@ -46,16 +46,14 @@ const FootwearCollection = () => {
           {footwearItems.map((item, index) => (
             <div
               key={index}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${
-                index % 2 === 0 ? "" : "lg:grid-flow-dense"
-              }`}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${index % 2 === 0 ? "" : "lg:grid-flow-dense"
+                }`}
             >
               {/* Image Section */}
               <Link
                 href={item.link}
-                className={`group relative overflow-hidden ${
-                  index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-2"
-                }`}
+                className={`group relative overflow-hidden ${index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-2"
+                  }`}
               >
                 <div className="aspect-[4/3] relative bg-rose-50">
                   <img
@@ -69,9 +67,8 @@ const FootwearCollection = () => {
 
               {/* Text Section */}
               <div
-                className={`flex items-center justify-center font-serif bg-gradient-to-br from-rose-50 to-rose-100/50 p-2 sm:p-12 ${
-                  index % 2 === 0 ? "lg:col-start-2" : "lg:col-start-1"
-                }`}
+                className={`flex items-center justify-center font-serif bg-gradient-to-br from-rose-50 to-rose-50 p-2 sm:p-12 ${index % 2 === 0 ? "lg:col-start-2" : "lg:col-start-1"
+                  }`}
               >
                 <div className="max-w-lg">
                   <h3 className="text-5xl sm:text-5xl  text-gray-900 mb-4 tracking-wide">
@@ -92,7 +89,7 @@ const FootwearCollection = () => {
           ))}
         </div>
 
-       
+
         {/* Additional Categories Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
@@ -122,7 +119,7 @@ const FootwearCollection = () => {
           ))}
         </div>
 
-        
+
       </div>
     </div>
   );

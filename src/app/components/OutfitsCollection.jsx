@@ -69,10 +69,11 @@ const OutfitsCollection = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-b from-white to-rose-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-gradient-to-b from-white to-rose-50 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Top Categories Section */}
-        <h1 className="uppercase font-medium text-5xl md:text-6xl text-center mb-12 font-serif">outfit <span className="text-rose-500">Collection</span></h1>
+        <h1 className="uppercase font-medium text-5xl md:text-6xl text-center mb-2 font-serif">outfit <span className="text-rose-500">Collection</span></h1>
+        <p className="text-gray-600 text-center text-xl mb-12">Designed for those who seek style beyond trends, embracing elegance in every detail</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           {categories.map((category, index) => (
             <Link
@@ -108,8 +109,8 @@ const OutfitsCollection = () => {
         {/* Men's Collection Section */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif text-gray-900 mb-2">
-              {mensCollection.title}
+            <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize">
+             men's <span className="text-rose-500">collection</span>
             </h2>
             <p className="text-gray-600">{mensCollection.description}</p>
           </div>
@@ -183,8 +184,8 @@ const OutfitsCollection = () => {
         {/* Women's Collection Section */}
         <section>
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif text-gray-900 mb-2">
-              {womensCollection.title}
+            <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize ">
+              Women's <span className="text-rose-500">Collection</span>
             </h2>
             <p className="text-gray-600">{womensCollection.description}</p>
           </div>
