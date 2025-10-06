@@ -72,6 +72,7 @@ const OutfitsCollection = () => {
     <div className="w-full bg-gradient-to-b from-white to-rose-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Top Categories Section */}
+        <h1 className="uppercase font-medium text-5xl md:text-6xl text-center mb-12 font-serif">outfit <span className="text-rose-500">Collection</span></h1>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           {categories.map((category, index) => (
             <Link
@@ -91,14 +92,14 @@ const OutfitsCollection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               </div>
-              <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center">
+              <div className="absolute bottom-7 left-1/2 transform -translate-x-1/2 text-center">
                 <div className="w-12 h-12 mx-auto mb-2 bg-white/90 rounded-full flex items-center justify-center">
                   <span className="text-rose-500 text-xl">✦</span>
                 </div>
-                <h3 className="text-gray-900 font-bold text-sm tracking-wide">
+                <h3 className="text-rose-300 font-medium text-2xl tracking-wide">
                   {category.title}
                 </h3>
-                <p className="text-xs text-gray-700 mt-1">{category.subtitle}</p>
+                <p className="text-sm text-rose-200 mt-1">{category.subtitle}</p>
               </div>
             </Link>
           ))}
