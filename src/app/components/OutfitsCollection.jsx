@@ -28,7 +28,7 @@ const OutfitsCollection = () => {
 
   const mensCollection = {
     title: "Men's Collection",
-    mainImage: "/images/mens-main.jpg",
+    mainImage: "/images/main-men-groomwear.jpg",
     description: "Discover sophisticated styles for the modern gentleman",
     link: "/outfits/mens-collection",
     featured: [
@@ -86,7 +86,7 @@ const OutfitsCollection = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   onError={(e) => {
                     e.target.src =
-                      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400";
+                      "/images/women-lehnga.jpg";
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
@@ -120,13 +120,13 @@ const OutfitsCollection = () => {
               className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               <div className="aspect-[4/5] bg-rose-100 relative overflow-hidden">
-                <img
+                <video
                   src={mensCollection.mainImage}
                   alt={mensCollection.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
                     e.target.src =
-                      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800";
+                      "/images/main-men-groomwear.jpg";
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-rose-900/50 via-transparent to-transparent"></div>
@@ -169,9 +169,9 @@ const OutfitsCollection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                   </div>
 
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <div className="absolute bottom-6 left-6 right-6 text-rose-500">
                     <h4 className="text-lg font-bold mb-1">{item.title}</h4>
-                    <p className="text-xs text-white/90">{item.subtitle}</p>
+                    <p className="text-xs text-rose-900/50">{item.subtitle}</p>
                   </div>
                 </Link>
               ))}
@@ -210,9 +210,9 @@ const OutfitsCollection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent"></div>
                   </div>
 
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <div className="absolute bottom-6 left-6 right-6 text-rose-500">
                     <h4 className="text-lg font-bold mb-1">{item.title}</h4>
-                    <p className="text-xs text-white/90">{item.subtitle}</p>
+                    <p className="text-xs text-rose-900/50">{item.subtitle}</p>
                   </div>
                 </Link>
               ))}
@@ -254,32 +254,7 @@ const OutfitsCollection = () => {
           </div>
         </section>
 
-        {/* Bottom CTA Section */}
-        <div className="mt-20 bg-gradient-to-r from-rose-100 via-pink-50 to-rose-100 rounded-3xl p-12 text-center">
-          <h3 className="text-3xl font-serif text-gray-900 mb-4">
-            Can&apos;t Find What You&apos;re Looking For?
-          </h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Explore our complete collection of wedding and celebration outfits,
-            or get in touch with our styling experts for personalized
-            recommendations.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/outfits/all"
-              className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2"
-            >
-              View All Collections
-              <ArrowRight size={20} />
-            </Link>
-            <Link
-              href="/contact"
-              className="border-2 border-rose-500 text-rose-500 hover:bg-rose-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center"
-            >
-              Get Styling Help
-            </Link>
-          </div>
-        </div>
+      
       </div>
     </div>
   );
