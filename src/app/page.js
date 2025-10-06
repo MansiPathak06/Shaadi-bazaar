@@ -4,6 +4,7 @@ import HeroPage from './components/HeroPage';
 import OutfitsCollection from './components/OutfitsCollection';
 import FootwearCollection from './components/FootwearCollection';
 import Accessories from './components/Accessories';
+import TestimonialsPage from './components/TestimonialsPage';
 
 
 
@@ -15,6 +16,7 @@ const page = () => {
       <OutfitsCollection />
       <FootwearCollection/>
       <Accessories/>
+      <TestimonialsPage/>
     </div>
 
   );
