@@ -95,7 +95,7 @@ const FootwearCollection = () => {
           {[
             { name: "Heels", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400", link: "/footwear/heels" },
             { name: "Flats", image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400", link: "/footwear/flats" },
-            { name: "Sandals", image: "https://images.unsplash.com/photo-1603808033587-38d1f5d4caa1?w=400", link: "/footwear/sandals" },
+            { name: "Sandals", image: "https://plus.unsplash.com/premium_photo-1676225678979-80df276a983e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FuZGFsc3xlbnwwfHwwfHx8MA%3D%3D", link: "/footwear/sandals" },
             { name: "Boots", image: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400", link: "/footwear/boots" },
           ].map((category, index) => (
             <Link

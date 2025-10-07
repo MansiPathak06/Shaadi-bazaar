@@ -336,28 +336,7 @@ const Testimonials = () => {
           </Link>
 
           {/* Jane - Bottom Right */}
-          <Link
-            href={testimonials[8].link}
-            className="group bg-gradient-to-br from-rose-50 to-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative"
-          >
-            <div className="absolute top-4 left-4 text-rose-200 opacity-30">
-              <Quote size={40} />
-            </div>
-            <p className="text-gray-700 text-sm leading-relaxed mb-4 pt-8 italic">
-              &ldquo;{testimonials[8].review}&rdquo;
-            </p>
-            <div className="flex items-center gap-3">
-              <img
-                src={testimonials[8].image}
-                alt={testimonials[8].name}
-                className="w-12 h-12 rounded-full object-cover border-2 border-rose-200"
-              />
-              <div>
-                <p className="font-bold text-gray-900">{testimonials[8].name}</p>
-                <p className="text-rose-400 text-xs">{testimonials[8].username}</p>
-              </div>
-            </div>
-          </Link>
+          
         </div>
       </div>
     </div>

@@ -43,8 +43,8 @@ const Accessories = () => {
             id: 1,
             name: 'Pearl',
             subtitle: 'River diamond stud earrings',
-            price: '$350.00',
-            oldPrice: '$450.00',
+            price: '₹350.00',
+            oldPrice: '₹450.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
             image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -53,7 +53,7 @@ const Accessories = () => {
             id: 2,
             name: 'ALEX RING',
             subtitle: '9 row pearl stud earrings',
-            price: '$850.00',
+            price: '₹850.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
             image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -62,22 +62,22 @@ const Accessories = () => {
             id: 3,
             name: 'Pearl',
             subtitle: 'Women\'s Princess Rose Gold Plated',
-            price: '$1,350.00',
-            oldPrice: '$1,850.00',
+            price: '₹1,350.00',
+            oldPrice: '₹1,850.00',
             image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             id: 4,
             name: 'ALEX RING',
             subtitle: 'Adorable stud gold earrings',
-            price: '$750.00',
+            price: '₹750.00',
             image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             id: 5,
             name: 'Pearl',
             subtitle: 'Drop Paved Crystal Earrings',
-            price: '$1,150.00',
+            price: '₹1,150.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
             image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -86,7 +86,7 @@ const Accessories = () => {
             id: 6,
             name: 'Pearl',
             subtitle: 'Stylish gold vermail pendant',
-            price: '$850.00',
+            price: '₹850.00',
             badge: 'New',
             badgeColor: 'bg-orange-400',
             image: 'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -95,7 +95,7 @@ const Accessories = () => {
             id: 7,
             name: 'Pearl',
             subtitle: 'Pink London Lou 24 K Earrings Gold',
-            price: '$450.00',
+            price: '₹450.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
             image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -104,7 +104,7 @@ const Accessories = () => {
             id: 8,
             name: 'Pearl',
             subtitle: 'Contemporary diamond ring',
-            price: '$650.00',
+            price: '₹650.00',
             image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         }
     ];
@@ -196,7 +196,7 @@ const Accessories = () => {
                         <div key={product.id} className="group cursor-pointer">
                             <div className="relative bg-gray-100 rounded-lg overflow-hidden mb-3 aspect-square flex items-center justify-center hover:bg-gray-200 transition-colors">
                                 {product.badge && (
-                                    <span className={`absolute top-2 left-2 ${product.badgeColor} text-white text-xs px-2 py-1 rounded`}>
+                                    <span className={`absolute top-2 left-2 ₹{product.badgeColor} text-white text-xs px-2 py-1 rounded`}>
                                         {product.badge}
                                     </span>
                                 )}
