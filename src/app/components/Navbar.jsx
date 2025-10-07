@@ -33,12 +33,12 @@ const Navbar = () => {
       heading: "Start hiring your accessories vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Jewelry", icon: Gift },
-        { name: "Bags & Purses", icon: Gift },
-        { name: "Hair Accessories", icon: Sparkles },
-        { name: "Shoes", icon: Gift },
-        { name: "Watches", icon: Gift },
-        { name: "Belts", icon: Gift },
+        { name: "Jewelry", icon: Gift, link: "/Accessories/Jewellery" },
+        { name: "Bags & Purses", icon: Gift, link: "/Accessories/BagsAndPurses" },
+        { name: "Hair Accessories", icon: Sparkles, link: "/Accessories/HairAccessories" },
+        { name: "Shoes", icon: Gift, link: "/Accessories/Shoes" },
+        { name: "Watches", icon: Gift, link: "/Accessories/Watches" },
+        { name: "Belts", icon: Gift, link: "/Accessories/Belts" },
       ],
     },
     {
@@ -47,12 +47,12 @@ const Navbar = () => {
       heading: "Start hiring your outfit vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Bridal Wear", icon: Sparkles },
-        { name: "Groom Wear", icon: Gift },
-        { name: "Party Wear", icon: Sparkles },
-        { name: "Traditional Wear", icon: Gift },
-        { name: "Western Wear", icon: Sparkles },
-        { name: "Kids Outfits", icon: Gift },
+        { name: "Bridal Wear", icon: Sparkles, link: "/Outfits/BridalWear" },
+        { name: "Groom Wear", icon: Gift, link: "/Outfits/GroomWear" },
+        { name: "Party Wear", icon: Sparkles, link: "/Outfits/PartyWear" },
+        { name: "Traditional Wear", icon: Gift, link: "/Outfits/TraditionalWear" },
+        { name: "Western Wear", icon: Sparkles, link: "/Outfits/WesternWear" },
+        { name: "Kids Outfits", icon: Gift, link: "/Outfits/KidsOutfits" },
       ],
     },
     {
@@ -61,12 +61,12 @@ const Navbar = () => {
       heading: "Start hiring your catering & decor vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Wedding Catering", icon: Utensils },
-        { name: "Floral Decor", icon: Flower },
-        { name: "Stage Decoration", icon: Flower },
-        { name: "Lighting", icon: Sparkles },
-        { name: "Furniture Rental", icon: Gift },
-        { name: "Theme Decor", icon: Flower },
+        { name: "Wedding Catering", icon: Utensils, link: "/CateringAndDecor/WeddingCatering" },
+        { name: "Floral Decor", icon: Flower, link: "/CateringAndDecor/FloralDecor" },
+        { name: "Stage Decoration", icon: Flower, link: "/CateringAndDecor/StageDecoration" },
+        { name: "Lighting", icon: Sparkles, link: "/CateringAndDecor/Lighting" },
+        { name: "Furniture Rental", icon: Gift, link: "/CateringAndDecor/FurnitureRental" },
+        { name: "Theme Decor", icon: Flower, link: "/CateringAndDecor/ThemeDecor" },
       ],
     },
     {
@@ -75,12 +75,12 @@ const Navbar = () => {
       heading: "Start hiring your accommodation vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Hotels", icon: Plane },
-        { name: "Resorts", icon: Plane },
-        { name: "Guest Houses", icon: Plane },
-        { name: "Banquet Halls", icon: MapPin },
-        { name: "Farmhouses", icon: MapPin },
-        { name: "Beach Properties", icon: Plane },
+        { name: "Hotels", icon: Plane, link: "/Accommodation/Hotels" },
+        { name: "Resorts", icon: Plane, link: "/Accommodation/Resorts" },
+        { name: "Guest Houses", icon: Plane, link: "/Accommodation/GuestHouses" },
+        { name: "Banquet Halls", icon: MapPin, link: "/Accommodation/BanquetHalls" },
+        { name: "Farmhouses", icon: MapPin, link: "/Accommodation/Farmhouses" },
+        { name: "Beach Properties", icon: Plane, link: "/Accommodation/BeachProperties" },
       ],
     },
     {
@@ -90,12 +90,12 @@ const Navbar = () => {
       hasMegaMenu: true,
       showDestinationCard: true,
       dropdowns: [
-        { name: "Outdoor Venues", icon: MapPin },
-        { name: "Indoor Venues", icon: MapPin },
-        { name: "Destination Wedding", icon: Plane },
-        { name: "Banquet Halls", icon: MapPin },
-        { name: "Gardens", icon: Flower },
-        { name: "Beach Venues", icon: Plane },
+        { name: "Outdoor Venues", icon: MapPin, link: "/VenueAndLocation/OutdoorVenues" },
+        { name: "Indoor Venues", icon: MapPin, link: "/VenueAndLocation/IndoorVenues" },
+        { name: "Destination Wedding", icon: Plane, link: "/VenueAndLocation/DestinationWedding" },
+        { name: "Banquet Halls", icon: MapPin, link: "/VenueAndLocation/BanquetHalls" },
+        { name: "Gardens", icon: Flower, link: "/VenueAndLocation/Gardens" },
+        { name: "Beach Venues", icon: Plane, link: "/VenueAndLocation/BeachVenues" },
       ],
     },
     {
@@ -104,12 +104,12 @@ const Navbar = () => {
       heading: "Start hiring your beauty & styling vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Bridal Makeup", icon: Sparkles },
-        { name: "Hair Styling", icon: Sparkles },
-        { name: "Mehendi Artists", icon: Sparkles },
-        { name: "Spa Services", icon: Sparkles },
-        { name: "Grooming", icon: Sparkles },
-        { name: "Nail Art", icon: Sparkles },
+        { name: "Bridal Makeup", icon: Sparkles, link: "/BeautyAndStyling/BridalMakeup" },
+        { name: "Hair Styling", icon: Sparkles, link: "/BeautyAndStyling/HairStyling" },
+        { name: "Mehendi Artists", icon: Sparkles, link: "/BeautyAndStyling/MehendiArtists" },
+        { name: "Spa Services", icon: Sparkles, link: "/BeautyAndStyling/SpaServices" },
+        { name: "Grooming", icon: Sparkles, link: "/BeautyAndStyling/Grooming" },
+        { name: "Nail Art", icon: Sparkles, link: "/BeautyAndStyling/NailArt" },
       ],
     },
     {
@@ -118,10 +118,10 @@ const Navbar = () => {
       heading: "Start hiring your event planning vendors",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Wedding Planning", icon: Calendar },
-        { name: "Destination Wedding", icon: Plane },
-        { name: "Engagement Planning", icon: Calendar },
-        { name: "Cocktail Planning", icon: Calendar },
+        { name: "Wedding Planning", icon: Calendar, link: "/EventPlanning/WeddingPlanning" },
+        { name: "Destination Wedding", icon: Plane, link: "/EventPlanning/DestinationWedding" },
+        { name: "Engagement Planning", icon: Calendar, link: "/EventPlanning/EngagementPlanning" },
+        { name: "Cocktail Planning", icon: Calendar, link: "/EventPlanning/CocktailPlanning" },
       ],
     },
     {
@@ -257,7 +257,7 @@ const Navbar = () => {
                           {link.dropdowns.map((item, idx) => (
                             <a
                               key={idx}
-                              href="#"
+                              href={item.link}
                               className="block px-4 py-2 text-sm text-gray-600 hover:bg-rose-50 hover:text-rose-500 rounded transition-colors duration-150"
                             >
                               {item.name}
@@ -300,7 +300,7 @@ const Navbar = () => {
                   return (
                     <a
                       key={idx}
-                      href="#"
+                      href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg hover:bg-rose-50 transition-colors duration-200 group"
                     >
                       <div className="flex-shrink-0 w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-rose-100 transition-colors duration-200">
