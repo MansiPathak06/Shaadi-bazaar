@@ -206,13 +206,13 @@ const Navbar = () => {
                 onMouseLeave={() => link.hasMegaMenu && setOpenDropdown(null)}
               >
                 {link.hasMegaMenu ? (
-                  <button className="px-3 py-3 text-sm font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 cursor-pointer">
+                  <button className="px-3 py-3 text-md font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 cursor-pointer">
                     {link.name}
                   </button>
                 ) : (
                   <a
                     href={link.link}
-                    className="px-3 py-3 text-sm font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 block"
+                    className="px-3 py-3 text-lg font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 block"
                   >
                     {link.name}
                   </a>

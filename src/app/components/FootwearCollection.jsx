@@ -33,10 +33,10 @@ const FootwearCollection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mt-12 mb-16">
-          <h2 className="text-5xl font-serif text-gray-900 ">
+          <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize">
             Footwear <span className="text-rose-500">Collection</span>
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-center text-xl mb-12">
             Step into elegance with our curated collection of premium footwear
           </p>
         </div>
