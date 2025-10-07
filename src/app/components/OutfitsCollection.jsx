@@ -69,7 +69,7 @@ const OutfitsCollection = () => {
   };
 
   return (
-    <div className="w-full bg-gradient-to-b from-white to-rose-50 px-4 sm:px-6 lg:px-8">
+    <div className="w-full bg-gradient-to-b from-white to-rose-50 px-4 sm:px-6 pt-20 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Top Categories Section */}
         <h1 className="uppercase font-medium text-5xl md:text-6xl text-center mb-2 font-serif">outfit <span className="text-rose-500">Collection</span></h1>
