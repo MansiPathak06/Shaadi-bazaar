@@ -42,7 +42,7 @@ const FootwearCollection = () => {
         </div>
 
         {/* Footwear Grid */}
-        <div className="space-y-8">
+        <div>
           {footwearItems.map((item, index) => (
             <div
               key={index}

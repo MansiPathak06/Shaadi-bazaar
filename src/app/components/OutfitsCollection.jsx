@@ -28,14 +28,14 @@ const OutfitsCollection = () => {
 
   const mensCollection = {
     title: "Men's Collection",
-    mainImage: "/images/main-men-groomwear.jpg",
+    mainImage: "/images/men.jpg",
     description: "Discover sophisticated styles for the modern gentleman",
     link: "/outfits/mens-collection",
     featured: [
       {
         title: "Groomwear Essentials",
         subtitle: "Sherwani, Suits & Indo-Western",
-        image: "/images/mens-groomwear.jpg",
+        image: "/images/men.jpg",
         link: "/outfits/mens-groomwear",
       },
       {
@@ -122,7 +122,7 @@ const OutfitsCollection = () => {
               className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               <div className="aspect-[4/5] bg-rose-100 relative overflow-hidden">
-                <video
+                <img
                   src={mensCollection.mainImage}
                   alt={mensCollection.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -188,7 +188,8 @@ const Accessories = () => {
 
             {/* Trending Products */}
             <div>
-<h1 className='text-center text-5xl'>Product grid </h1>
+                <h1 className='text-center text-5xl mb-4 capitalize font-medium  '>Trending <span className='text-rose-500'>Fashion</span> pieces </h1>
+                <p className='text-gray-600 text-center text-xl mb-12'>Where the latest fashion meets effortless confidence</p>
                 {/* Products Grid */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {products.map((product) => (
