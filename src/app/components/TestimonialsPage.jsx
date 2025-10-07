@@ -123,7 +123,7 @@ const Testimonials = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-serif text-gray-900 mb-4 uppercase">
-            What <span className="text-rose-500"> our clients</span> Say
+            &quot;What <span className="text-rose-500"> our clients</span> Say&quot;
           </h2>
           <p className="text-gray-700 max-w-2xl mx-auto text-xl">
             Real experiences from real people who trusted us with their special moments
