@@ -222,151 +222,192 @@ export default function FootwearShop() {
       </div>
 
       {/* Brand Partners */}
-      <div className="bg-white py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap justify-around items-center gap-8 opacity-60">
-            {['DAVID SMITH', 'NON JONES', 'GOLDEN GRID', 'STORM FASHION', 'GOLDEN MOTION', 'CABLE MOUNTAIN'].map((brand, i) => (
-              <div key={i} className="text-gray-800 font-bold text-lg tracking-wider">
-                {brand}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }
 
 const HeroSection = () => {
   return (
-    <div className="bg-gradient-to-br from-pink-50 to-pink-100 min-h-screen p-6 md:p-12">
-      {/* Main Hero Section */}
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-16">
-          {/* Left Content */}
-          <div className="lg:w-1/2 mb-8 lg:mb-0">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-6 leading-tight">
-              NIKE AIR<br />
-              ZOOM SUPER<br />
-              REP CORAL
+    <div className="bg-gradient-to-br from-pink-50 to-pink-100 min-h-screen">
+      {/* Main Hero Container */}
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        {/* Top Content with Split Layout */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          {/* Left Side - Text Content */}
+          <div className="space-y-8">
+            <div className="inline-block bg-pink-200 text-pink-800 px-4 py-2 rounded-full text-sm font-semibold">
+              NEW ARRIVAL 2025
+            </div>
+            
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-none">
+              STEP INTO
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">
+                STYLE
+              </span>
             </h1>
-            <button className="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition-colors">
-              SHOP NOW →
-            </button>
+            
+            <p className="text-gray-600 text-lg max-w-md">
+              Discover the perfect blend of comfort and fashion with our exclusive collection designed for modern lifestyles.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transition-all hover:scale-105 shadow-lg">
+                Explore Collection
+              </button>
+              <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold border-2 border-gray-200 hover:border-gray-400 transition-all hover:scale-105">
+                View Lookbook
+              </button>
+            </div>
+
+            {/* Stats */}
+            <div className="flex gap-8 pt-8">
+              <div>
+                <div className="text-3xl font-bold text-gray-900">500+</div>
+                <div className="text-sm text-gray-500">Styles Available</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-gray-900">50K+</div>
+                <div className="text-sm text-gray-500">Happy Customers</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-gray-900">4.9★</div>
+                <div className="text-sm text-gray-500">Customer Rating</div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Content - Product Image */}
-          <div className="lg:w-1/2 relative">
-            <div className="relative">
-              {/* Large "AIR" background text */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-10">
-                <span className="text-9xl md:text-[12rem] lg:text-[15rem] font-black text-pink-300">
-                  AIR
-                </span>
+          {/* Right Side - Feature Product Display */}
+          <div className="relative">
+            {/* Decorative Circle Background */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full blur-3xl opacity-50"></div>
+            
+            {/* Main Product Card */}
+            <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-500">
+              <div className="absolute top-6 right-6 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                -30%
               </div>
+              
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=400&fit=crop&crop=center"
+                alt="Featured Shoe"
+                className="w-full h-80 object-contain mb-6"
+              />
+              
+              <div className="space-y-3">
+                <h3 className="text-2xl font-bold text-gray-900">Premium Runner X</h3>
+                <div className="flex items-center gap-2">
+                  <span className="text-3xl font-bold text-gray-900">$279</span>
+                  <span className="text-lg text-gray-400 line-through">$399</span>
+                </div>
+                <div className="flex gap-2">
+                  <div className="w-6 h-6 bg-pink-300 rounded-full border-2 border-gray-300 cursor-pointer"></div>
+                  <div className="w-6 h-6 bg-gray-900 rounded-full border-2 border-gray-300 cursor-pointer"></div>
+                  <div className="w-6 h-6 bg-blue-400 rounded-full border-2 border-gray-300 cursor-pointer"></div>
+                </div>
+              </div>
+            </div>
 
-              {/* Main Product Image */}
-              <div className="relative z-10 flex justify-center">
-                <div className="w-80 h-80 md:w-96 md:h-96 bg-white rounded-3xl flex items-center justify-center shadow-2xl transform rotate-12 hover:rotate-6 transition-transform duration-300 overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop&crop=center"
-                    alt="Nike Air Zoom Super Rep Coral"
-                    className="w-full h-full object-cover"
-                  />
+            {/* Floating Cards */}
+            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center">
+                  <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <div className="font-bold text-gray-900">Free Shipping</div>
+                  <div className="text-xs text-gray-500">On orders over $100</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Product Details Bar */}
-        <div className="flex flex-wrap justify-between items-center bg-white/50 backdrop-blur-sm rounded-2xl p-6 mb-12">
-          <div className="flex flex-wrap gap-8 text-sm">
-            <div>
-              <span className="block text-gray-500 uppercase tracking-wide">BRAND</span>
-              <span className="font-semibold">Nike Running</span>
-            </div>
-            <div>
-              <span className="block text-gray-500 uppercase tracking-wide">BRAND</span>
-              <span className="font-semibold">AIR</span>
-            </div>
-            <div>
-              <span className="block text-gray-500 uppercase tracking-wide">COLORS</span>
-              <span className="font-semibold">Super Rep Coral</span>
-            </div>
-            <div>
-              <span className="block text-gray-500 uppercase tracking-wide">PRICE</span>
-              <span className="font-semibold">$399.00</span>
-            </div>
-          </div>
-          <button className="bg-white text-black px-6 py-2 rounded-full font-semibold border-2 border-gray-200 hover:border-gray-400 transition-colors mt-4 md:mt-0">
-            SHOP NOW →
-          </button>
-        </div>
-
-        {/* Three Item Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* New Collections */}
-          <div className="bg-gradient-to-br from-pink-100 to-pink-200 rounded-3xl p-8 text-center relative overflow-hidden group">
-            <div className="relative z-10">
-              {/* Product Image */}
-              <div className="w-48 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=300&h=200&fit=crop&crop=center"
-                  alt="New Nike Collection"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <h3 className="text-xl font-bold text-gray-900 mb-4">New Collections</h3>
-
-              <button className="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full font-semibold hover:border-gray-500 hover:bg-white transition-all">
-                SHOP NOW →
-              </button>
-            </div>
+        {/* Featured Categories Section */}
+        <div className="space-y-8">
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Shop by Category</h2>
+            <p className="text-gray-600">Find the perfect pair for every occasion</p>
           </div>
 
-          {/* For Women */}
-          <div className="bg-gradient-to-br from-purple-100 to-pink-200 rounded-3xl p-8 text-center relative overflow-hidden group">
-            <div className="relative z-10">
-              {/* Product Image */}
-              <div className="w-48 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-300 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=300&h=200&fit=crop&crop=center"
-                  alt="Nike Shoes for Women"
-                  className="w-full h-full object-cover"
-                />
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Running Shoes */}
+            <div className="group bg-gradient-to-br from-pink-100 to-pink-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div className="relative z-10">
+                <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop&crop=center"
+                    alt="Running Shoes"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Running Shoes</h3>
+                <p className="text-gray-600 mb-4">Performance meets comfort</p>
+                
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                  Shop Now →
+                </button>
               </div>
-
-              <h3 className="text-xl font-bold text-gray-900 mb-4">For Women</h3>
-
-              <button className="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full font-semibold hover:border-gray-500 hover:bg-white transition-all">
-                SHOP NOW →
-              </button>
             </div>
-          </div>
 
-          {/* For Men */}
-          <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 text-center relative overflow-hidden group">
-            <div className="relative z-10">
-              {/* Product Image */}
-              <div className="w-48 h-32 mx-auto mb-6 bg-white rounded-2xl shadow-lg transform rotate-6 group-hover:rotate-0 transition-transform duration-300 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=200&fit=crop&crop=center"
-                  alt="Nike Shoes for Men"
-                  className="w-full h-full object-cover"
-                />
+            {/* Casual Sneakers */}
+            <div className="group bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div className="relative z-10">
+                <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=300&fit=crop&crop=center"
+                    alt="Casual Sneakers"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Casual Sneakers</h3>
+                <p className="text-gray-600 mb-4">Everyday style essentials</p>
+                
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                  Shop Now →
+                </button>
               </div>
+            </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-4">For Men</h3>
-
-              <button className="border-2 border-gray-300 text-gray-700 px-6 py-2 rounded-full font-semibold hover:border-gray-500 hover:bg-white transition-all">
-                SHOP NOW →
-              </button>
+            {/* Sports Collection */}
+            <div className="group bg-gradient-to-br from-gray-100 to-pink-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              
+              <div className="relative z-10">
+                <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
+                  <img
+                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400&h=300&fit=crop&crop=center"
+                    alt="Sports Collection"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Sports Collection</h3>
+                <p className="text-gray-600 mb-4">Engineered for athletes</p>
+                
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                  Shop Now →
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Bottom CTA Banner */}
+        
       </div>
     </div>
+
+
+
+
   );
 };

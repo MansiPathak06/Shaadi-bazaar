@@ -68,7 +68,7 @@ function WatchHero() {
           <div className="relative flex justify-center">
             <div className="relative">
               <img
-                src="https://i.pinimg.com/736x/05/78/46/057846e8ca9fe6186565d6e235adbb74.jpg"
+                src="/images/watch-hero.png"
                 alt="Michael Kors Blake Black Tone Watch"
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-500 rotate-290"
               />
