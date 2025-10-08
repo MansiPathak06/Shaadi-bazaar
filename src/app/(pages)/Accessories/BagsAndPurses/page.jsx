@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
+
 
 const BagsAndPurses = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -137,7 +136,7 @@ const BagsAndPurses = () => {
 
   return (
     <>
-      <Navbar />
+     
       <div className="w-full ">
         {/* Hero Banner Section - Bags & Purses */}
         <section className="relative w-full   py-16 md:py-24">
@@ -512,7 +511,7 @@ const BagsAndPurses = () => {
           </div>
         </section>
       </div>
-      <Footer />
+    
     </>
   );
 };

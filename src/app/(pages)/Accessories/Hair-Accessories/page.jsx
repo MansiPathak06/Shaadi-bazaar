@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 
 import { Star, ShoppingBag, Heart, Sparkles, Crown, Flower2 } from "lucide-react";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
+
 
 const HairAccessoriesPage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -96,7 +95,7 @@ const HairAccessoriesPage = () => {
 
   return (
     <>
-      <Navbar />
+  
 
       <div className="w-full bg-white">
         {/* Hero Section */}
@@ -395,7 +394,7 @@ const HairAccessoriesPage = () => {
        
       </div>
 
-      <Footer />
+    
     </>
   );
 };

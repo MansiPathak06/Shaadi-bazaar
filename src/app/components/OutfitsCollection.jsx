@@ -77,6 +77,18 @@ const OutfitsCollection = () => {
         image: "/images/womens-contemporary.jpg",
         link: "/outfits/womens-contemporary",
       },
+      {
+        title: "Traditional Elegance",
+        subtitle: "Salwar Suits & Ethnic Wear",
+        image: "/images/womens-traditional.jpg",
+        link: "/outfits/womens-traditional",
+      },
+      {
+        title: "Party & Evening Wear",
+        subtitle: "Designer Outfits & Cocktail Dresses",
+        image: "/images/womens-party.jpg",
+        link: "/outfits/womens-party",
+      },
     ],
   };
 
@@ -98,11 +110,11 @@ const OutfitsCollection = () => {
               href={category.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
+              <div className="aspect-[5/5] bg-rose-100 relative overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-[500px] object-cover group-hover:scale-110 transition-transform duration-500"
                   onError={(e) => {
                     e.target.src = "/images/women-lehnga.jpg";
                   }}
@@ -134,36 +146,36 @@ const OutfitsCollection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
             {/* Left: Main Image */}
             <Link
-  href={mensCollection.link}
-  className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
->
-  <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
-    <img
-      src={mensCollection.mainImage}
-      alt={mensCollection.title}
-      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-      onError={(e) => {
-        e.target.src = "/images/main-men-groomwear.jpg";
-      }}
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent"></div>
-  </div>
+              href={mensCollection.link}
+              className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
+                <img
+                  src={mensCollection.mainImage}
+                  alt={mensCollection.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  onError={(e) => {
+                    e.target.src = "/images/main-men-groomwear.jpg";
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent"></div>
+              </div>
 
-  <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8 text-white">
-    <h3 className="text-2xl md:text-3xl font-serif mb-2 md:mb-3">
-      Shop Your Elegant
-      <br />
-      <span className="italic">Men&apos;s Attire</span>
-    </h3>
-    <p className="text-xs md:text-sm text-white/90 mb-3 md:mb-4">
-      Discover contemporary styles crafted for the modern gentleman
-    </p>
-    <button className="bg-white text-rose-500 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
-      SHOP NOW
-      <ArrowRight size={18} />
-    </button>
-  </div>
-</Link>
+              <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8 text-white">
+                <h3 className="text-2xl md:text-3xl font-serif mb-2 md:mb-3">
+                  Shop Your Elegant
+                  <br />
+                  <span className="italic">Men&apos;s Attire</span>
+                </h3>
+                <p className="text-xs md:text-sm text-white/90 mb-3 md:mb-4">
+                  Discover contemporary styles crafted for the modern gentleman
+                </p>
+                <button className="bg-white text-rose-500 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
+                  SHOP NOW
+                  <ArrowRight size={18} />
+                </button>
+              </div>
+            </Link>
 
             {/* Right: Featured Items Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
@@ -240,7 +252,7 @@ const OutfitsCollection = () => {
               href={womensCollection.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 lg:order-2"
             >
-              <div className="aspect-[4/5] bg-rose-100 relative overflow-hidden">
+              <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
                 <img
                   src={womensCollection.mainImage}
                   alt={womensCollection.title}

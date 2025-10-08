@@ -17,6 +17,13 @@ import {
   Clipboard,
   Mail,
   Home,
+ Scissors,
+  ShoppingBag,
+
+  Footprints,
+  Watch,
+  FlaskConical,
+ 
 } from "lucide-react";
 
 const Navbar = () => {
@@ -36,12 +43,12 @@ const Navbar = () => {
       heading: "Add A Little Spark To Your Style!",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Jewelry", icon: Gift, link: "/Accessories/Jewellery" },
-        { name: "Bags & Purses", icon: Gift, link: "/Accessories/BagsAndPurses" },
-        { name: "Hair Accessories", icon: Sparkles, link: "/Accessories/Hair-Accessories" },
-        { name: "Shoes", icon: Gift, link: "/Accessories/Shoes" },
-        { name: "Watches", icon: Gift, link: "/Accessories/Watches" },
-        { name: "Perfumes", icon: Gift, link: "/Accessories/Perfumes" },
+        { name: "Jewellery", icon:Sparkles, link: "/Accessories/Jewellery" },
+        { name: "Bags & Purses", icon: ShoppingBag, link: "/Accessories/BagsAndPurses" },
+        { name: "Hair Accessories", icon: Scissors, link: "/Accessories/Hair-Accessories" },
+        { name: "Shoes", icon: Footprints, link: "/Accessories/Shoes" },
+        { name: "Watches", icon: Watch, link: "/Accessories/Watches" },
+        { name: "Perfumes", icon: FlaskConical, link: "/Accessories/Perfumes" },
       ],
     },
     {
