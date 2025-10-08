@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 import React, { useState } from "react";
@@ -601,16 +600,3 @@ const Jewellery = () => {
 };
 
 export default Jewellery;
-=======
-import React from 'react';
-
-const page = () => {
-  return (
-    <div>
-      jewellery
-    </div>
-  );
-}
-
-export default page;
->>>>>>> d6fc75fdd185089240d4352d02f96ee5b8377354
