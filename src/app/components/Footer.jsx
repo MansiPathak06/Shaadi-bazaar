@@ -9,14 +9,7 @@ import {
     Twitter,
     Instagram,
     Linkedin,
-    Gift,
-    Sparkles,
-    Utensils,
-    Plane,
-    Calendar,
-    Clipboard,
-    User,
-    ShoppingCart,
+
 } from "lucide-react";
 
 const Footer = () => {

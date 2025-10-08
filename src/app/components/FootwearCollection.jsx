@@ -29,27 +29,27 @@ const FootwearCollection = () => {
   ];
 
   const categories = [
-    { 
-      name: "Heels", 
-      image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400", 
+    {
+      name: "Heels",
+      image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400",
       link: "/footwear/heels",
       count: "120+ Styles"
     },
-    { 
-      name: "Flats", 
-      image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400", 
+    {
+      name: "Flats",
+      image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400",
       link: "/footwear/flats",
       count: "95+ Styles"
     },
-    { 
-      name: "Sandals", 
-      image: "https://plus.unsplash.com/premium_photo-1676225678979-80df276a983e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FuZGFsc3xlbnwwfHwwfHx8MA%3D%3D", 
+    {
+      name: "Sandals",
+      image: "https://plus.unsplash.com/premium_photo-1676225678979-80df276a983e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2FuZGFsc3xlbnwwfHwwfHx8MA%3D%3D",
       link: "/footwear/sandals",
       count: "80+ Styles"
     },
-    { 
-      name: "Boots", 
-      image: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400", 
+    {
+      name: "Boots",
+      image: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=400",
       link: "/footwear/boots",
       count: "65+ Styles"
     },
@@ -58,7 +58,7 @@ const FootwearCollection = () => {
   return (
     <div className="w-full bg-gradient-to-b from-white via-rose-50/30 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
+
         {/* Hero Section with Modern Typography */}
         <div className="text-center mb-20">
           <div className="inline-block mb-4">
@@ -68,7 +68,7 @@ const FootwearCollection = () => {
           </div>
           <h1 className="text-6xl md:text-4xl lg:text-5xl font-serif  text-gray-900 mb-6">
             Step Into <span className="text-rose-500">Elegance</span>
-            
+
           </h1>
           <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
             Discover luxury footwear from world-renowned brands, crafted for style and comfort
@@ -81,9 +81,8 @@ const FootwearCollection = () => {
             <Link
               key={index}
               href={brand.link}
-              className={`group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 ${
-                index === 0 ? "md:col-span-2 md:row-span-2" : ""
-              }`}
+              className={`group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 ${index === 0 ? "md:col-span-2 md:row-span-2" : ""
+                }`}
             >
               {/* Image Container */}
               <div className={`relative ${index === 0 ? "h-[600px]" : "h-[290px]"} overflow-hidden`}>
@@ -92,10 +91,10 @@ const FootwearCollection = () => {
                   alt={brand.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                
+
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                
+
                 {/* Tag */}
                 <div className="absolute top-6 left-6">
                   <span className="bg-rose-500 text-white px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">
@@ -108,19 +107,18 @@ const FootwearCollection = () => {
                   <h3 className="text-white text-3xl md:text-4xl font-bold mb-3">
                     {brand.title}
                   </h3>
-                  <p className={`text-gray-200 text-sm md:text-base leading-relaxed mb-4 ${
-                    index === 0 ? "block" : "hidden md:block"
-                  }`}>
+                  <p className={`text-gray-200 text-sm md:text-base leading-relaxed mb-4 ${index === 0 ? "block" : "hidden md:block"
+                    }`}>
                     {brand.description}
                   </p>
-                  
+
                   {/* Shop Button */}
                   <div className="inline-flex items-center text-white font-semibold group-hover:gap-3 gap-2 transition-all duration-300">
                     <span>Shop Now</span>
-                    <svg 
-                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
-                      fill="none" 
-                      stroke="currentColor" 
+                    <svg
+                      className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -135,21 +133,27 @@ const FootwearCollection = () => {
         {/* Shop by Category Section */}
         <div className="mb-16">
           <div className="flex items-center justify-between mb-10">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-                Shop by Category
-              </h2>
-              <p className="text-gray-600">Find your perfect pair</p>
+            <div className="text-center mb-20">
+              <div className="inline-block mb-4">
+
+              </div>
+              <h1 className="text-6xl md:text-4xl lg:text-5xl font-serif  text-gray-900 mb-6">
+                Find By   <span className="text-rose-500">Category</span>
+
+              </h1>
+              <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+                Find Your Perfect Pair
+              </p>
             </div>
-            <Link 
-              href="/footwear/all" 
+            <Link
+              href="/footwear/all"
               className="hidden md:inline-flex items-center gap-2 text-rose-500 hover:text-rose-600 font-semibold group"
             >
               View All
-              <svg 
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -171,17 +175,17 @@ const FootwearCollection = () => {
                     alt={category.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  
+
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
-                  
+
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <h3 className="text-white text-2xl font-bold mb-1">
                       {category.name}
                     </h3>
                     <p className="text-gray-300 text-sm mb-3">{category.count}</p>
-                    
+
                     {/* Animated Underline */}
                     <div className="w-12 h-1 bg-rose-500 group-hover:w-full transition-all duration-500 rounded-full"></div>
                   </div>
@@ -191,7 +195,7 @@ const FootwearCollection = () => {
           </div>
         </div>
 
-     
+
 
       </div>
     </div>

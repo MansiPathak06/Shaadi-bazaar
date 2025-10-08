@@ -5,9 +5,6 @@ import { ChevronDown, ShoppingBag, ShoppingCart, Heart, Star, ArrowRight, Play, 
 
 
 
-
-
-
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-yellow-50 overflow-hidden">
@@ -1050,15 +1047,16 @@ const FeaturedProducts = () => {
 }
 
 
+
 function Perfumes() {
   return (
-    <Fragment className="min-h-screen">
+    <div className="min-h-screen">
       <HeroSection />
       <ProductCard />
       <FeaturedProducts />
       <PromoBanner />
       <SpecialOffers />
-    </Fragment>
+    </div>
   );
 }
 
