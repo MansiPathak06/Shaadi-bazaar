@@ -1052,13 +1052,13 @@ const FeaturedProducts = () => {
 
 function Perfumes() {
   return (
-    <Fragment className="min-h-screen">
+    <div className="min-h-screen">
       <HeroSection />
       <ProductCard />
       <FeaturedProducts />
       <PromoBanner />
       <SpecialOffers />
-    </Fragment>
+    </div>
   );
 }
 
