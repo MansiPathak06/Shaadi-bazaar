@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
-import { Heart, ShoppingCart, Star, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Heart, Star } from 'lucide-react';
 
 export default function FootwearShop() {
   const [favorites, setFavorites] = useState([]);
