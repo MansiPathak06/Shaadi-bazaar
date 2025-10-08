@@ -344,7 +344,7 @@ function WatchBrandsGrid() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-50 to-neutral-100 p-8">
+    <div className=" bg-gradient-to-br from-neutral-50 to-neutral-100 p-8">
       <div className="max-w-7xl mx-auto">
         <Banner title='watch brands' tagline='your choice' />
 
@@ -517,7 +517,7 @@ function BestSellers() {
     <div className="px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <Banner title='best sellers' tagline="impressive discount" />
+        <Banner title="Groom's Collection" tagline="Royal Precision" />
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -670,7 +670,7 @@ function Sellers() {
     <div className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-       <Banner title="featuring" tagline='short heading' />
+       <Banner title="Bride's Collection" tagline='Radiant Moments' />
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

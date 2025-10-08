@@ -12,13 +12,11 @@ import Footer from './components/Footer';
 const page = () => {
   return (
     <div className='bg-gradient-to-b from-rose-100 to-white'>
-      <Navbar />
       <HeroPage />
       <OutfitsCollection />
       <FootwearCollection/>
       <Accessories/>
       <Testimonials />
-      <Footer />
     </div>
 
   );

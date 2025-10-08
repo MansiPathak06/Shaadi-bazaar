@@ -16,6 +16,7 @@ import {
   Calendar,
   Clipboard,
   Mail,
+  Home,
 } from "lucide-react";
 
 const Navbar = () => {
@@ -23,6 +24,12 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigationLinks = [
+    {
+      name: "Home",
+      icon: Clipboard,
+      hasMegaMenu: false,
+      link: "/",
+    },
     {
       name: "Accessories",
       icon: Gift,
@@ -143,11 +150,13 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-rose-500">
-                <img
-                  src="/images/logo.png"
-                  alt="Logo"
-                  className="h-20 w-40"
-                />
+                <a href="/">
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="h-20 w-40"
+                  />
+                </a>
               </h1>
             </div>
 
@@ -208,7 +217,7 @@ const Navbar = () => {
                 ) : (
                   <a
                     href={link.link}
-                    className="px-3 py-3 text-lg font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 block"
+                    className="px-3 py-3 text-md font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 block"
                   >
                     {link.name}
                   </a>

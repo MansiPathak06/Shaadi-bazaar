@@ -123,38 +123,6 @@ export default function FootwearShop() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className=" bg-gray-50">
-
-
-
-
-        {/* <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-lg overflow-hidden shadow-lg">
-            <div className="flex items-center justify-between p-12">
-
-              <div className="w-1/2">
-                <img
-                  src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80"
-                  alt="Brown wedge sandals"
-                  className="w-full h-auto object-contain transform -rotate-12"
-                />
-              </div>
-
-
-              <div className="w-1/2 pl-12">
-                <div className="border-t-2 border-b-2 border-dashed border-gray-400 py-2 mb-4 inline-block">
-                  <p className="text-gray-600 font-serif italic text-xl">Must Have</p>
-                </div>
-                <h2 className="text-6xl font-bold text-gray-900 mb-6">SANDALS</h2>
-                <div className="flex items-center gap-4 mb-6">
-                  <p className="text-gray-600 text-lg">STARTING AT <span className="text-3xl font-bold text-gray-900">$19.99</span></p>
-                  <button className="px-8 py-3 border-2 border-gray-900 text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors">
-                    GET YOURS!
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main> */}
         <HeroSection />
       </div>
 
