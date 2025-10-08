@@ -140,16 +140,16 @@ const OutfitsCollection = () => {
             <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize">
               men's <span className="text-rose-500">collection</span>
             </h2>
-            <p className="text-gray-600">{mensCollection.description}</p>
+            <p className="text-gray-600 text-sm">{mensCollection.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
             {/* Left: Main Image */}
             <Link
               href={mensCollection.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
+              <div className="h-[350px] lg:h-[555px] bg-rose-100 relative overflow-hidden">
                 <img
                   src={mensCollection.mainImage}
                   alt={mensCollection.title}
@@ -161,31 +161,31 @@ const OutfitsCollection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent"></div>
               </div>
 
-              <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8 text-white">
-                <h3 className="text-2xl md:text-3xl font-serif mb-2 md:mb-3">
+              <div className="absolute bottom-3 md:bottom-5 left-3 md:left-5 right-3 md:right-5 text-white">
+                <h3 className="text-lg md:text-xl font-serif mb-1">
                   Shop Your Elegant
                   <br />
                   <span className="italic">Men&apos;s Attire</span>
                 </h3>
-                <p className="text-xs md:text-sm text-white/90 mb-3 md:mb-4">
+                <p className="text-xs text-white/90 mb-2">
                   Discover contemporary styles crafted for the modern gentleman
                 </p>
-                <button className="bg-white text-rose-500 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
+                <button className="bg-white text-rose-500 px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
                   SHOP NOW
-                  <ArrowRight size={18} />
+                  <ArrowRight size={14} />
                 </button>
               </div>
             </Link>
 
             {/* Right: Featured Items Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 gap-2 md:gap-3">
               {mensCollection.featured.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
                   className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className="aspect-[3/4] bg-gradient-to-br from-rose-200 to-rose-100 relative overflow-hidden">
+                  <div className="h-[200px] lg:h-[270px] bg-gradient-to-br from-rose-200 to-rose-100 relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -198,8 +198,8 @@ const OutfitsCollection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
                   </div>
 
-                  <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white">
-                    <h4 className="text-base md:text-lg font-bold mb-1">{item.title}</h4>
+                  <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 text-white">
+                    <h4 className="text-xs md:text-sm font-bold mb-0.5">{item.title}</h4>
                     <p className="text-xs text-white/80">{item.subtitle}</p>
                   </div>
                 </Link>
@@ -217,16 +217,16 @@ const OutfitsCollection = () => {
             <p className="text-gray-600">{mensCollection.description}</p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
             {/* Left: Featured Items Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:order-1">
+            <div className="grid grid-cols-2 gap-2 md:gap-3 lg:order-1">
               {womensCollection.featured.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
                   className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  <div className="aspect-[3/4] bg-gradient-to-br from-rose-200 to-pink-100 relative overflow-hidden">
+                  <div className="h-[200px] lg:h-[270px] bg-gradient-to-br from-rose-200 to-pink-100 relative overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -239,8 +239,8 @@ const OutfitsCollection = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-rose-900/70 via-transparent to-transparent"></div>
                   </div>
 
-                  <div className="absolute bottom-4 md:bottom-6 left-4 md:left-6 right-4 md:right-6 text-white">
-                    <h4 className="text-base md:text-lg font-bold mb-1">{item.title}</h4>
+                  <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 right-2 md:right-3 text-white">
+                    <h4 className="text-xs md:text-sm font-bold mb-0.5">{item.title}</h4>
                     <p className="text-xs text-white/80">{item.subtitle}</p>
                   </div>
                 </Link>
@@ -252,7 +252,7 @@ const OutfitsCollection = () => {
               href={womensCollection.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 lg:order-2"
             >
-              <div className="aspect-[3/4] bg-rose-100 relative overflow-hidden">
+              <div className="h-[350px] lg:h-[555px] bg-rose-100 relative overflow-hidden">
                 <img
                   src={womensCollection.mainImage}
                   alt={womensCollection.title}
@@ -265,18 +265,18 @@ const OutfitsCollection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-rose-900/60 via-transparent to-transparent"></div>
               </div>
 
-              <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8 text-white">
-                <h3 className="text-2xl md:text-3xl font-serif mb-2 md:mb-3">
+              <div className="absolute bottom-3 md:bottom-5 left-3 md:left-5 right-3 md:right-5 text-white">
+                <h3 className="text-lg md:text-xl font-serif mb-1">
                   Shop Your Elegant
                   <br />
                   <span className="italic">Women&apos;s Attire</span>
                 </h3>
-                <p className="text-xs md:text-sm text-white/90 mb-3 md:mb-4">
+                <p className="text-xs text-white/90 mb-2">
                   Exquisite designs for every celebration and occasion
                 </p>
-                <button className="bg-white text-rose-500 px-5 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
+                <button className="bg-white text-rose-500 px-4 py-2 rounded-full text-xs md:text-sm font-semibold hover:bg-rose-50 transition-colors duration-300 flex items-center gap-2 group-hover:gap-3">
                   SHOP NOW
-                  <ArrowRight size={18} />
+                  <ArrowRight size={14} />
                 </button>
               </div>
             </Link>
