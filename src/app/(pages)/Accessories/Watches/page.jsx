@@ -1,16 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { Twitter, Instagram, Facebook, ChevronDown } from 'lucide-react';
+import { Twitter, Instagram, Facebook, ChevronDown, Heading } from 'lucide-react';
 import Button from '@/app/components/ui/Button';
+import Banner from '@/app/components/ui/Heading';
 
 
 export default function WatchesPage() {
-
-
-
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-neutral-50">
       <WatchHero />
       <PremiumWatchSection />
       <WatchCollectionGrid />
@@ -131,16 +129,12 @@ function PremiumWatchSection() {
   ];
 
   return (
-    <div className="bg-white">
+    <div>
       {/* Trending Products Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Discover</p>
-          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight">
-            Trending Products
-          </h2>
-        </div>
+        <Banner title="Trending products" tagline='discover' />
+     
 
         {/* Products Grid - Mobile: 1 col, Tablet: 2 cols, Desktop: 3 cols */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-10">
@@ -264,12 +258,7 @@ function WatchCollectionGrid() {
 
   return (
     <div className="bg-neutral-50 my-24">
-      <div className="text-center mb-16">
-        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Best Sellers</p>
-        <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight">
-          Combined Collection
-        </h2>
-      </div>
+      <Banner title='Combined collection' tagline='best sellers' />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Grid Layout */}
@@ -357,12 +346,7 @@ function WatchBrandsGrid() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 to-neutral-100 p-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Your Choice</p>
-          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight">
-            Watch Brands
-          </h2>
-        </div>
+        <Banner title='watch brands' tagline='your choice' />
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -530,15 +514,10 @@ function BestSellers() {
   };
 
   return (
-    <div className="bg-white px-4">
+    <div className="px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Impressive discount</p>
-          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight capitalize">
-            best sellers
-          </h2>
-        </div>
+        <Banner title='best sellers' tagline="impressive discount" />
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -688,15 +667,10 @@ function Sellers() {
   };
 
   return (
-    <div className="bg-white py-16 px-4">
+    <div className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">short heading</p>
-          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight">
-            Featuring
-          </h2>
-        </div>
+       <Banner title="featuring" tagline='short heading' />
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

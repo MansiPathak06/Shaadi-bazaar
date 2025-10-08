@@ -30,7 +30,7 @@ const Navbar = () => {
     {
       name: "Accessories",
       icon: Gift,
-      heading: "Start hiring your accessories vendors",
+      heading: "Add A Little Spark To Your Style!",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Jewelry", icon: Gift, link: "/Accessories/Jewellery" },
@@ -38,13 +38,13 @@ const Navbar = () => {
         { name: "Hair Accessories", icon: Sparkles, link: "/Accessories/HairAccessories" },
         { name: "Shoes", icon: Gift, link: "/Accessories/Shoes" },
         { name: "Watches", icon: Gift, link: "/Accessories/Watches" },
-        { name: "Belts", icon: Gift, link: "/Accessories/Belts" },
+        { name: "Perfumes", icon: Gift, link: "/Accessories/Perfumes" },
       ],
     },
     {
       name: "Outfits",
       icon: Sparkles,
-      heading: "Start hiring your outfit vendors",
+      heading: "Dressed to Impress, Designed to Express",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Bridal Wear", icon: Sparkles, link: "/Outfits/BridalWear" },
@@ -58,7 +58,7 @@ const Navbar = () => {
     {
       name: "Catering & Decor",
       icon: Utensils,
-      heading: "Start hiring your catering & decor vendors",
+      heading: "Crafting Moments. Serving Memories",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Wedding Catering", icon: Utensils, link: "/CateringAndDecor/WeddingCatering" },
@@ -72,7 +72,7 @@ const Navbar = () => {
     {
       name: "Accommodation",
       icon: Plane,
-      heading: "Start hiring your accommodation vendors",
+      heading: "Stay in Style, Sleep in Serenity",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Hotels", icon: Plane, link: "/Accommodation/Hotels" },
@@ -86,7 +86,7 @@ const Navbar = () => {
     {
       name: "Venue & Location",
       icon: MapPin,
-      heading: "Start hiring your venue & location vendors",
+      heading: "The Perfect Place for Your Perfect Day",
       hasMegaMenu: true,
       showDestinationCard: true,
       dropdowns: [
@@ -101,7 +101,7 @@ const Navbar = () => {
     {
       name: "Beauty & Styling",
       icon: Sparkles,
-      heading: "Start hiring your beauty & styling vendors",
+      heading: "Timeless Beauty, Effortlessly You",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Bridal Makeup", icon: Sparkles, link: "/BeautyAndStyling/BridalMakeup" },
@@ -115,7 +115,7 @@ const Navbar = () => {
     {
       name: "Event Planning",
       icon: Calendar,
-      heading: "Start hiring your event planning vendors",
+      heading: "Stylish Events. Seamless Execution",
       hasMegaMenu: true,
       dropdowns: [
         { name: "Wedding Planning", icon: Calendar, link: "/EventPlanning/WeddingPlanning" },
