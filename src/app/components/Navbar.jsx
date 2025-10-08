@@ -17,13 +17,12 @@ import {
   Clipboard,
   Mail,
   Home,
- Scissors,
+  Scissors,
   ShoppingBag,
-
   Footprints,
   Watch,
   FlaskConical,
- 
+  ChevronDown,
 } from "lucide-react";
 
 const Navbar = () => {
@@ -43,7 +42,7 @@ const Navbar = () => {
       heading: "Add A Little Spark To Your Style!",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Jewellery", icon:Sparkles, link: "/Accessories/Jewellery" },
+        { name: "Jewellery", icon: Sparkles, link: "/Accessories/Jewellery" },
         { name: "Bags & Purses", icon: ShoppingBag, link: "/Accessories/BagsAndPurses" },
         { name: "Hair Accessories", icon: Scissors, link: "/Accessories/Hair-Accessories" },
         { name: "Shoes", icon: Footprints, link: "/Accessories/Shoes" },
@@ -154,18 +153,19 @@ const Navbar = () => {
       <div className="border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-rose-500">
-                <a href="/">
-                  <img
-                    src="/images/logo.png"
-                    alt="Logo"
-                    className="h-20 w-40"
-                  />
-                </a>
-              </h1>
-            </div>
+            {/* Logo - Shifted more to left on mobile */}
+<div className="flex-shrink-0 -ml-13 md:ml-0">
+  <h1 className="text-2xl font-bold text-rose-500">
+    <a href="/">
+      <img
+        src="/images/logo.png"
+        alt="Logo"
+        className="h-20 w-40"
+      />
+    </a>
+  </h1>
+</div>
+
 
             {/* Search Bar */}
             <div className="hidden md:flex flex-1 max-w-2xl mx-8">
@@ -259,9 +259,15 @@ const Navbar = () => {
                         onClick={() =>
                           setOpenDropdown(openDropdown === index ? null : index)
                         }
-                        className="w-full text-left px-4 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-500 font-medium rounded transition-colors duration-200"
+                        className="w-full flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-500 font-medium rounded transition-colors duration-200"
                       >
-                        {link.name}
+                        <span>{link.name}</span>
+                        <ChevronDown
+                          size={18}
+                          className={`transition-transform duration-200 ${
+                            openDropdown === index ? "rotate-180" : ""
+                          }`}
+                        />
                       </button>
 
                       {openDropdown === index && (
