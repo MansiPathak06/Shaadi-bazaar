@@ -102,32 +102,32 @@ const Navbar = () => {
         {
           name: "Wedding Catering",
           icon: Utensils,
-          link: "/pages/CateringAndDecor/WeddingCatering",
+          link: "CateringAndDecor/WeddingCatering",
         },
         {
           name: "Floral Decor",
           icon: Flower,
-          link: "/pages/CateringAndDecor/FloralDecor",
+          link: "CateringAndDecor/FloralDecor",
         },
         {
           name: "Stage Decoration",
           icon: Flower,
-          link: "/pages/CateringAndDecor/StageDecoration",
+          link: "CateringAndDecor/StageDecoration",
         },
         {
           name: "Lighting",
           icon: Sparkles,
-          link: "/pages/CateringAndDecor/Lighting",
+          link: "/CateringAndDecor/Lightning",
         },
         {
           name: "Furniture Rental",
           icon: Gift,
-          link: "/pages/CateringAndDecor/FurnitureRental",
+          link: "/CateringAndDecor/FurnitureRental",
         },
         {
           name: "Theme Decor",
           icon: Flower,
-          link: "/pages/CateringAndDecor/ThemeDecor",
+          link: "/CateringAndDecor/ThemeDecor",
         },
       ],
     },
@@ -324,9 +324,14 @@ const Navbar = () => {
                 <ShoppingCart size={20} />
                 <span className="text-sm font-medium">Cart</span>
               </button>
-              <button className=" items-center space-x-1 text-gray-700 hover:text-rose-500 bg-rose-500 rounded-4xl py-3 px-7 border-none cursor-pointer hidden lg:block">
-                <span className="text-md font-semibold text-white">Wedding Website</span>
-              </button>
+
+              <Link href="/wedding-website">
+                <button className="items-center space-x-1 text-gray-700 hover:text-rose-500 bg-rose-500 rounded-4xl py-3 px-7 border-none cursor-pointer hidden lg:block">
+                  <span className="text-md font-semibold text-white">
+                    Wedding Website
+                  </span>
+                </button>
+              </Link>
 
               {/* Mobile Menu Button */}
               <button
@@ -399,8 +404,9 @@ const Navbar = () => {
                         <span>{link.name}</span>
                         <ChevronDown
                           size={18}
-                          className={`transition-transform duration-200 ${openDropdown === index ? "rotate-180" : ""
-                            }`}
+                          className={`transition-transform duration-200 ${
+                            openDropdown === index ? "rotate-180" : ""
+                          }`}
                         />
                       </button>
 

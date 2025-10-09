@@ -10,6 +10,7 @@ import Hero from './components/Hero';
 
 
 
+
 const page = () => {
   return (
     <div className='bg-gradient-to-b from-rose-100 to-white'>
@@ -18,6 +19,7 @@ const page = () => {
       <FootwearCollection/>
       <Accessories/>
       <Testimonials />
+      
     </div>
 
   );

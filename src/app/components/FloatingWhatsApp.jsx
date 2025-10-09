@@ -85,7 +85,7 @@ const FloatingWhatsApp = () => {
         {/* Main Floating Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group relative"
+          className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 group relative cursor-pointer"
         >
           {/* Pulse Animation */}
           <span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-75"></span>
