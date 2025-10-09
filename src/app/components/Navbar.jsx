@@ -102,32 +102,32 @@ const Navbar = () => {
         {
           name: "Wedding Catering",
           icon: Utensils,
-          link: "/pages/CateringAndDecor/WeddingCatering",
+          link: "/CateringAndDecor/WeddingCatering",
         },
         {
           name: "Floral Decor",
           icon: Flower,
-          link: "/pages/CateringAndDecor/FloralDecor",
+          link: "/CateringAndDecor/FloralDecor",
         },
         {
           name: "Stage Decoration",
           icon: Flower,
-          link: "/pages/CateringAndDecor/StageDecoration",
+          link: "/CateringAndDecor/StageDecoration",
         },
         {
           name: "Lighting",
           icon: Sparkles,
-          link: "/pages/CateringAndDecor/Lighting",
+          link: "/CateringAndDecor/Lighting",
         },
         {
           name: "Furniture Rental",
           icon: Gift,
-          link: "/pages/CateringAndDecor/FurnitureRental",
+          link: "/CateringAndDecor/FurnitureRental",
         },
         {
           name: "Theme Decor",
           icon: Flower,
-          link: "/pages/CateringAndDecor/ThemeDecor",
+          link: "/CateringAndDecor/ThemeDecor",
         },
       ],
     },
