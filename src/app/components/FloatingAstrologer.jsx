@@ -9,9 +9,8 @@ const FloatingAstrologer = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(true);
 
-  // Astrologer contact details
-  const astrologerPhone = "919876543210"; // Replace with actual number
-  const astrologerWhatsApp = "919876543210"; // Replace with actual WhatsApp number
+  const astrologerPhone = "919876543210";
+  const astrologerWhatsApp = "919876543210";
 
   const handleCall = () => {
     window.location.href = `tel:${astrologerPhone}`;
@@ -27,28 +26,27 @@ const FloatingAstrologer = () => {
 
   return (
     <>
-      {/* Fixed Container - This ensures button never moves */}
-      <div 
+      <div
         className="fixed bottom-28 right-6 z-50"
         style={{
-          width: '64px',
-          height: '64px',
-          touchAction: 'none'
+          width: "64px",
+          height: "64px",
+          touchAction: "none",
         }}
       >
-        {/* Permanent Popup Message */}
+        {/* Popup message */}
         {showPopup && !isOpen && (
-          <div 
+          <div
             className="fixed -translate-y-1/2 bg-gradient-to-r from-rose-500 to-rose-400 text-white px-4 py-3 rounded-xl shadow-2xl animate-bounce-slow w-60"
             style={{
-              bottom: 'calc(7rem + 32px)',
-              right: 'calc(1.5rem + 64px + 8px)',
-              pointerEvents: 'auto'
+              bottom: "calc(7rem + 32px)",
+              right: "calc(1.5rem + 64px + 8px)",
+              pointerEvents: "auto",
             }}
           >
             <button
               onClick={() => setShowPopup(false)}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-white text-rose-500 rounded-full flex items-center justify-center transition-colors shadow-lg touch-manipulation active:scale-95"
+              className="absolute -top-2 -right-2 w-6 h-6 bg-white text-rose-500 rounded-full flex items-center justify-center transition-colors shadow-lg touch-manipulation active:scale-95 cursor-pointer"
             >
               <X size={14} />
             </button>
@@ -58,21 +56,21 @@ const FloatingAstrologer = () => {
                 Do you want to talk to an astrologer?
               </p>
             </div>
-            <div 
+            <div
               className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-rose-500 transform rotate-45"
-              style={{ right: '-8px' }}
+              style={{ right: "-8px" }}
             ></div>
           </div>
         )}
 
-        {/* Chat Options Popup */}
+        {/* Chat popup */}
         {isOpen && (
-          <div 
+          <div
             className="fixed w-80 bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-up"
             style={{
-              bottom: 'calc(7rem + 72px)',
-              right: '1.5rem',
-              pointerEvents: 'auto'
+              bottom: "calc(7rem + 72px)",
+              right: "1.5rem",
+              pointerEvents: "auto",
             }}
           >
             {/* Header */}
@@ -81,7 +79,10 @@ const FloatingAstrologer = () => {
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center relative">
                   <GiCrystalBall className="text-rose-600" size={28} />
                   <div className="absolute -top-1 -right-1">
-                    <FaStar className="text-yellow-400 animate-pulse" size={12} />
+                    <FaStar
+                      className="text-yellow-400 animate-pulse"
+                      size={12}
+                    />
                   </div>
                 </div>
                 <div className="text-white">
@@ -93,7 +94,7 @@ const FloatingAstrologer = () => {
               </div>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-white rounded-full p-1 transition-colors touch-manipulation active:scale-95 active:bg-white/20"
+                className="text-white rounded-full p-1 transition-colors touch-manipulation active:scale-95 active:bg-white/20 cursor-pointer"
               >
                 <X size={20} />
               </button>
@@ -111,27 +112,26 @@ const FloatingAstrologer = () => {
                 </p>
               </div>
 
-              {/* Services List */}
+              {/* Services */}
               <div className="space-y-2 mb-4">
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <FaStar className="text-yellow-500" size={12} />
-                  <span>Birth Chart Analysis</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <FaStar className="text-yellow-500" size={12} />
-                  <span>Future Predictions</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-700">
-                  <FaStar className="text-yellow-500" size={12} />
-                  <span>Relationship Guidance</span>
-                </div>
+                {["Birth Chart Analysis", "Future Predictions", "Relationship Guidance"].map(
+                  (service) => (
+                    <div
+                      key={service}
+                      className="flex items-center gap-2 text-sm text-gray-700"
+                    >
+                      <FaStar className="text-yellow-500" size={12} />
+                      <span>{service}</span>
+                    </div>
+                  )
+                )}
               </div>
 
               {/* Contact Buttons */}
               <div className="space-y-2">
                 <button
                   onClick={handleCall}
-                  className="w-full bg-gradient-to-r from-rose-600 to-rose-700 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg touch-manipulation active:scale-95 active:shadow-md"
+                  className="w-full bg-gradient-to-r from-rose-600 to-rose-700 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg touch-manipulation active:scale-95 active:shadow-md cursor-pointer"
                 >
                   <Phone size={18} />
                   Call Now
@@ -139,7 +139,7 @@ const FloatingAstrologer = () => {
 
                 <button
                   onClick={handleWhatsApp}
-                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 justify-center shadow-lg touch-manipulation active:scale-95 active:shadow-md"
+                  className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-3 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 justify-center shadow-lg touch-manipulation active:scale-95 active:shadow-md cursor-pointer"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,33 +157,27 @@ const FloatingAstrologer = () => {
           </div>
         )}
 
-        {/* Main Floating Button - Absolutely positioned within fixed container */}
+        {/* Floating Main Button */}
         <button
           onClick={() => {
             setIsOpen(!isOpen);
             setShowPopup(false);
           }}
-          className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-r from-rose-500 to-rose-400 rounded-full flex items-center justify-center shadow-2xl group"
+          className="absolute top-0 left-0 w-16 h-16 bg-gradient-to-r from-rose-500 to-rose-400 rounded-full flex items-center justify-center shadow-2xl group cursor-pointer"
           style={{
-            touchAction: 'manipulation',
-            WebkitTapHighlightColor: 'transparent',
-            transform: 'translateZ(0)',
-            willChange: 'transform',
-            backfaceVisibility: 'hidden'
+            touchAction: "manipulation",
+            WebkitTapHighlightColor: "transparent",
+            transform: "translateZ(0)",
+            willChange: "transform",
+            backfaceVisibility: "hidden",
           }}
         >
-          {/* Pulse Animation */}
-          <span 
+          <span
             className="absolute inset-0 rounded-full bg-rose-400 animate-ping opacity-75"
-            style={{ pointerEvents: 'none' }}
+            style={{ pointerEvents: "none" }}
           ></span>
-
-          {/* Crystal Ball Icon */}
           <div className="relative z-10">
-            <GiCrystalBall
-              className="text-white"
-              size={32}
-            />
+            <GiCrystalBall className="text-white" size={32} />
             <FaStar
               className="absolute -top-1 -right-1 text-yellow-300 animate-pulse"
               size={12}
@@ -192,7 +186,7 @@ const FloatingAstrologer = () => {
         </button>
       </div>
 
-      {/* Custom Animations */}
+      {/* Animations */}
       <style jsx>{`
         @keyframes scale-up {
           from {
@@ -218,21 +212,6 @@ const FloatingAstrologer = () => {
         }
         .animate-bounce-slow {
           animation: bounce-slow 2s infinite;
-        }
-        
-        /* Prevent any movement or layout shifts */
-        .touch-manipulation {
-          touch-action: manipulation;
-          -webkit-tap-highlight-color: transparent;
-          user-select: none;
-          -webkit-user-select: none;
-          -webkit-touch-callout: none;
-        }
-        
-        /* Hardware acceleration for smooth rendering */
-        button {
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
         }
       `}</style>
     </>
