@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import React, { useState } from "react";
 import {
@@ -43,8 +44,16 @@ const Navbar = () => {
       hasMegaMenu: true,
       dropdowns: [
         { name: "Jewellery", icon: Sparkles, link: "/Accessories/Jewellery" },
-        { name: "Bags & Purses", icon: ShoppingBag, link: "/Accessories/BagsAndPurses" },
-        { name: "Hair Accessories", icon: Scissors, link: "/Accessories/Hair-Accessories" },
+        {
+          name: "Bags & Purses",
+          icon: ShoppingBag,
+          link: "/Accessories/BagsAndPurses",
+        },
+        {
+          name: "Hair Accessories",
+          icon: Scissors,
+          link: "/Accessories/Hair-Accessories",
+        },
         { name: "Shoes", icon: Footprints, link: "/Accessories/Shoes" },
         { name: "Watches", icon: Watch, link: "/Accessories/Watches" },
         { name: "Perfumes", icon: FlaskConical, link: "/Accessories/Perfumes" },
@@ -56,12 +65,32 @@ const Navbar = () => {
       heading: "Dressed to Impress, Designed to Express",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Bridal Wear", icon: Sparkles, link: "/pages/Outfits/BridalWear" },
-        { name: "Groom Wear", icon: Gift, link: "/pages/Outfits/GroomWear" },
-        { name: "Party Wear", icon: Sparkles, link: "/pages/Outfits/PartyWear" },
-        { name: "Traditional Wear", icon: Gift, link: "/pages/Outfits/TraditionalWear" },
-        { name: "Western Wear", icon: Sparkles, link: "/pages/Outfits/WesternWear" },
-        { name: "Kids Outfits", icon: Gift, link: "/pages/Outfits/KidsOutfits" },
+        {
+          name: "Bridal Wear",
+          icon: Sparkles,
+          link: "/Outfits/BridalWear",
+        },
+        { name: "Groom Wear", icon: Gift, link: "/Outfits/GroomWear" },
+        {
+          name: "Party Wear",
+          icon: Sparkles,
+          link: "/Outfits/PartyWear",
+        },
+        {
+          name: "Traditional Wear",
+          icon: Gift,
+          link: "/Outfits/TraditionalWear",
+        },
+        {
+          name: "Western Wear",
+          icon: Sparkles,
+          link: "/Outfits/WesternWear",
+        },
+        {
+          name: "Kids Outfits",
+          icon: Gift,
+          link: "/Outfits/KidsOutfits",
+        },
       ],
     },
     {
@@ -70,12 +99,36 @@ const Navbar = () => {
       heading: "Crafting Moments. Serving Memories",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Wedding Catering", icon: Utensils, link: "/pages/CateringAndDecor/WeddingCatering" },
-        { name: "Floral Decor", icon: Flower, link: "/pages/CateringAndDecor/FloralDecor" },
-        { name: "Stage Decoration", icon: Flower, link: "/pages/CateringAndDecor/StageDecoration" },
-        { name: "Lighting", icon: Sparkles, link: "/pages/CateringAndDecor/Lighting" },
-        { name: "Furniture Rental", icon: Gift, link: "/pages/CateringAndDecor/FurnitureRental" },
-        { name: "Theme Decor", icon: Flower, link: "/pages/CateringAndDecor/ThemeDecor" },
+        {
+          name: "Wedding Catering",
+          icon: Utensils,
+          link: "/pages/CateringAndDecor/WeddingCatering",
+        },
+        {
+          name: "Floral Decor",
+          icon: Flower,
+          link: "/pages/CateringAndDecor/FloralDecor",
+        },
+        {
+          name: "Stage Decoration",
+          icon: Flower,
+          link: "/pages/CateringAndDecor/StageDecoration",
+        },
+        {
+          name: "Lighting",
+          icon: Sparkles,
+          link: "/pages/CateringAndDecor/Lighting",
+        },
+        {
+          name: "Furniture Rental",
+          icon: Gift,
+          link: "/pages/CateringAndDecor/FurnitureRental",
+        },
+        {
+          name: "Theme Decor",
+          icon: Flower,
+          link: "/pages/CateringAndDecor/ThemeDecor",
+        },
       ],
     },
     {
@@ -86,10 +139,26 @@ const Navbar = () => {
       dropdowns: [
         { name: "Hotels", icon: Plane, link: "/pages/Accommodation/Hotels" },
         { name: "Resorts", icon: Plane, link: "/pages/Accommodation/Resorts" },
-        { name: "Guest Houses", icon: Plane, link: "/pages/Accommodation/GuestHouses" },
-        { name: "Banquet Halls", icon: MapPin, link: "/pages/Accommodation/BanquetHalls" },
-        { name: "Farmhouses", icon: MapPin, link: "/pages/Accommodation/Farmhouses" },
-        { name: "Beach Properties", icon: Plane, link: "/pages/Accommodation/BeachProperties" },
+        {
+          name: "Guest Houses",
+          icon: Plane,
+          link: "/pages/Accommodation/GuestHouses",
+        },
+        {
+          name: "Banquet Halls",
+          icon: MapPin,
+          link: "/pages/Accommodation/BanquetHalls",
+        },
+        {
+          name: "Farmhouses",
+          icon: MapPin,
+          link: "/pages/Accommodation/Farmhouses",
+        },
+        {
+          name: "Beach Properties",
+          icon: Plane,
+          link: "/pages/Accommodation/BeachProperties",
+        },
       ],
     },
     {
@@ -99,12 +168,36 @@ const Navbar = () => {
       hasMegaMenu: true,
       showDestinationCard: true,
       dropdowns: [
-        { name: "Outdoor Venues", icon: MapPin, link: "/pages/VenueAndLocation/OutdoorVenues" },
-        { name: "Indoor Venues", icon: MapPin, link: "/pages/VenueAndLocation/IndoorVenues" },
-        { name: "Destination Wedding", icon: Plane, link: "/pages/VenueAndLocation/DestinationWedding" },
-        { name: "Banquet Halls", icon: MapPin, link: "/pages/VenueAndLocation/BanquetHalls" },
-        { name: "Gardens", icon: Flower, link: "/pages/VenueAndLocation/Gardens" },
-        { name: "Beach Venues", icon: Plane, link: "/pages/VenueAndLocation/BeachVenues" },
+        {
+          name: "Outdoor Venues",
+          icon: MapPin,
+          link: "/pages/VenueAndLocation/OutdoorVenues",
+        },
+        {
+          name: "Indoor Venues",
+          icon: MapPin,
+          link: "/pages/VenueAndLocation/IndoorVenues",
+        },
+        {
+          name: "Destination Wedding",
+          icon: Plane,
+          link: "/pages/VenueAndLocation/DestinationWedding",
+        },
+        {
+          name: "Banquet Halls",
+          icon: MapPin,
+          link: "/pages/VenueAndLocation/BanquetHalls",
+        },
+        {
+          name: "Gardens",
+          icon: Flower,
+          link: "/pages/VenueAndLocation/Gardens",
+        },
+        {
+          name: "Beach Venues",
+          icon: Plane,
+          link: "/pages/VenueAndLocation/BeachVenues",
+        },
       ],
     },
     {
@@ -113,12 +206,36 @@ const Navbar = () => {
       heading: "Timeless Beauty, Effortlessly You",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Bridal Makeup", icon: Sparkles, link: "/pages/BeautyAndStyling/BridalMakeup" },
-        { name: "Hair Styling", icon: Sparkles, link: "/pages/BeautyAndStyling/HairStyling" },
-        { name: "Mehendi Artists", icon: Sparkles, link: "/pages/BeautyAndStyling/MehendiArtists" },
-        { name: "Spa Services", icon: Sparkles, link: "/pages/BeautyAndStyling/SpaServices" },
-        { name: "Grooming", icon: Sparkles, link: "/pages/BeautyAndStyling/Grooming" },
-        { name: "Nail Art", icon: Sparkles, link: "/pages/BeautyAndStyling/NailArt" },
+        {
+          name: "Bridal Makeup",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/BridalMakeup",
+        },
+        {
+          name: "Hair Styling",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/HairStyling",
+        },
+        {
+          name: "Mehendi Artists",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/MehendiArtists",
+        },
+        {
+          name: "Spa Services",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/SpaServices",
+        },
+        {
+          name: "Grooming",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/Grooming",
+        },
+        {
+          name: "Nail Art",
+          icon: Sparkles,
+          link: "/pages/BeautyAndStyling/NailArt",
+        },
       ],
     },
     {
@@ -127,10 +244,26 @@ const Navbar = () => {
       heading: "Stylish Events. Seamless Execution",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Wedding Planning", icon: Calendar, link: "/pages/EventPlanning/WeddingPlanning" },
-        { name: "Destination Wedding", icon: Plane, link: "/pages/EventPlanning/DestinationWedding" },
-        { name: "Engagement Planning", icon: Calendar, link: "/pages/EventPlanning/EngagementPlanning" },
-        { name: "Cocktail Planning", icon: Calendar, link: "/pages/EventPlanning/CocktailPlanning" },
+        {
+          name: "Wedding Planning",
+          icon: Calendar,
+          link: "/pages/EventPlanning/WeddingPlanning",
+        },
+        {
+          name: "Destination Wedding",
+          icon: Plane,
+          link: "/pages/EventPlanning/DestinationWedding",
+        },
+        {
+          name: "Engagement Planning",
+          icon: Calendar,
+          link: "/pages/EventPlanning/EngagementPlanning",
+        },
+        {
+          name: "Cocktail Planning",
+          icon: Calendar,
+          link: "/pages/EventPlanning/CocktailPlanning",
+        },
       ],
     },
     {
@@ -154,18 +287,17 @@ const Navbar = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo - Shifted more to left on mobile */}
-<div className="flex-shrink-0 -ml-13 md:ml-0">
-  <h1 className="text-2xl font-bold text-rose-500">
-    <a href="/">
-      <img
-        src="/images/logo.png"
-        alt="Logo"
-        className="h-20 w-40"
-      />
-    </a>
-  </h1>
-</div>
-
+            <div className="flex-shrink-0 -ml-13 md:ml-0">
+              <h1 className="text-2xl font-bold text-rose-500">
+                <a href="/">
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="h-20 w-40"
+                  />
+                </a>
+              </h1>
+            </div>
 
             {/* Search Bar */}
             <div className="hidden md:flex flex-1 max-w-2xl mx-8">
