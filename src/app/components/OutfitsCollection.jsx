@@ -283,7 +283,7 @@ const OutfitsCollection = () => {
           </div>
         </section>
 
-
+      
       </div>
     </div>
   );

@@ -56,12 +56,12 @@ const Navbar = () => {
       heading: "Dressed to Impress, Designed to Express",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Bridal Wear", icon: Sparkles, link: "/pages/Outfits/BridalWear" },
-        { name: "Groom Wear", icon: Gift, link: "/pages/Outfits/GroomWear" },
-        { name: "Party Wear", icon: Sparkles, link: "/pages/Outfits/PartyWear" },
-        { name: "Traditional Wear", icon: Gift, link: "/pages/Outfits/TraditionalWear" },
-        { name: "Western Wear", icon: Sparkles, link: "/pages/Outfits/WesternWear" },
-        { name: "Kids Outfits", icon: Gift, link: "/pages/Outfits/KidsOutfits" },
+        { name: "Bridal Wear", icon: Sparkles, link: "/Outfits/BridalWear" },
+        { name: "Groom Wear", icon: Gift, link: "/Outfits/GroomWear" },
+        { name: "Party Wear", icon: Sparkles, link: "/Outfits/PartyWear" },
+        { name: "Traditional Wear", icon: Gift, link: "/Outfits/TraditionalWear" },
+        { name: "Western Wear", icon: Sparkles, link: "/Outfits/WesternWear" },
+        { name: "Kids Outfits", icon: Gift, link: "/Outfits/KidsOutfits" },
       ],
     },
     {
@@ -70,12 +70,12 @@ const Navbar = () => {
       heading: "Crafting Moments. Serving Memories",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Wedding Catering", icon: Utensils, link: "/pages/CateringAndDecor/WeddingCatering" },
-        { name: "Floral Decor", icon: Flower, link: "/pages/CateringAndDecor/FloralDecor" },
-        { name: "Stage Decoration", icon: Flower, link: "/pages/CateringAndDecor/StageDecoration" },
-        { name: "Lighting", icon: Sparkles, link: "/pages/CateringAndDecor/Lighting" },
-        { name: "Furniture Rental", icon: Gift, link: "/pages/CateringAndDecor/FurnitureRental" },
-        { name: "Theme Decor", icon: Flower, link: "/pages/CateringAndDecor/ThemeDecor" },
+        { name: "Wedding Catering", icon: Utensils, link: "/CateringAndDecor/WeddingCatering" },
+        { name: "Floral Decor", icon: Flower, link: "/CateringAndDecor/FloralDecor" },
+        { name: "Stage Decoration", icon: Flower, link: "/CateringAndDecor/StageDecoration" },
+        { name: "Lighting", icon: Sparkles, link: "/CateringAndDecor/Lighting" },
+        { name: "Furniture Rental", icon: Gift, link: "/CateringAndDecor/FurnitureRental" },
+        { name: "Theme Decor", icon: Flower, link: "/CateringAndDecor/ThemeDecor" },
       ],
     },
     {
@@ -151,20 +151,20 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       {/* Top Section */}
       <div className="border-b border-gray-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 ">
           <div className="flex items-center justify-between h-16">
             {/* Logo - Shifted more to left on mobile */}
-<div className="flex-shrink-0 -ml-13 md:ml-0">
-  <h1 className="text-2xl font-bold text-rose-500">
-    <a href="/">
-      <img
-        src="/images/logo.png"
-        alt="Logo"
-        className="h-20 w-40"
-      />
-    </a>
-  </h1>
-</div>
+            <div className="flex-shrink-0 -ml-13 md:ml-0">
+              <h1 className="text-2xl font-bold text-rose-500">
+                <a href="/">
+                  <img
+                    src="/images/logo.png"
+                    alt="Logo"
+                    className="h-20 w-40"
+                  />
+                </a>
+              </h1>
+            </div>
 
 
             {/* Search Bar */}
@@ -191,6 +191,9 @@ const Navbar = () => {
               <button className="flex items-center space-x-1 text-gray-700 hover:text-rose-500">
                 <ShoppingCart size={20} />
                 <span className="text-sm font-medium">Cart</span>
+              </button>
+              <button className=" items-center space-x-1 text-gray-700 hover:text-rose-500 bg-rose-500 rounded-4xl py-3 px-7 border-none cursor-pointer hidden lg:block">
+                <span className="text-md font-semibold text-white">Wedding Website</span>
               </button>
 
               {/* Mobile Menu Button */}
@@ -264,9 +267,8 @@ const Navbar = () => {
                         <span>{link.name}</span>
                         <ChevronDown
                           size={18}
-                          className={`transition-transform duration-200 ${
-                            openDropdown === index ? "rotate-180" : ""
-                          }`}
+                          className={`transition-transform duration-200 ${openDropdown === index ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
 

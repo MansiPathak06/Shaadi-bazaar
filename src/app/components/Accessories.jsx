@@ -112,9 +112,21 @@ const Accessories = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 py-12 ">
             {/* Popular Categories */}
-            <div className="mb-16">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-center mb-2 font-serif text-gray-900 uppercase">Popular <span className='text-rose-500'>Categories</span></h2>
-                <p className="text-gray-600 text-center text-xl mb-12">Step into a world where timeless elegance meets modern sophistication, and every outfit tells a story of luxury.</p>
+            <div className='mb-4 text-center'>
+                <div className="inline-block mb-4">
+                    <span className="text-rose-500 text-sm font-semibold tracking-[0.3em] uppercase">
+                        Adorn your beauty
+                    </span>
+                </div>
+                <h1 className="text-6xl md:text-4xl lg:text-5xl font-serif  text-gray-900 mb-6">
+                    Popular <span className="text-rose-500">Categories</span>
+
+                </h1>
+                <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                    Adorn yourself with jewels that define your beauty.
+                </p>
+
+
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     {categories.map((category, index) => (

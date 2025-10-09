@@ -133,18 +133,21 @@ const FootwearCollection = () => {
         {/* Shop by Category Section */}
         <div className="mb-16">
           <div className="flex items-center justify-between mb-10">
-            <div className="text-center mb-20">
+            <div className="text-center ">
               <div className="inline-block mb-4">
-
+                <span className="text-rose-500 text-sm font-semibold tracking-[0.3em] uppercase">
+                  Step into your style
+                </span>
               </div>
               <h1 className="text-6xl md:text-4xl lg:text-5xl font-serif  text-gray-900 mb-6">
-                Find By   <span className="text-rose-500">Category</span>
+                Find Your <span className="text-rose-500">Category</span>
 
               </h1>
               <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-                Find Your Perfect Pair
+                Step into comfort and style with every category.
               </p>
             </div>
+
             <Link
               href="/footwear/all"
               className="hidden md:inline-flex items-center gap-2 text-rose-500 hover:text-rose-600 font-semibold group"
@@ -194,8 +197,6 @@ const FootwearCollection = () => {
             ))}
           </div>
         </div>
-
-
 
       </div>
     </div>
