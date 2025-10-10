@@ -211,32 +211,32 @@ const Navbar = () => {
         {
           name: "Bridal Makeup",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/BridalMakeup",
+          link: "/BeautyAndStyling/BridalMakeup",
         },
         {
           name: "Hair Styling",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/HairStyling",
+          link: "/BeautyAndStyling/HairStyling",
         },
         {
           name: "Mehendi Artists",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/MehendiArtists",
+          link: "/BeautyAndStyling/MehendiArtists",
         },
         {
           name: "Spa Services",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/SpaServices",
+          link: "/BeautyAndStyling/SpaServices",
         },
         {
           name: "Grooming",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/Grooming",
+          link: "/BeautyAndStyling/Grooming",
         },
         {
           name: "Nail Art",
           icon: Sparkles,
-          link: "/pages/BeautyAndStyling/NailArt",
+          link: "/BeautyAndStyling/NailArt",
         },
       ],
     },
