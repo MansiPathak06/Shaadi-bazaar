@@ -117,7 +117,7 @@ const Navbar = () => {
         {
           name: "Lighting",
           icon: Sparkles,
-          link: "/CateringAndDecor/Lighting",
+          link: "/CateringAndDecor/Lightning",
         },
         {
           name: "Furniture Rental",
@@ -139,27 +139,36 @@ const Navbar = () => {
       heading: "Stay in Style, Sleep in Serenity",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Hotels", icon: Plane, link: "/pages/Accommodation/Hotels" },
-        { name: "Resorts", icon: Plane, link: "/pages/Accommodation/Resorts" },
+        {
+          name: "Hotels",
+          icon: Plane,
+          link: "/Accommodation/Hotels"
+        },
+
+        {
+          name: "Resorts",
+          icon: Plane,
+          link: "/Accommodation/Resorts"
+        },
         {
           name: "Guest Houses",
           icon: Plane,
-          link: "/pages/Accommodation/GuestHouses",
+          link: "/Accommodation/GuestHouses",
         },
         {
           name: "Banquet Halls",
           icon: MapPin,
-          link: "/pages/Accommodation/BanquetHalls",
+          link: "/Accommodation/BanquetHalls",
         },
         {
           name: "Farmhouses",
           icon: MapPin,
-          link: "/pages/Accommodation/Farmhouses",
+          link: "/Accommodation/Farmhouses",
         },
         {
           name: "Beach Properties",
           icon: Plane,
-          link: "/pages/Accommodation/BeachProperties",
+          link: "/Accommodation/BeachProperties",
         },
       ],
     },
@@ -406,9 +415,8 @@ const Navbar = () => {
                         <span>{link.name}</span>
                         <ChevronDown
                           size={18}
-                          className={`transition-transform duration-200 ${
-                            openDropdown === index ? "rotate-180" : ""
-                          }`}
+                          className={`transition-transform duration-200 ${openDropdown === index ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
 

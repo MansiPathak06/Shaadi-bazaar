@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
-import LowerHeading from "@/app/components/ui/LowerHeading";
-import Button from "@/app/components/ui/Button";
+import LowerHeading from '@/app/components/ui/LowerHeading';
 
 const Jewellery = () => {
   const [favorites, setFavorites] = useState([]);
@@ -168,7 +167,7 @@ const Jewellery = () => {
           {/* Section Header */}
           <div className="text-center mb-6 mt-6">
 
-            <LowerHeading title='Shop By Seller' tagline='Your Favorite Sellers, all in one place' />
+            <LowerHeading title='shop by seller' tagline='Your Favorite Sellers, all in one place' />
 
             <div className="flex justify-center gap-4 md:gap-8 mb-8">
               <button className="text-sm md:text-base font-medium text-gray-800 border-b-2 border-rose-400 pb-2 px-2">
