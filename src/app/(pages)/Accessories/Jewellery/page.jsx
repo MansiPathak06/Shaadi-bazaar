@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
+import LowerHeading from "@/app/components/ui/LowerHeading";
+import Button from "@/app/components/ui/Button";
 
 const Jewellery = () => {
   const [favorites, setFavorites] = useState([]);
@@ -24,7 +26,7 @@ const Jewellery = () => {
       price: "₹2,49,999",
       originalPrice: "₹2,99,999",
       discount: "-17%",
-      image: "/images/necklace-1.jpg",
+      image: "https://i.pinimg.com/1200x/ad/ce/22/adce22f76f2cca8fc5105c3335679688.jpg",
       badge: "HOT",
       rating: 4.8,
     },
@@ -34,7 +36,7 @@ const Jewellery = () => {
       price: "₹45,999",
       originalPrice: "₹55,999",
       discount: "-18%",
-      image: "/images/earrings-1.jpg",
+      image: "https://i.pinimg.com/1200x/af/ee/42/afee42159dc6e52eba8b3f2a5feb8f3a.jpg",
       badge: "HOT",
       rating: 4.9,
     },
@@ -44,7 +46,7 @@ const Jewellery = () => {
       price: "₹32,999",
       originalPrice: "₹39,999",
       discount: "-17%",
-      image: "/images/bracelet-1.jpg",
+      image: "https://i.pinimg.com/736x/86/ef/2d/86ef2dd5bf0de49641cef64eace765bf.jpg",
       badge: "HOT",
       rating: 4.7,
     },
@@ -54,7 +56,7 @@ const Jewellery = () => {
       price: "₹78,999",
       originalPrice: "₹95,999",
       discount: "-18%",
-      image: "/images/ring-1.jpg",
+      image: "https://i.pinimg.com/736x/52/89/f2/5289f21a1c55ee6b0275a8931d6fd609.jpg",
       badge: "HOT",
       rating: 4.9,
     },
@@ -65,7 +67,7 @@ const Jewellery = () => {
     {
       id: 1,
       name: "Bridal Collection",
-      image: "/images/bridal-jewelry.jpg",
+      image: "https://i.pinimg.com/1200x/13/83/59/138359354b82ff653e2581f766e4b17f.jpg",
       link: "/collections/bridal",
     },
     {
@@ -89,25 +91,25 @@ const Jewellery = () => {
     {
       id: 5,
       name: "Gemstone Beauty",
-      image: "/images/gemstone-collection.jpg",
+      image: "https://i.pinimg.com/736x/ec/33/78/ec337802c82b112d175e256336361b08.jpg",
       link: "/collections/gemstone",
     },
     {
       id: 6,
       name: "Contemporary",
-      image: "/images/modern-jewelry.jpg",
+      image: "https://i.pinimg.com/1200x/57/2c/bd/572cbd1c8284d284c2bba424565f2067.jpg",
       link: "/collections/contemporary",
     },
     {
       id: 7,
       name: "Vintage Style",
-      image: "/images/vintage-jewelry.jpg",
+      image: "https://i.pinimg.com/1200x/4e/93/c7/4e93c7e4bab23bc573fd690bbac7fcd7.jpg",
       link: "/collections/vintage",
     },
     {
       id: 8,
       name: "Temple Jewellery",
-      image: "/images/temple-jewelry.jpg",
+      image: "https://i.pinimg.com/1200x/ec/86/4c/ec864cc4bc06c910585ea31e9d558995.jpg",
       link: "/collections/temple",
     },
   ];
@@ -161,15 +163,13 @@ const Jewellery = () => {
       </section>
 
       {/* Shop Best Seller Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-800 mb-6">
-              Shop Best Seller
-            </h2>
-            
-            {/* Filter Tabs */}
+          <div className="text-center mb-6 mt-6">
+
+            <LowerHeading title='Shop By Seller' tagline='Your Favorite Sellers, all in one place' />
+
             <div className="flex justify-center gap-4 md:gap-8 mb-8">
               <button className="text-sm md:text-base font-medium text-gray-800 border-b-2 border-rose-400 pb-2 px-2">
                 Women
@@ -226,10 +226,7 @@ const Jewellery = () => {
                     }}
                   />
 
-                  {/* Quick Add Button - Shows on Hover */}
-                  <button className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-gray-800 px-6 py-2 rounded-sm text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-rose-400 hover:text-white">
-                    Quick Add
-                  </button>
+
                 </div>
 
                 {/* Product Info */}
@@ -237,7 +234,7 @@ const Jewellery = () => {
                   <h3 className="text-base font-medium text-gray-800 mb-2 line-clamp-1">
                     {product.name}
                   </h3>
-                  
+
                   {/* Rating */}
                   <div className="flex items-center gap-1 mb-3">
                     <Star size={14} className="text-amber-400 fill-amber-400" />
@@ -261,18 +258,15 @@ const Jewellery = () => {
             ))}
           </div>
         </div>
+        <Button />
       </section>
 
       {/* Collections Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-light text-gray-800 mb-2">
-              Collections
-            </h2>
-            <div className="w-16 h-0.5 bg-rose-400 mx-auto"></div>
-          </div>
+
+          <LowerHeading title='Collection' tagline='Where elegance meets sparkle' />
 
           {/* Collections Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
@@ -307,6 +301,7 @@ const Jewellery = () => {
           </div>
         </div>
       </section>
+      <Button />
     </div>
   );
 };

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
+import LowerHeading from "@/app/components/ui/LowerHeading";
 
 
 const BagsAndPurses = () => {
@@ -137,20 +138,20 @@ const BagsAndPurses = () => {
   return (
     <>
      
-      <div className="w-full ">
+      <div className="w-full">
         {/* Hero Banner Section - Bags & Purses */}
-        <section className="relative w-full   py-16 md:py-24">
+        <section className="relative w-full  py-16 md:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-6">
                 <div className="inline-block">
-                  <span className="px-4 py-2 bg-rose-100 text-rose-600 rounded-full text-sm font-semibold uppercase tracking-wide">
+                  <span className="px-4 py-2 bg-rose-100 text-rose-600 rounded-full text-sm font-medium uppercase tracking-wide">
                     Wedding Collection
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
                   Elegant Bags & Purses
                   <span className="block text-rose-600 mt-2">
                     For Your Special Day
@@ -255,16 +256,10 @@ const BagsAndPurses = () => {
         </section>
 
         {/* Our Full Line Section */}
-        <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-14 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 uppercase tracking-wide">
-                OUR FULL LINE
-              </h2>
-              <p className="text-gray-600 text-base md:text-lg">
-                Handcrafted bags and accessories for every occasion
-              </p>
-            </div>
+            
+            <LowerHeading title='Our Full Line' tagline='Handcrafted bags and accessories for every occasion' />
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8">
               {fullLineProducts.map((product) => (
@@ -331,18 +326,14 @@ const BagsAndPurses = () => {
         </section>
 
         {/* Just Off The Line - Featured Products */}
-        <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 uppercase tracking-wide">
-                JUST OFF THE LINE
-              </h2>
-              <p className="text-gray-600 text-base md:text-lg mb-8">
-                Discover our latest handcrafted collections
-              </p>
+            <div className="text-center ">
+
+              <LowerHeading title='  JUST OFF THE LINE' tagline='Discover our latest handcrafted collections' />
 
               {/* Category Filter */}
-              <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8">
+              <div className="flex flex-wrap justify-center gap-2 md:gap-3">
                 {categories.map((cat) => (
                   <button
                     key={cat.id}
@@ -350,7 +341,7 @@ const BagsAndPurses = () => {
                     className={`px-4 md:px-6 py-2 rounded-full text-sm md:text-base font-medium transition-all duration-300 ₹{
                       activeCategory === cat.id
                         ? "bg-rose-500 text-white shadow-lg"
-                        : "bg-gray-100 text-gray-700 hover:bg-rose-100 hover:text-rose-600"
+                        : "bg-gray-100 hover:bg-rose-100 hover:text-rose-600"
                     }`}
                   >
                     {cat.name}
@@ -468,7 +459,7 @@ const BagsAndPurses = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               {/* Left: Content */}
               <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 uppercase">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-gray-900 mb-4 uppercase">
                   MAX PROTECTION
                 </h2>
                 <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">

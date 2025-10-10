@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Heart, Star } from 'lucide-react';
+import LowerHeading from '@/app/components/ui/LowerHeading';
 
 export default function FootwearShop() {
   const [favorites, setFavorites] = useState([]);
@@ -147,12 +148,7 @@ export default function FootwearShop() {
 
       {/* Featured Products */}
       <div className="max-w-7xl mx-auto py-16 px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            Featured<span className="font-light">Products</span>
-          </h2>
-          <p className="text-gray-600">Amazing products selected carefully in our catalog</p>
-        </div>
+        <LowerHeading title="Step in Style" tagline='Showcasing this season’s most loved shoes' />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
@@ -162,12 +158,8 @@ export default function FootwearShop() {
 
       {/* Summer Collection */}
       <div className="max-w-7xl mx-auto py-16 px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            Summer<span className="font-light">Collection</span>
-          </h2>
-          <p className="text-gray-600">Amazing products selected carefully in our catalog</p>
-        </div>
+
+        <LowerHeading title='The Perfect Pair Collection' tagline='Complementary designs for the modern bride and groom' />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative overflow-hidden rounded-lg shadow-lg group">
             <img
@@ -326,11 +318,9 @@ const HeroSection = () => {
         </div>
 
         {/* Featured Categories Section */}
-        <div className="space-y-8">
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Shop by Category</h2>
-            <p className="text-gray-600">Find the perfect pair for every occasion</p>
-          </div>
+        <div className="space-y-8 ">
+
+          <LowerHeading title='shop by category' tagline='Find the perfect pair for every occasion' />
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Running Shoes */}
@@ -346,10 +336,10 @@ const HeroSection = () => {
                   />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Running Shoes</h3>
+                <h3 className="text-2xl font-medium text-gray-900 mb-2">Running Shoes</h3>
                 <p className="text-gray-600 mb-4">Performance meets comfort</p>
                 
-                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
               </div>
@@ -368,10 +358,10 @@ const HeroSection = () => {
                   />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Casual Sneakers</h3>
+                <h3 className="text-2xl font-medium text-gray-900 mb-2">Casual Sneakers</h3>
                 <p className="text-gray-600 mb-4">Everyday style essentials</p>
                 
-                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
               </div>
@@ -390,24 +380,17 @@ const HeroSection = () => {
                   />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Sports Collection</h3>
+                <h3 className="text-2xl font-medium text-gray-900 mb-2">Sports Collection</h3>
                 <p className="text-gray-600 mb-4">Engineered for athletes</p>
                 
-                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105">
+                <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Bottom CTA Banner */}
-        
+        </div>        
       </div>
     </div>
-
-
-
-
   );
 };

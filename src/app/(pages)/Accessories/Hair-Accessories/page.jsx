@@ -4,6 +4,9 @@ import React, { useState } from "react";
 
 import { Star, ShoppingBag, Heart, Sparkles, Crown, Flower2 } from "lucide-react";
 
+import LowerHeading from "@/app/components/ui/LowerHeading";
+import Button from "@/app/components/ui/Button";
+
 
 const HairAccessoriesPage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -106,12 +109,12 @@ const HairAccessoriesPage = () => {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-md">
                   <Crown className="w-5 h-5 text-rose-600" />
-                  <span className="text-sm font-semibold text-rose-600 uppercase tracking-wide">
+                  <span className="text-sm font-medium text-rose-600 uppercase tracking-wide">
                     Bridal Collection 2025
                   </span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-gray-900 leading-tight">
                   Exquisite Hair
                   <span className="block text-rose-600 mt-2">
                     Accessories
@@ -241,16 +244,10 @@ const HairAccessoriesPage = () => {
         </section>
 
         {/* Products Grid Section */}
-        <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-rose-50">
+        <section className="py-16 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-rose-50">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Featured Collection
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Handpicked accessories that add the perfect finishing touch to your bridal look
-              </p>
-            </div>
+           
+            <LowerHeading title='Featured Collection' tagline='Handpicked accessories to complete your bridal look' />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => (
@@ -324,19 +321,15 @@ const HairAccessoriesPage = () => {
               ))}
             </div>
           </div>
+          <Button / >
         </section>
 
         {/* Why Choose Us Section */}
         <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Brides Love Us
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join thousands of happy brides who trusted us for their special day
-              </p>
-            </div>
+
+
+            <LowerHeading title=' Why Brides Love Us' tagline='Trusted by thousands of happy brides for their special day' />
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center p-6 rounded-xl bg-rose-50 hover:bg-rose-100 transition-colors duration-300">
