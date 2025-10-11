@@ -26,12 +26,36 @@ export default function WeddingFurnitureSite() {
     ];
 
     const galleryImages = [
-        { url: "https://i.pinimg.com/1200x/a7/73/46/a773463f74c012f0edefa1c774983279.jpg", label: "Rustic Outdoor Setup" },
-        { url: "https://i.pinimg.com/1200x/e3/d8/fb/e3d8fbc585add0ae821b550da54c3e03.jpg", label: "Royal Gold Stage" },
-        { url: "https://i.pinimg.com/736x/4b/2c/85/4b2c8549d3055c83d31e25c8e17fbdcc.jpg", label: "Elegant Reception" },
-        { url: "https://i.pinimg.com/736x/6a/93/ba/6a93bac58b201ba55a70963a7d275550.jpg", label: "Garden Party Setup" },
-        { url: "https://i.pinimg.com/736x/70/8f/cf/708fcf635ffe887d8bfd96b8f1e2ff0e.jpg", label: "Intimate Ceremony" },
-        { url: "https://i.pinimg.com/736x/a2/45/fb/a245fb3f7c72c15b91438855ced34043.jpg", label: "Grand Celebration" }
+        {
+
+            url: "https://i.pinimg.com/1200x/a7/73/46/a773463f74c012f0edefa1c774983279.jpg",
+            label: "Rustic Outdoor Setup"
+        },
+        {
+
+            url: "https://i.pinimg.com/1200x/e3/d8/fb/e3d8fbc585add0ae821b550da54c3e03.jpg",
+            label: "Royal Gold Stage"
+        },
+        {
+
+            url: "https://i.pinimg.com/736x/4b/2c/85/4b2c8549d3055c83d31e25c8e17fbdcc.jpg",
+            label: "Elegant Reception"
+        },
+        {
+
+            url: "https://i.pinimg.com/736x/6a/93/ba/6a93bac58b201ba55a70963a7d275550.jpg",
+            label: "Garden Party Setup"
+        },
+        {
+
+            url: "https://i.pinimg.com/736x/70/8f/cf/708fcf635ffe887d8bfd96b8f1e2ff0e.jpg",
+            label: "Intimate Ceremony"
+        },
+        {
+
+            url: "https://i.pinimg.com/736x/a2/45/fb/a245fb3f7c72c15b91438855ced34043.jpg",
+            label: "Grand Celebration"
+        }
     ];
 
     return (

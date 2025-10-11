@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
-import LowerHeading from "@/app/components/ui/LowerHeading";
+
+
 
 
 const BagsAndPurses = () => {
@@ -137,7 +138,7 @@ const BagsAndPurses = () => {
 
   return (
     <>
-     
+
       <div className="w-full">
         {/* Hero Banner Section - Bags & Purses */}
         <section className="relative w-full  py-16 md:py-16">
@@ -256,10 +257,15 @@ const BagsAndPurses = () => {
         </section>
 
         {/* Our Full Line Section */}
-        <section className="py-16 md:py-14 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:py-14 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            
-            <LowerHeading title='Our Full Line' tagline='Handcrafted bags and accessories for every occasion' />
+
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                our full line
+              </h2>
+              <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Handcrafted bags and accessories for every occasion</p>
+            </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 lg:gap-8">
               {fullLineProducts.map((product) => (
@@ -326,11 +332,16 @@ const BagsAndPurses = () => {
         </section>
 
         {/* Just Off The Line - Featured Products */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center ">
 
-              <LowerHeading title='  JUST OFF THE LINE' tagline='Discover our latest handcrafted collections' />
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                  just of the line
+                </h2>
+                <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Discover our latest handcrafted collections</p>
+              </div>
 
               {/* Category Filter */}
               <div className="flex flex-wrap justify-center gap-2 md:gap-3">
@@ -446,7 +457,7 @@ const BagsAndPurses = () => {
 
             {/* View All Button */}
             <div className="text-center mt-12">
-              <button className="border-2 border-rose-500 text-rose-500 px-8 py-3 rounded-full font-semibold hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="border-2 border-rose-500 text-rose-500 px-8 py-3 rounded-full font-semibold hover:bg-rose-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
                 VIEW ALL PRODUCTS
               </button>
             </div>
@@ -502,7 +513,7 @@ const BagsAndPurses = () => {
           </div>
         </section>
       </div>
-    
+
     </>
   );
 };
