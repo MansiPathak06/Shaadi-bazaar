@@ -115,9 +115,9 @@ const Navbar = () => {
           link: "/CateringAndDecor/StageDecoration",
         },
         {
-          name: "Lighting",
+          name: "Lightning",
           icon: Sparkles,
-          link: "/CateringAndDecor/Lighting",
+          link: "/CateringAndDecor/Lightning",
         },
         {
           name: "Furniture Rental",
