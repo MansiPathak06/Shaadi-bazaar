@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Heart, ShoppingCart, Star, Check, Info } from "lucide-react";
+import { Heart, ShoppingCart, Star, Check, Sparkles, Award, Gem, Target, ArrowRight } from "lucide-react";
 
 const GroomWear = () => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
@@ -420,57 +420,88 @@ const GroomWear = () => {
       {/* Why Choose Us Section */}
       <section className="py-12 md:py-16 bg-gray-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12 uppercase">
-            Why Choose Our Collection
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              why choose our collection
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Curated for Style, Crafted for You</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center"
+                className="group relative bg-white p-6 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 hover:border-rose-200 transition-all duration-300 text-center overflow-hidden"
+                style={{
+                  animationDelay: `${index * 100}ms`
+                }}
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-rose-500 text-white rounded-full mb-4">
-                  {feature.icon}
+                {/* Sliding background effect */}
+                <div className="absolute inset-0 bg-gradient-to-t from-rose-50 to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-2xl" />
+
+                {/* Icon with floating animation */}
+                <div className="relative inline-flex items-center justify-center w-14 h-14 bg-rose-500 text-white rounded-full mb-5 shadow-lg group-hover:shadow-rose-200 group-hover:-translate-y-1 transition-all duration-300">
+                  <div className="text-xl group-hover:scale-105 transition-transform">
+                    {feature.icon}
+                  </div>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+
+                {/* Content with stagger effect */}
+                <div className="relative">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-rose-600 transition-colors duration-200">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-200">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
       {/* Fabric Guide Section */}
       <section className="py-12 md:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4 uppercase">
-            Fabric Guide
-          </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            Understanding suit fabrics helps create the perfect look for every occasion
-          </p>
+
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              Fabric Guide
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Know your fabrics, perfect your look</p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {fabricTypes.map((fabric, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-lg border-2 border-gray-200 hover:border-rose-400 transition-all"
+                className="group bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 hover:border-rose-200 transition-all duration-300 cursor-pointer"
               >
-                <div className="text-4xl mb-3">{fabric.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  {fabric.name}
-                </h3>
-                <p className="text-gray-700 text-sm mb-3">
-                  {fabric.description}
-                </p>
-                <div className="pt-3 border-t border-gray-300">
-                  <p className="text-xs text-gray-500 font-semibold uppercase mb-1">
-                    Best For:
+                {/* Icon with background circle */}
+                <div className="w-16 h-16 bg-rose-50 group-hover:bg-rose-100 rounded-full flex items-center justify-center mb-6 transition-colors">
+                  <Sparkles className="w-8 h-8 text-rose-500 group-hover:text-rose-600" />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-gray-800">
+                    {fabric.name}
+                  </h3>
+
+                  <p className="text-gray-600 leading-relaxed">
+                    {fabric.description}
                   </p>
-                  <p className="text-sm text-rose-600 font-medium">
-                    {fabric.bestFor}
-                  </p>
+
+                  {/* Best For section with icon */}
+                  <div className="flex items-start gap-3 pt-2">
+                    <Award className="w-4 h-4 text-rose-500 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="text-sm font-medium text-gray-800 mb-1">Best For:</p>
+                      <p className="text-sm text-rose-600">{fabric.bestFor}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -481,12 +512,15 @@ const GroomWear = () => {
       {/* Styling Tips Section */}
       <section className="py-12 md:py-16 lg:py-20 bg-gray-900">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4 uppercase">
-            2025 Styling Tips
-          </h2>
-          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
-            Stay ahead of the fashion curve with expert styling advice
-          </p>
+
+
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-white tracking-tight uppercase">
+              2025 Styling Tips
+            </h2>
+            <p className="text-white text-lg tracking-widest uppercase mb-2">Stay ahead of the fashion curve with expert styling advice</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {stylingTips.map((item, index) => (
               <div
@@ -516,22 +550,24 @@ const GroomWear = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <section className="pt-20 bg-gray-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 uppercase">
-              Our Collection
-            </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                our collections
+              </h2>
+              <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Perfect fabric, perfect look</p>
+            </div>
             <div className="flex justify-center gap-3 flex-wrap">
               {productCategories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2 font-semibold uppercase text-sm transition-all duration-300 ${
-                    selectedCategory === category
-                      ? "bg-rose-500 text-white shadow-lg"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
+                  className={`px-6 py-2 font-semibold uppercase text-sm transition-all duration-300 ${selectedCategory === category
+                    ? "bg-rose-500 text-white shadow-lg"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                    }`}
                 >
                   {category}
                 </button>
@@ -589,11 +625,10 @@ const GroomWear = () => {
                     {[...Array(5)].map((_, idx) => (
                       <Star
                         key={idx}
-                        className={`w-4 h-4 ${
-                          idx < Math.floor(product.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
+                        className={`w-4 h-4 ${idx < Math.floor(product.rating)
+                          ? "fill-yellow-400 text-yellow-400"
+                          : "text-gray-300"
+                          }`}
                       />
                     ))}
                     <span className="text-sm text-gray-600 ml-1">
@@ -615,16 +650,47 @@ const GroomWear = () => {
             ))}
           </div>
         </div>
+        <div className='flex justify-center py-12'>
+          <button
+            className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+          >
+            {/* Button text */}
+            <span className="relative z-10 flex items-center gap-2">
+              View More Products
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+
+            {/* Hover effect overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </button>
+
+        </div>
       </section>
 
-     
+
 
       {/* Testimonials Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-6 md:px-8 lg:px-12 max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12 uppercase">
-            What Our Customers Say
-          </h2>
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              What Our Customers Say
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Stories That Inspire Us Every Day</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {

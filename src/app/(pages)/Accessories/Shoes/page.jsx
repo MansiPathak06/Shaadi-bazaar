@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState } from 'react';
-import { Heart, Star } from 'lucide-react';
-import LowerHeading from '@/app/components/ui/LowerHeading';
+import { Heart, Star, Truck, DollarSign, Headphones, Shield, ArrowRight, CheckCircle } from 'lucide-react';
+
 
 export default function FootwearShop() {
   const [favorites, setFavorites] = useState([]);
@@ -14,9 +14,30 @@ export default function FootwearShop() {
   };
 
   const products = [
-    { id: 1, name: 'Yellow Man Shoes', price: 49.00, oldPrice: 59.00, rating: 4, sale: true, image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop' },
-    { id: 2, name: 'Light Brown Shoes', price: 49.00, oldPrice: 59.00, rating: 5, sale: true, image: 'https://images.unsplash.com/photo-1542280756-74b2f55e73ab?w=400&h=400&fit=crop' },
-    { id: 3, name: 'Brown Shoes', price: 59.00, rating: 4, image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop' },
+    {
+      id: 1,
+      name: 'Yellow Man Shoes',
+      price: 49.00,
+      oldPrice: 59.00,
+      rating: 4,
+      sale: true,
+      image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop'
+    },
+    {
+      id: 2,
+      name: 'Light Brown Shoes',
+      price: 49.00,
+      oldPrice: 59.00,
+      rating: 5,
+      sale: true, image: 'https://images.unsplash.com/photo-1542280756-74b2f55e73ab?w=400&h=400&fit=crop'
+    },
+    {
+      id: 3,
+      name: 'Brown Shoes',
+      price: 59.00,
+      rating: 4,
+      image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop'
+    },
     {
       id: 4,
       name: 'Nike Air Max 270',
@@ -54,19 +75,132 @@ export default function FootwearShop() {
     }
   ];
 
-  const bestSellers = [
-    { id: 1, name: 'Yellow Man Shoes', price: 49.00, rating: 4, sale: true, image: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&h=400&fit=crop' },
+  const groomcollection = [
+    {
+      id: 1,
+      name: 'Yellow Man Shoes',
+      price: 499.00,
+      oldPrice: 455.67,
+      rating: 4,
+      sale: true,
+      image: 'https://i.pinimg.com/1200x/ac/6b/58/ac6b58bee4a2baae1c898b87d17bce53.jpg'
+    },
 
-    { id: 2, name: 'Classic White Sneakers', price: 65.00, oldPrice: 79.00, rating: 4.5, sale: true, image: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&h=400&fit=crop' },
+    {
+      id: 2,
 
-    { id: 3, name: 'Black Running Shoes', price: 89.00, oldPrice: 110.00, rating: 4.8, sale: true, image: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop' },
+      name: 'Classic White Sneakers',
+      price: 659.00,
+      oldPrice: 799.00,
+      rating: 4.5,
+      sale: true,
+      image: 'https://i.pinimg.com/1200x/c4/c4/71/c4c471650e0cdbefd30e4115f285fbac.jpg'
+    },
 
-    { id: 4, name: 'Canvas High-Top Sneakers', price: 45.00, oldPrice: 55.00, rating: 4.2, sale: true, image: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop' },
+    {
+      id: 3,
+      name: 'Black Running Shoes',
+      price: 899.00,
+      oldPrice: 1109.00,
+      rating: 4.8, sale: true,
+      image: 'https://i.pinimg.com/736x/4c/c0/3f/4cc03f010dea650bd977411a34ca5bcd.jpg'
+    },
 
-    { id: 5, name: 'Nike Air Jordan Retro', price: 150.00, oldPrice: 180.00, rating: 5.0, sale: true, image: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?w=400&h=400&fit=crop' },
+    {
+      id: 4,
+      name: 'Canvas High-Top Sneakers',
+      price: 459.00,
+      oldPrice: 559.00,
+      rating: 4.2, sale: true,
+      image: 'https://i.pinimg.com/736x/db/f1/3e/dbf13e69e3ec01bc9ee8d3c81ffa5651.jpg'
+    },
 
-    { id: 6, name: 'Leather Casual Loafers', price: 75.00, oldPrice: 95.00, rating: 4.6, sale: true, image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=400&fit=crop' }
-    
+    {
+      id: 5,
+      name: 'Nike Air Jordan Retro',
+      price: 1509.00,
+      oldPrice: 1809.00,
+      rating: 5.0,
+      sale: true,
+      image: 'https://i.pinimg.com/736x/39/46/73/394673504c633110396d69be05b56f4c.jpg'
+    },
+
+
+    {
+      id: 6,
+      name: 'Leather Casual Loafers',
+      price: 759.00,
+      oldPrice: 959.00,
+      rating: 4.6,
+      sale: true,
+      image: 'https://i.pinimg.com/736x/d4/b5/c9/d4b5c901e3b26d8d30d491f600e67fd8.jpg'
+    }
+
+
+  ];
+
+
+  const bridecollection = [
+    {
+      id: 1,
+      name: 'Yellow Man Shoes',
+      price: 499.00,
+      oldPrice: 455.67,
+      rating: 4,
+      sale: true,
+      image: 'https://i.pinimg.com/1200x/3f/07/41/3f07414890726dec8019e2f1afe2e798.jpg'
+    },
+
+    {
+      id: 2,
+      name: 'Classic White Sneakers',
+      price: 659.00,
+      oldPrice: 799.00,
+      rating: 4.5,
+      sale: true,
+      image: 'https://i.pinimg.com/736x/49/60/df/4960dfbac5ad9b670c80d0a881d43cee.jpg'
+    },
+
+    {
+      id: 3,
+      name: 'Black Running Shoes',
+      price: 899.00,
+      oldPrice: 1109.00,
+      rating: 4.8,
+      sale: true,
+      image: 'https://i.pinimg.com/1200x/e9/47/3d/e9473dba2b034faea55a0a61420af93d.jpg'
+    },
+
+    {
+      id: 4,
+      name: 'Canvas High-Top Sneakers',
+      price: 459.00,
+      oldPrice: 559.00,
+      rating: 4.2,
+      sale: true,
+      image: 'https://i.pinimg.com/736x/03/29/75/03297540c0a8b2d6f24b01e929f178c8.jpg'
+    },
+
+    {
+      id: 5,
+      name: 'Nike Air Jordan Retro',
+      price: 1509.00,
+      oldPrice: 1809.00,
+      rating: 5.0,
+      sale: true,
+      image: 'https://i.pinimg.com/1200x/de/03/13/de03135406009ea3978675226a2f68f4.jpg'
+    },
+
+    {
+      id: 6,
+      name: 'Leather Casual Loafers',
+      price: 759.00,
+      oldPrice: 959.00,
+      rating: 4.6,
+      sale: true,
+      image: 'https://i.pinimg.com/736x/cb/d6/04/cbd604d672d3a5eda1207f401afa5dce.jpg'
+    }
+
   ];
 
   const ProductCard = ({ product, showOldPrice = true }) => (
@@ -109,11 +243,11 @@ export default function FootwearShop() {
         <div className="flex items-center gap-2">
           {showOldPrice && product.oldPrice && (
             <span className="text-gray-400 line-through text-sm">
-              ${product.oldPrice.toFixed(2)}
+              ₹{product.oldPrice.toFixed(2)}
             </span>
           )}
           <span className="text-lg font-semibold text-gray-800">
-            ${product.price.toFixed(2)}
+            ₹{product.price.toFixed(2)}
           </span>
         </div>
       </div>
@@ -128,19 +262,115 @@ export default function FootwearShop() {
       </div>
 
 
-      {/* Features */}
-      <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          { icon: '🚚', title: 'FREE SHIPPING & RETURN', desc: 'Free shipping on all orders over $99' },
-          { icon: '💰', title: 'MONEY BACK GUARANTEE', desc: '100% money back guarantee' },
-          { icon: '💬', title: 'ONLINE SUPPORT 24/7', desc: 'Lorem ipsum dolor sit amet' },
-          { icon: '🔒', title: 'SECURE PAYMENT', desc: 'Lorem ipsum dolor sit amet' },
+          {
+            icon: <Truck size={32} className="text-blue-600" />,
+            title: 'FREE SHIPPING & RETURN',
+            desc: 'Free shipping on all orders over $99',
+            hoverInfo: 'Fast delivery within 2-3 business days. Easy returns within 30 days.',
+            color: 'blue'
+          },
+          {
+            icon: <DollarSign size={32} className="text-green-600" />,
+            title: 'MONEY BACK GUARANTEE',
+            desc: '100% money back guarantee',
+            hoverInfo: 'No questions asked refund policy. Your satisfaction is our priority.',
+            color: 'green'
+          },
+          {
+            icon: <Headphones size={32} className="text-purple-600" />,
+            title: 'ONLINE SUPPORT 24/7',
+            desc: '24/7 customer support available',
+            hoverInfo: 'Live chat, email, and phone support available round the clock.',
+            color: 'purple'
+          },
+          {
+            icon: <Shield size={32} className="text-red-600" />,
+            title: 'SECURE PAYMENT',
+            desc: 'Your payment information is secure',
+            hoverInfo: 'SSL encrypted transactions with multiple payment options.',
+            color: 'red'
+          },
         ].map((feature, i) => (
-          <div key={i} className="flex items-start gap-3">
-            <div className="text-3xl">{feature.icon}</div>
-            <div>
-              <h3 className="font-semibold text-gray-900 text-sm mb-1">{feature.title}</h3>
-              <p className="text-xs text-gray-600">{feature.desc}</p>
+          <div
+            key={i}
+            className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105 border border-gray-100 hover:border-opacity-0 overflow-hidden cursor-pointer"
+          >
+            {/* Background gradient animation */}
+            <div className={`absolute inset-0 bg-gradient-to-br ${feature.color === 'blue' ? 'from-blue-50 to-blue-100' :
+              feature.color === 'green' ? 'from-green-50 to-green-100' :
+                feature.color === 'purple' ? 'from-purple-50 to-purple-100' :
+                  'from-red-50 to-red-100'
+              } opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl`}></div>
+
+            {/* Animated border */}
+            <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${feature.color === 'blue' ? 'bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600' :
+              feature.color === 'green' ? 'bg-gradient-to-r from-green-400 via-green-500 to-green-600' :
+                feature.color === 'purple' ? 'bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600' :
+                  'bg-gradient-to-r from-red-400 via-red-500 to-red-600'
+              } p-0.5`}>
+              <div className="bg-white rounded-2xl h-full w-full"></div>
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10">
+              {/* Icon with bounce animation */}
+              <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gray-50 group-hover:bg-white transition-colors duration-300 mb-4 group-hover:animate-bounce">
+                {feature.icon}
+              </div>
+
+              {/* Title and description */}
+              <div className="mb-4">
+                <h3 className="font-bold text-gray-900 text-sm mb-2 group-hover:text-gray-800 transition-colors duration-300">
+                  {feature.title}
+                </h3>
+                <p className="text-xs text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                  {feature.desc}
+                </p>
+              </div>
+
+              {/* Hidden content that appears on hover */}
+              <div className="overflow-hidden">
+                <div className="transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                  <div className="border-t border-gray-200 pt-4">
+                    <div className="flex items-start gap-2 mb-3">
+                      <CheckCircle size={16} className={`mt-0.5 ${feature.color === 'blue' ? 'text-blue-600' :
+                        feature.color === 'green' ? 'text-green-600' :
+                          feature.color === 'purple' ? 'text-purple-600' :
+                            'text-red-600'
+                        }`} />
+                      <p className="text-xs text-gray-700 leading-relaxed">
+                        {feature.hoverInfo}
+                      </p>
+                    </div>
+
+                    {/* Call to action */}
+                    <div className="flex items-center gap-1 text-xs font-semibold text-gray-800 group-hover:gap-2 transition-all duration-300">
+                      <span>Learn More</span>
+                      <ArrowRight size={14} className={`transform group-hover:translate-x-1 transition-transform duration-300 ${feature.color === 'blue' ? 'text-blue-600' :
+                        feature.color === 'green' ? 'text-green-600' :
+                          feature.color === 'purple' ? 'text-purple-600' :
+                            'text-red-600'
+                        }`} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating particles effect */}
+            <div className="absolute top-0 right-0 w-20 h-20 opacity-0 group-hover:opacity-20 transition-opacity duration-700">
+              <div className={`w-2 h-2 rounded-full animate-ping ${feature.color === 'blue' ? 'bg-blue-400' :
+                feature.color === 'green' ? 'bg-green-400' :
+                  feature.color === 'purple' ? 'bg-purple-400' :
+                    'bg-red-400'
+                } absolute top-4 right-4`}></div>
+              <div className={`w-1 h-1 rounded-full animate-pulse ${feature.color === 'blue' ? 'bg-blue-500' :
+                feature.color === 'green' ? 'bg-green-500' :
+                  feature.color === 'purple' ? 'bg-purple-500' :
+                    'bg-red-500'
+                } absolute top-8 right-8 animation-delay-200`}></div>
             </div>
           </div>
         ))}
@@ -148,7 +378,13 @@ export default function FootwearShop() {
 
       {/* Featured Products */}
       <div className="max-w-7xl mx-auto py-16 px-4">
-        <LowerHeading title="Step in Style" tagline='Showcasing this season’s most loved shoes' />
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            step in style
+          </h2>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Showcasing this season’s most loved shoes</p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
@@ -159,7 +395,12 @@ export default function FootwearShop() {
       {/* Summer Collection */}
       <div className="max-w-7xl mx-auto py-16 px-4">
 
-        <LowerHeading title='The Perfect Pair Collection' tagline='Complementary designs for the modern bride and groom' />
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            the perfect pair collection
+          </h2>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Complementary designs for the modern bride and groom</p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="relative overflow-hidden rounded-lg shadow-lg group">
             <img
@@ -198,23 +439,95 @@ export default function FootwearShop() {
         </div>
       </div>
 
-      {/* Best Sellers */}
-      <div className="max-w-7xl mx-auto py-16 px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-2">
-            Best Seller<span className="font-light">Products</span>
+      {/* Groom Colllection */}
+
+
+      <div className="max-w-7xl mx-auto py-12 px-4">
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            Groom collection
           </h2>
-          <p className="text-gray-600">Only the best sellers products in our catalog</p>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">style for the Aisle</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {bestSellers.map(product => (
+          {groomcollection.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
       </div>
 
-      {/* Brand Partners */}
-      
+      <div className='flex justify-center py-12'>
+        <button
+          className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+        >
+          {/* Button text */}
+          <span className="relative z-10 flex items-center gap-2 ">
+            View More Products
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </span>
+
+          {/* Hover effect overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" />
+        </button>
+
+        {/* Bride Collection */}
+
+      </div>
+      <div className="max-w-7xl mx-auto py-12 px-4">
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            Bride Collection
+          </h2>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Grace in Every Step</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {bridecollection.map(product => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      </div>
+
+      <div className='flex justify-center py-12'>
+        <button
+          className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+        >
+          {/* Button text */}
+          <span className="relative z-10 flex items-center gap-2 ">
+            View More Products
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </span>
+
+          {/* Hover effect overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer" />
+        </button>
+
+      </div>
     </div>
   );
 }
@@ -231,14 +544,14 @@ const HeroSection = () => {
             <div className="inline-block bg-pink-200 text-pink-800 px-4 py-2 rounded-full text-sm font-semibold">
               NEW ARRIVAL 2025
             </div>
-            
+
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 leading-none">
               STEP INTO
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">
                 STYLE
               </span>
             </h1>
-            
+
             <p className="text-gray-600 text-lg max-w-md">
               Discover the perfect blend of comfort and fashion with our exclusive collection designed for modern lifestyles.
             </p>
@@ -273,19 +586,19 @@ const HeroSection = () => {
           <div className="relative">
             {/* Decorative Circle Background */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full blur-3xl opacity-50"></div>
-            
+
             {/* Main Product Card */}
             <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-transform duration-500">
               <div className="absolute top-6 right-6 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
                 -30%
               </div>
-              
+
               <img
                 src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=400&fit=crop&crop=center"
                 alt="Featured Shoe"
                 className="w-full h-80 object-contain mb-6"
               />
-              
+
               <div className="space-y-3">
                 <h3 className="text-2xl font-bold text-gray-900">Premium Runner X</h3>
                 <div className="flex items-center gap-2">
@@ -320,13 +633,18 @@ const HeroSection = () => {
         {/* Featured Categories Section */}
         <div className="space-y-8 ">
 
-          <LowerHeading title='shop by category' tagline='Find the perfect pair for every occasion' />
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              shop by category
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Find the perfect pair for every occasion</p>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {/* Running Shoes */}
             <div className="group bg-gradient-to-br from-pink-100 to-pink-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               <div className="relative z-10">
                 <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <img
@@ -335,10 +653,10 @@ const HeroSection = () => {
                     className="w-full h-48 object-contain"
                   />
                 </div>
-                
+
                 <h3 className="text-2xl font-medium text-gray-900 mb-2">Running Shoes</h3>
                 <p className="text-gray-600 mb-4">Performance meets comfort</p>
-                
+
                 <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
@@ -348,7 +666,7 @@ const HeroSection = () => {
             {/* Casual Sneakers */}
             <div className="group bg-gradient-to-br from-purple-100 to-pink-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               <div className="relative z-10">
                 <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <img
@@ -357,10 +675,10 @@ const HeroSection = () => {
                     className="w-full h-48 object-contain"
                   />
                 </div>
-                
+
                 <h3 className="text-2xl font-medium text-gray-900 mb-2">Casual Sneakers</h3>
                 <p className="text-gray-600 mb-4">Everyday style essentials</p>
-                
+
                 <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
@@ -370,7 +688,7 @@ const HeroSection = () => {
             {/* Sports Collection */}
             <div className="group bg-gradient-to-br from-gray-100 to-pink-50 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              
+
               <div className="relative z-10">
                 <div className="mb-6 transform group-hover:-translate-y-2 transition-transform duration-300">
                   <img
@@ -379,17 +697,17 @@ const HeroSection = () => {
                     className="w-full h-48 object-contain"
                   />
                 </div>
-                
+
                 <h3 className="text-2xl font-medium text-gray-900 mb-2">Sports Collection</h3>
                 <p className="text-gray-600 mb-4">Engineered for athletes</p>
-                
+
                 <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-900 hover:text-white transition-all group-hover:scale-105 cursor-pointer">
                   Shop Now →
                 </button>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
   );

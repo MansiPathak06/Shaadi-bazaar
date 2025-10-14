@@ -2,8 +2,7 @@
 
 import { useState } from 'react'
 import { Twitter, Instagram, Facebook, ChevronDown, Heading } from 'lucide-react';
-import Button from '@/app/components/ui/Button';
-import Banner from '@/app/components/ui/Heading';
+
 
 
 export default function WatchesPage() {
@@ -133,8 +132,16 @@ function PremiumWatchSection() {
       {/* Trending Products Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Heading */}
-        <Banner title="Trending products" tagline='discover' />
-     
+
+
+        <div className="text-center mb-16">
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">discover</p>
+          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight uppercase">
+            trending products
+          </h2>
+        </div>
+
+
 
         {/* Products Grid - Mobile: 1 col, Tablet: 2 cols, Desktop: 3 cols */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-10">
@@ -258,7 +265,16 @@ function WatchCollectionGrid() {
 
   return (
     <div className="bg-neutral-50 my-24">
-      <Banner title='Combined collection' tagline='best sellers' />
+
+
+      <div className="text-center mb-16">
+        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">best sellers</p>
+        <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight uppercase">
+          combined collection
+        </h2>
+      </div>
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Grid Layout */}
@@ -346,7 +362,13 @@ function WatchBrandsGrid() {
   return (
     <div className=" bg-gradient-to-br from-neutral-50 to-neutral-100 p-8">
       <div className="max-w-7xl mx-auto">
-        <Banner title='watch brands' tagline='your choice' />
+
+        <div className="text-center mb-16">
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">your choice</p>
+          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight uppercase">
+            watch brands
+          </h2>
+        </div>
 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -517,7 +539,14 @@ function BestSellers() {
     <div className="px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <Banner title="Groom's Collection" tagline="Royal Precision" />
+
+
+        <div className="text-center mb-16">
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">royal precision</p>
+          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight uppercase">
+            groom's collection
+          </h2>
+        </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -567,7 +596,33 @@ function BestSellers() {
           ))}
         </div>
       </div>
-      <Button />
+      <div className='flex justify-center py-12'>
+        <button
+          className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+        >
+          {/* Button text */}
+          <span className="relative z-10 flex items-center gap-2">
+            View More Products
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </span>
+
+          {/* Hover effect overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </button>
+
+      </div>
     </div>
   );
 }
@@ -670,7 +725,16 @@ function Sellers() {
     <div className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-       <Banner title="Bride's Collection" tagline='Radiant Moments' />
+
+
+
+
+        <div className="text-center mb-16">
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">radiant moments</p>
+          <h2 className="text-4xl md:text-6xl font-light text-neutral-800 tracking-tight uppercase">
+            bride's collection
+          </h2>
+        </div>
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -719,7 +783,33 @@ function Sellers() {
             </div>
           ))}
         </div>
-        <Button />
+        <div className='flex justify-center py-12'>
+          <button
+            className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+          >
+            {/* Button text */}
+            <span className="relative z-10 flex items-center gap-2">
+              View More Products
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+
+            {/* Hover effect overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </button>
+
+        </div>
       </div>
     </div>
   );

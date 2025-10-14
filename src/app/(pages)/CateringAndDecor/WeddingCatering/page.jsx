@@ -3,10 +3,9 @@
 import React, { useState } from 'react';
 import { Heart, Sparkles, Camera, Phone, Mail, MapPin, Menu, X, ChefHat, Crown, Gem, Users, Calendar, Award, CheckCircle, Star, Utensils, FlowerIcon as Flower, Clock } from 'lucide-react';
 
-import LowerHeading from '@/app/components/ui/LowerHeading';
+
 
 export default function WeddingCateringWebsite() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const testimonials = [
         {
@@ -127,7 +126,12 @@ export default function WeddingCateringWebsite() {
             {/* Catering Section */}
             <section className="pt-16 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
-                    <LowerHeading title='A Symphony Of Flavors' tagline='Designed For Your Celebration' />
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            A Symphony Of Flavors
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Designed For Your Celebration</p>
+                    </div>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-12">
                         <div className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-2xl p-8 relative overflow-hidden"
@@ -300,7 +304,13 @@ export default function WeddingCateringWebsite() {
             <section className="pb-12 pt-22 px-6 bg-gradient-to-br from-stone-50 to-amber-50">
                 <div className="max-w-7xl mx-auto">
 
-                    <LowerHeading title='Food Stalls & Live Counters' tagline='Interactive culinary experiences that bring flavor to life' />
+                    <LowerHeading title='' tagline='' />
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Food Stalls & Live Counters
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Crafted Live, Served with Love</p>
+                    </div>
 
                     {/* Hero Food Stall Image */}
                     <div className="mb-16 relative h-96 rounded-3xl overflow-hidden">
@@ -522,7 +532,13 @@ export default function WeddingCateringWebsite() {
             <section className="py-12 px-6">
                 <div className="max-w-7xl mx-auto">
 
-                    <LowerHeading title='Designs That Speak Love' tagline='Décor is the heart of every celebration.' />
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Designs That Speak Love
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Décor is the heart of every celebration</p>
+                    </div>
 
                     {/* Modern Grid Layout with Varied Card Sizes */}
                     <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 gap-4 mb-12">
@@ -671,7 +687,13 @@ export default function WeddingCateringWebsite() {
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
 
-                    <LowerHeading title='Luxury You’ll Remember' tagline='Every moment deserves perfection' />
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Luxury You’ll Remember
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Every moment deserves perfection</p>
+                    </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
                         <div className="bg-gradient-to-br from-stone-800 to-stone-600 text-white rounded-2xl p-8 flex flex-col justify-between min-h-64">
@@ -713,7 +735,13 @@ export default function WeddingCateringWebsite() {
             <section id="gallery" className="py-20 px-6">
                 <div className="max-w-6xl mx-auto">
 
-                    <LowerHeading title='Every Frame A Fairytale' tagline='Feel the magic in every detail' />
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Every Frame A Fairytale
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Feel the magic in every detail</p>
+                    </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                         <div className="rounded-2xl h-64 hover:scale-105 transition cursor-pointer overflow-hidden">
@@ -756,7 +784,14 @@ export default function WeddingCateringWebsite() {
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-6xl mx-auto">
 
-                    <LowerHeading title='Love & Happy Endings' tagline='Moments cherished forever' />
+
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Love & Happy Endings
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Moments cherished forever</p>
+                    </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {testimonials.map((testimonial, index) => (
@@ -778,7 +813,14 @@ export default function WeddingCateringWebsite() {
             <section id="packages" className="py-20 px-6">
                 <div className="max-w-6xl mx-auto">
 
-                    <LowerHeading title='Elegance for Every Couple' tagline='Packages crafted to match your dream day' />
+
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Elegance for Every Couple
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Packages crafted to match your dream day</p>
+                    </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {packages.map((pkg, index) => (
@@ -814,7 +856,12 @@ export default function WeddingCateringWebsite() {
                 <div className="max-w-4xl mx-auto relative z-10">
 
 
-                    <LowerHeading title='Your Dream Wedding Starts Here' tagline='Together, we create your perfect day' className='text-white' />
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Your Dream Wedding Starts Here
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Together, we create your perfect day</p>
+                    </div>
 
                     <form className="space-y-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8">
                         <div className="grid md:grid-cols-2 gap-6">
@@ -862,7 +909,13 @@ export default function WeddingCateringWebsite() {
             <section className="py-20 px-6 bg-white">
                 <div className="max-w-4xl mx-auto text-center">
 
-                    <LowerHeading title='Every Celebration Deserves Beauty' tagline='We craft every detail — décor, cuisine, and lighting — to make your day truly unique' />
+
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                            Every Celebration Deserves Beauty
+                        </h2>
+                        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">We craft every detail — décor, cuisine, and lighting — to make your day truly unique</p>
+                    </div>
                     <div className="flex justify-center gap-6">
                         <Heart className="w-12 h-12 text-pink-500" />
                         <Flower className="w-12 h-12 text-green-500" />

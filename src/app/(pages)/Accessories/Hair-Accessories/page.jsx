@@ -4,8 +4,7 @@ import React, { useState } from "react";
 
 import { Star, ShoppingBag, Heart, Sparkles, Crown, Flower2 } from "lucide-react";
 
-import LowerHeading from "@/app/components/ui/LowerHeading";
-import Button from "@/app/components/ui/Button";
+
 
 
 const HairAccessoriesPage = () => {
@@ -98,11 +97,11 @@ const HairAccessoriesPage = () => {
 
   return (
     <>
-  
+
 
       <div className="w-full bg-white">
         {/* Hero Section */}
-        <section className="relative w-full bg-gradient-to-br from-rose-50 via-pink-50 to-rose-100 py-20 md:py-28">
+        <section className="relative w-full bg-gradient-to-br from-rose-50 via-pink-50 to-rose-100 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
@@ -228,11 +227,10 @@ const HairAccessoriesPage = () => {
                   <button
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-md ${
-                      activeCategory === category.id
-                        ? "bg-rose-600 text-white"
-                        : "bg-rose-50 text-rose-700 hover:bg-rose-100"
-                    }`}
+                    className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-md ${activeCategory === category.id
+                      ? "bg-rose-600 text-white"
+                      : "bg-rose-50 text-rose-700 hover:bg-rose-100"
+                      }`}
                   >
                     <IconComponent className="w-4 h-4" />
                     {category.name}
@@ -246,8 +244,13 @@ const HairAccessoriesPage = () => {
         {/* Products Grid Section */}
         <section className="py-16 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-rose-50">
           <div className="max-w-7xl mx-auto">
-           
-            <LowerHeading title='Featured Collection' tagline='Handpicked accessories to complete your bridal look' />
+
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                featured collection
+              </h2>
+              <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Handpicked accessories to complete your bridal look</p>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => (
@@ -321,22 +324,53 @@ const HairAccessoriesPage = () => {
               ))}
             </div>
           </div>
-          <Button / >
+          <div className='flex justify-center py-12'>
+            <button
+              className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+            >
+              {/* Button text */}
+              <span className="relative z-10 flex items-center gap-2">
+                View More Products
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </span>
+
+              {/* Hover effect overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </button>
+
+          </div>
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-16 md:py-12 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
 
 
-            <LowerHeading title=' Why Brides Love Us' tagline='Trusted by thousands of happy brides for their special day' />
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                why brides love us
+              </h2>
+              <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Trusted by thousands of happy brides for their special day</p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center p-6 rounded-xl bg-rose-50 hover:bg-rose-100 transition-colors duration-300">
                 <div className="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Premium Quality
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -348,7 +382,7 @@ const HairAccessoriesPage = () => {
                 <div className="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Crown className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Unique Designs
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -360,7 +394,7 @@ const HairAccessoriesPage = () => {
                 <div className="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Made with Love
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -372,7 +406,7 @@ const HairAccessoriesPage = () => {
                 <div className="w-16 h-16 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
                   <ShoppingBag className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
                   Fast Delivery
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -384,10 +418,10 @@ const HairAccessoriesPage = () => {
         </section>
 
         {/* CTA Banner */}
-       
+
       </div>
 
-    
+
     </>
   );
 };

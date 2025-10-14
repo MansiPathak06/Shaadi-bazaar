@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = () => {
+const CustomButton = () => {
     return (
         <div className='flex justify-center py-12'>
             <button
@@ -32,4 +32,4 @@ const Button = () => {
     )
 }
 
-export default Button
+export default CustomButton;

@@ -2,9 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ShoppingCart, Heart, Star, ArrowRight } from "lucide-react";
-import LowerHeading from "@/app/components/ui/LowerHeading";
-import Button from "@/app/components/ui/Button";
+import { Heart, Star } from "lucide-react";
+
 
 const Jewellery = () => {
   const [favorites, setFavorites] = useState([]);
@@ -168,7 +167,16 @@ const Jewellery = () => {
           {/* Section Header */}
           <div className="text-center mb-6 mt-6">
 
-            <LowerHeading title='Shop By Seller' tagline='Your Favorite Sellers, all in one place' />
+
+
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+                shop by seller
+              </h2>
+              <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Your Favorite Sellers, all in one place</p>
+            </div>
+
+
 
             <div className="flex justify-center gap-4 md:gap-8 mb-8">
               <button className="text-sm md:text-base font-medium text-gray-800 border-b-2 border-rose-400 pb-2 px-2">
@@ -258,7 +266,35 @@ const Jewellery = () => {
             ))}
           </div>
         </div>
-        <Button />
+
+        <div className='flex justify-center py-12'>
+          <button
+            className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+          >
+            {/* Button text */}
+            <span className="relative z-10 flex items-center gap-2">
+              View More Products
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+
+            {/* Hover effect overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          </button>
+
+        </div>
+
       </section>
 
       {/* Collections Section */}
@@ -266,7 +302,14 @@ const Jewellery = () => {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
 
-          <LowerHeading title='Collection' tagline='Where elegance meets sparkle' />
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              collection
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Where elegance meets sparkle</p>
+          </div>
+
 
           {/* Collections Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
@@ -301,7 +344,35 @@ const Jewellery = () => {
           </div>
         </div>
       </section>
-      <Button />
+
+      <div className='flex justify-center py-12'>
+        <button
+          className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+        >
+          {/* Button text */}
+          <span className="relative z-10 flex items-center gap-2">
+            View More Products
+            <svg
+              className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </span>
+
+          {/* Hover effect overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </button>
+
+      </div>
+
     </div>
   );
 };

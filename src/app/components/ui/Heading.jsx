@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Banner = (props) => {
+const Heading = (props) => {
     return (
         <div className="text-center mb-16">
             <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">{props.tagline}</p>
@@ -11,4 +11,4 @@ const Banner = (props) => {
     )
 }
 
-export default Banner;
+export default Heading;

@@ -139,27 +139,36 @@ const Navbar = () => {
       heading: "Stay in Style, Sleep in Serenity",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Hotels", icon: Plane, link: "/pages/Accommodation/Hotels" },
-        { name: "Resorts", icon: Plane, link: "/pages/Accommodation/Resorts" },
+        {
+          name: "Hotels",
+          icon: Plane,
+          link: "/Accommodation/Hotels"
+        },
+
+        {
+          name: "Resorts",
+          icon: Plane,
+          link: "/Accommodation/Resorts"
+        },
         {
           name: "Guest Houses",
           icon: Plane,
-          link: "/pages/Accommodation/GuestHouses",
+          link: "/Accommodation/GuestHouses",
         },
         {
           name: "Banquet Halls",
           icon: MapPin,
-          link: "/pages/Accommodation/BanquetHalls",
+          link: "/Accommodation/BanquetHalls",
         },
         {
           name: "Farmhouses",
           icon: MapPin,
-          link: "/pages/Accommodation/Farmhouses",
+          link: "/Accommodation/Farmhouses",
         },
         {
           name: "Beach Properties",
           icon: Plane,
-          link: "/pages/Accommodation/BeachProperties",
+          link: "/Accommodation/BeachProperties",
         },
       ],
     },
@@ -364,12 +373,12 @@ const Navbar = () => {
                     {link.name}
                   </button>
                 ) : (
-                  <a
+                  <Link
                     href={link.link}
                     className="px-3 py-3 text-md font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 rounded transition-colors duration-200 block"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
@@ -406,9 +415,8 @@ const Navbar = () => {
                         <span>{link.name}</span>
                         <ChevronDown
                           size={18}
-                          className={`transition-transform duration-200 ${
-                            openDropdown === index ? "rotate-180" : ""
-                          }`}
+                          className={`transition-transform duration-200 ${openDropdown === index ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
 
@@ -427,12 +435,12 @@ const Navbar = () => {
                       )}
                     </>
                   ) : (
-                    <a
+                    <Link
                       href={link.link}
                       className="block px-4 py-2 text-gray-700 hover:bg-rose-50 hover:text-rose-500 font-medium rounded transition-colors duration-200"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}
@@ -458,7 +466,7 @@ const Navbar = () => {
                 {navigationLinks[openDropdown].dropdowns.map((item, idx) => {
                   const IconComponent = item.icon;
                   return (
-                    <a
+                    <Link
                       key={idx}
                       href={item.link}
                       className="flex items-center gap-4 p-4 rounded-lg hover:bg-rose-50 transition-colors duration-200 group"
@@ -469,7 +477,7 @@ const Navbar = () => {
                       <span className="text-sm font-medium text-gray-700 group-hover:text-rose-500">
                         {item.name}
                       </span>
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
