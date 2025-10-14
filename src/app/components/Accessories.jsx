@@ -47,7 +47,7 @@ const Accessories = () => {
             oldPrice: '₹450.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
-            image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            image: 'https://i.pinimg.com/1200x/c1/f5/1e/c1f51ea969706b634863d5db2cf91a46.jpg'
         },
         {
             id: 2,
