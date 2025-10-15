@@ -7,90 +7,108 @@ import Link from "next/link";
 const OutfitsCollection = () => {
   const categories = [
     {
-      title: "CASUAL WEAR",
-      subtitle: "SHOP",
-      image: "/images/casual-wear.jpg",
+      title: "BRIDAL WEAR",
+      subtitle: "ROYAL BEAUTY",
+      image: "https://i.pinimg.com/1200x/4c/85/9d/4c859d031e9843216cf7c1176ee8df95.jpg",
       link: "/outfits/casual-wear",
     },
     {
-      title: "ELEGANT DRESSES",
-      subtitle: "SHOP",
-      image: "/images/elegant-dresses.jpg",
+      title: "GROOM WEAR",
+      subtitle: "BOLD ELEGANCE",
+      image: "https://i.pinimg.com/1200x/ad/04/9c/ad049c3eb96dfefe585f296277495aed.jpg",
       link: "/outfits/elegant-dresses",
     },
     {
-      title: "SEASONAL TRENDS",
-      subtitle: "SHOP",
-      image: "/images/wedding-dress.jpg",
+      title: "PARTY WAEAR",
+      subtitle: "CULTURAL ELEGANCE",
+      image: "https://i.pinimg.com/1200x/56/dd/1a/56dd1aa69e767ddbc5115425ffee1c17.jpg",
+      link: "/outfits/seasonal-trends",
+    },
+    {
+      title: "TRADITIONAL WEAR",
+      subtitle: "CULTURAL ELEGANCE",
+      image: "https://i.pinimg.com/1200x/50/3b/3c/503b3c9cd6f2c4dfa538b155cf968430.jpg",
+      link: "/outfits/seasonal-trends",
+    },
+    {
+      title: "WESTERN WEAR",
+      subtitle: "CULTURAL ELEGANCE",
+      image: "https://i.pinimg.com/474x/a8/d7/82/a8d7828e54a45291ab7c9cb0fe503d5e.jpg",
+      link: "/outfits/seasonal-trends",
+    },
+    {
+      title: "KIDS OUTFIT",
+      subtitle: "JOYFUL LOOKS",
+      image: "https://i.pinimg.com/736x/3f/46/67/3f4667423adefec1b2214d2641ec3f6a.jpg",
       link: "/outfits/seasonal-trends",
     },
   ];
 
-  const mensCollection = {
-    title: "Men's Collection",
-    mainImage: "/images/main-men-image.jpg",
-    description: "Discover sophisticated styles for the modern gentleman",
-    link: "/outfits/mens-collection",
-    featured: [
-      {
-        title: "Groomwear Essentials",
-        subtitle: "Sherwani, Suits & Indo-Western",
-        image: "/images/men.jpg",
-        link: "/outfits/mens-groomwear",
-      },
-      {
-        title: "Casual Elegance",
-        subtitle: "Kurtas, Shirts & Casual Outfits",
-        image: "/images/mens-casual.jpg",
-        link: "/outfits/mens-casual",
-      },
-      {
-        title: "Formal Wear",
-        subtitle: "Blazers, Tuxedos & Suits",
-        image: "/images/mens-formal.jpg",
-        link: "/outfits/mens-formal",
-      },
-      {
-        title: "Traditional Attire",
-        subtitle: "Kurta Sets & Ethnic Wear",
-        image: "/images/mens-traditional.jpg",
-        link: "/outfits/mens-traditional",
-      },
-    ],
-  };
+  // const mensCollection = {
+  //   title: "Men's Collection",
+  //   mainImage: "/images/main-men-image.jpg",
+  //   description: "Discover sophisticated styles for the modern gentleman",
+  //   link: "/outfits/mens-collection",
+  //   featured: [
+  //     {
+  //       title: "Groomwear Essentials",
+  //       subtitle: "Sherwani, Suits & Indo-Western",
+  //       image: "/images/men.jpg",
+  //       link: "/outfits/mens-groomwear",
+  //     },
+  //     {
+  //       title: "Casual Elegance",
+  //       subtitle: "Kurtas, Shirts & Casual Outfits",
+  //       image: "/images/mens-casual.jpg",
+  //       link: "/outfits/mens-casual",
+  //     },
+  //     {
+  //       title: "Formal Wear",
+  //       subtitle: "Blazers, Tuxedos & Suits",
+  //       image: "/images/mens-formal.jpg",
+  //       link: "/outfits/mens-formal",
+  //     },
+  //     {
+  //       title: "Traditional Attire",
+  //       subtitle: "Kurta Sets & Ethnic Wear",
+  //       image: "/images/mens-traditional.jpg",
+  //       link: "/outfits/mens-traditional",
+  //     },
+  //   ],
+  // };
 
-  const womensCollection = {
-    title: "Women's Collection",
-    mainImage: "/images/womens-main.jpg",
-    description: "Elegant designs for every celebration",
-    link: "/outfits/womens-collection",
-    featured: [
-      {
-        title: "Bridal Couture",
-        subtitle: "Lehengas, Sarees & Anarkalis",
-        image: "/images/womens-bridal.jpg",
-        link: "/outfits/womens-bridal",
-      },
-      {
-        title: "Contemporary Fashion",
-        subtitle: "Gowns, Dresses & Western Wear",
-        image: "/images/womens-contemporary.jpg",
-        link: "/outfits/womens-contemporary",
-      },
-      {
-        title: "Traditional Elegance",
-        subtitle: "Salwar Suits & Ethnic Wear",
-        image: "/images/womens-traditional.jpg",
-        link: "/outfits/womens-traditional",
-      },
-      {
-        title: "Party & Evening Wear",
-        subtitle: "Designer Outfits & Cocktail Dresses",
-        image: "/images/womens-party.jpg",
-        link: "/outfits/womens-party",
-      },
-    ],
-  };
+  // const womensCollection = {
+  //   title: "Women's Collection",
+  //   mainImage: "/images/womens-main.jpg",
+  //   description: "Elegant designs for every celebration",
+  //   link: "/outfits/womens-collection",
+  //   featured: [
+  //     {
+  //       title: "Bridal Couture",
+  //       subtitle: "Lehengas, Sarees & Anarkalis",
+  //       image: "/images/womens-bridal.jpg",
+  //       link: "/outfits/womens-bridal",
+  //     },
+  //     {
+  //       title: "Contemporary Fashion",
+  //       subtitle: "Gowns, Dresses & Western Wear",
+  //       image: "/images/womens-contemporary.jpg",
+  //       link: "/outfits/womens-contemporary",
+  //     },
+  //     {
+  //       title: "Traditional Elegance",
+  //       subtitle: "Salwar Suits & Ethnic Wear",
+  //       image: "/images/womens-traditional.jpg",
+  //       link: "/outfits/womens-traditional",
+  //     },
+  //     {
+  //       title: "Party & Evening Wear",
+  //       subtitle: "Designer Outfits & Cocktail Dresses",
+  //       image: "/images/womens-party.jpg",
+  //       link: "/outfits/womens-party",
+  //     },
+  //   ],
+  // };
 
   return (
     <div className="w-full bg-gradient-to-b from-white to-rose-50 px-4 sm:px-6 pt-20 lg:px-8">
@@ -135,7 +153,7 @@ const OutfitsCollection = () => {
         </div>
 
         {/* Men's Collection Section */}
-        <section className="mb-20">
+         {/* <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize">
               men's <span className="text-rose-500">collection</span>
@@ -144,7 +162,7 @@ const OutfitsCollection = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
-            {/* Left: Main Image */}
+      
             <Link
               href={mensCollection.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
@@ -177,7 +195,7 @@ const OutfitsCollection = () => {
               </div>
             </Link>
 
-            {/* Right: Featured Items Grid */}
+        
             <div className="grid grid-cols-2 gap-2 md:gap-3">
               {mensCollection.featured.map((item, index) => (
                 <Link
@@ -206,19 +224,19 @@ const OutfitsCollection = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section>  */}
 
         {/* Women's Collection Section */}
-        <section className="pb-0 mb-0">
+        {/* <section className="pb-0 mb-0">
           <div className="text-center mb-12">
             <h2 className="text-5xl font-serif text-gray-900 mb-2 capitalize">
               Women's <span className="text-rose-500">collection</span>
             </h2>
-            <p className="text-gray-600">{mensCollection.description}</p>
+            // <p className="text-gray-600">{mensCollection.description}</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4">
-            {/* Left: Featured Items Grid */}
+         
             <div className="grid grid-cols-2 gap-2 md:gap-3 lg:order-1">
               {womensCollection.featured.map((item, index) => (
                 <Link
@@ -247,7 +265,7 @@ const OutfitsCollection = () => {
               ))}
             </div>
 
-            {/* Right: Main Image */}
+     
             <Link
               href={womensCollection.link}
               className="group relative overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 lg:order-2"
@@ -281,7 +299,7 @@ const OutfitsCollection = () => {
               </div>
             </Link>
           </div>
-        </section>
+        </section> */}
 
       
       </div>
