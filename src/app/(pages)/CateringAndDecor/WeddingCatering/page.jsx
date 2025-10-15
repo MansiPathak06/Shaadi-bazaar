@@ -170,7 +170,7 @@ export default function WeddingCateringWebsite() {
 
                     {/* New Gallery Section with Food Images */}
                     <div className="mb-12">
-                        <LowerHeading title='Flavors to Remember' tagline='Flavors crafted with love' />
+                        {/* <LowerHeading title='Flavors to Remember' tagline='Flavors crafted with love' /> */}
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                             <div className="group relative overflow-hidden rounded-xl aspect-square">
@@ -304,7 +304,7 @@ export default function WeddingCateringWebsite() {
             <section className="pb-12 pt-22 px-6 bg-gradient-to-br from-stone-50 to-amber-50">
                 <div className="max-w-7xl mx-auto">
 
-                    <LowerHeading title='' tagline='' />
+                    {/* <LowerHeading title='' tagline='' /> */}
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
                             Food Stalls & Live Counters
