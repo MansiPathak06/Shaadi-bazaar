@@ -7,32 +7,32 @@ const Accessories = () => {
     const categories = [
         {
             name: 'BRACELETS',
-            items: '(76 Items)',
+            
             image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             name: 'CHARMS & DANGLES',
-            items: '(78 Items)',
+            
             image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             name: 'EARRINGS',
-            items: '(17 Items)',
+            
             image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             name: 'ENGAGEMENT RING',
-            items: '(9 Items)',
+           
             image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             name: 'NECKLACES',
-            items: '(31 Items)',
+            
             image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         },
         {
             name: 'PENDANT',
-            items: '(57 Items)',
+            
             image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
         }
 
@@ -47,7 +47,7 @@ const Accessories = () => {
             oldPrice: '₹450.00',
             badge: 'Hot',
             badgeColor: 'bg-red-500',
-            image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            image: 'https://i.pinimg.com/1200x/c1/f5/1e/c1f51ea969706b634863d5db2cf91a46.jpg'
         },
         {
             id: 2,
@@ -135,7 +135,7 @@ const Accessories = () => {
                                 <span><img src={category.image} alt="brands" className='overflow-hidden size-32' /></span>
                             </div>
                             <h3 className="text-xs font-medium text-gray-800 text-center">{category.name}</h3>
-                            <p className="text-xs text-gray-500">{category.items}</p>
+                            
                         </div>
                     ))}
                 </div>
