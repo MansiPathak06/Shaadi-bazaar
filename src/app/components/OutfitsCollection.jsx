@@ -114,7 +114,7 @@ const OutfitsCollection = () => {
                 <img
                   src={category.image}
                   alt={category.title}
-                  className="w-full h-[500px] object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-[500px] object-cover object-top group-hover:scale-110 transition-transform duration-500"
                   onError={(e) => {
                     e.target.src = "/images/women-lehnga.jpg";
                   }}

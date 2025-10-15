@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { Heart, ShoppingCart, Star, Check, Sparkles, Award, Gem, Target, ArrowRight } from "lucide-react";
+import { Heart, ShoppingCart, Star, Check, Sparkles, Award } from "lucide-react";
 
 const GroomWear = () => {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
@@ -44,7 +44,7 @@ const GroomWear = () => {
       price: 199.99,
       originalPrice: 299.99,
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/4c/a8/3e/4ca83ef8f4c2bb1e9fb099f30f7ccb23.jpg",
     },
     {
       id: 2,
@@ -53,7 +53,7 @@ const GroomWear = () => {
       price: 149.99,
       originalPrice: 199.99,
       rating: 4.6,
-      image: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/0a/c0/17/0ac01753d52753b7625b141b833766fb.jpg",
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ const GroomWear = () => {
       price: 249.99,
       originalPrice: 349.99,
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/73/31/d1/7331d1351c9ef12c352f681469574037.jpg",
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const GroomWear = () => {
       price: 299.99,
       originalPrice: 399.99,
       rating: 5.0,
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/b9/07/9e/b9079ea414675a7bc787de5120409204.jpg",
       badge: "BEST SELLER",
     },
     {
@@ -81,7 +81,7 @@ const GroomWear = () => {
       price: 279.99,
       originalPrice: 379.99,
       rating: 4.7,
-      image: "https://images.unsplash.com/photo-1593030668990-39b8fa661c8d?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/d9/86/89/d986893aab6b2a5144b4bc7787918ee3.jpg",
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ const GroomWear = () => {
       price: 329.99,
       originalPrice: 449.99,
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1591213373536-5f4db9b56093?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/d1/fb/b0/d1fbb0950790724719e6c0ef8bae6794.jpg",
       badge: "NEW",
     },
     {
@@ -100,7 +100,7 @@ const GroomWear = () => {
       price: 259.99,
       originalPrice: 359.99,
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/f7/01/1d/f7011d2cc5f373b9d1968821fa36157a.jpg",
     },
     {
       id: 8,
@@ -109,7 +109,7 @@ const GroomWear = () => {
       price: 179.99,
       originalPrice: 249.99,
       rating: 4.5,
-      image: "https://images.unsplash.com/photo-1594938291221-94f18cbb5660?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/f2/1c/d6/f21cd68150347e00b2f663a1b2ca843c.jpg",
     },
     {
       id: 9,
@@ -118,7 +118,7 @@ const GroomWear = () => {
       price: 349.99,
       originalPrice: 479.99,
       rating: 5.0,
-      image: "https://images.unsplash.com/photo-1598808503491-9edbf56fd9dc?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/cc/5d/7d/cc5d7d6a0c59528e47c30b0bd4c1f7e9.jpg",
       badge: "TRENDING",
     },
     {
@@ -128,7 +128,7 @@ const GroomWear = () => {
       price: 289.99,
       originalPrice: 389.99,
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/66/89/e8/6689e893a64f843b4d3a1f8319565db7.jpg",
     },
     {
       id: 11,
@@ -137,7 +137,7 @@ const GroomWear = () => {
       price: 199.99,
       originalPrice: 279.99,
       rating: 4.6,
-      image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/736x/a2/88/93/a288938387aacfb2387569abe555277e.jpg",
     },
     {
       id: 12,
@@ -146,7 +146,7 @@ const GroomWear = () => {
       price: 359.99,
       originalPrice: 499.99,
       rating: 4.9,
-      image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/0a/13/01/0a1301205127f3348c990e7a4ba728b9.jpg",
     },
     {
       id: 13,
@@ -155,7 +155,7 @@ const GroomWear = () => {
       price: 319.99,
       originalPrice: 429.99,
       rating: 4.7,
-      image: "https://images.unsplash.com/photo-1593030668990-39b8fa661c8d?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/d7/c2/d2/d7c2d2dc67e11bacdd1afa0359b5c608.jpg",
       badge: "NEW",
     },
     {
@@ -165,7 +165,7 @@ const GroomWear = () => {
       price: 169.99,
       originalPrice: 229.99,
       rating: 4.5,
-      image: "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/73/31/d1/7331d1351c9ef12c352f681469574037.jpg",
     },
     {
       id: 15,
@@ -174,7 +174,7 @@ const GroomWear = () => {
       price: 299.99,
       originalPrice: 399.99,
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/82/1d/d8/821dd828fc79d8f36569b5f15f3e8bec.jpg",
     },
     {
       id: 16,
@@ -183,7 +183,7 @@ const GroomWear = () => {
       price: 189.99,
       originalPrice: 259.99,
       rating: 4.6,
-      image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?w=600&q=80&fit=crop",
+      image: "https://i.pinimg.com/1200x/e3/12/f1/e312f1d952719651c76f41059f2d2eec.jpg",
       badge: "SUMMER SPECIAL",
     },
   ];
@@ -252,34 +252,7 @@ const GroomWear = () => {
     },
   ];
 
-  // Occasion Guide
-  const occasionGuide = [
-    {
-      occasion: "Corporate Meetings",
-      recommendation: "Single-breasted suits in navy, mid-grey, or graphite with white or powder blue shirts",
-      footwear: "Oxford shoes or leather derbies in black or dark brown",
-    },
-    {
-      occasion: "Wedding Ceremonies",
-      recommendation: "Three-piece suits in jewel tones, textured fabrics like velvet or jacquard",
-      footwear: "Velvet loafers or colored brogues for personality",
-    },
-    {
-      occasion: "Black-Tie Events",
-      recommendation: "Classic tuxedo with bow tie, preferably in midnight blue or black",
-      footwear: "Patent leather oxford shoes",
-    },
-    {
-      occasion: "Summer Weddings",
-      recommendation: "Linen or cotton suits in light tones like beige, sage, or light blue",
-      footwear: "Suede loafers or brown leather shoes",
-    },
-    {
-      occasion: "Cocktail Parties",
-      recommendation: "Bold colored blazers with patterned shirts or creative waistcoats",
-      footwear: "Statement dress shoes in burgundy or tan",
-    },
-  ];
+ 
 
   // Why Choose Us Features
   const features = [
@@ -406,7 +379,7 @@ const GroomWear = () => {
                       src={category.image}
                       alt={category.title}
                       fill
-                      className="object-contain group-hover:scale-110 transition-transform duration-300"
+                      className="object-contain object-top h-full w-full group-hover:scale-110 transition-transform duration-300"
                       sizes="128px"
                     />
                   </div>
@@ -564,7 +537,7 @@ const GroomWear = () => {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-2 font-semibold uppercase text-sm transition-all duration-300 ${selectedCategory === category
+                  className={`px-6 py-2 cursor-pointer font-semibold uppercase text-sm transition-all duration-300 ${selectedCategory === category
                     ? "bg-rose-500 text-white shadow-lg"
                     : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                     }`}
@@ -589,11 +562,10 @@ const GroomWear = () => {
                       {product.badge}
                     </span>
                   )}
-                  <Image
+                  <img
                     src={product.image}
                     alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover h-full w-full object-top group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
 
@@ -652,7 +624,7 @@ const GroomWear = () => {
         </div>
         <div className='flex justify-center py-12'>
           <button
-            className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+            className="group relative px-8 py-3 cursor-pointer bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
           >
             {/* Button text */}
             <span className="relative z-10 flex items-center gap-2">
@@ -750,7 +722,7 @@ const GroomWear = () => {
             Discover our exclusive collection of premium formal wear designed
             for the modern gentleman
           </p>
-          <button className="bg-rose-500 hover:bg-rose-600 text-white px-10 py-4 rounded-none font-bold uppercase tracking-wider transition-all duration-300 shadow-xl hover:shadow-2xl">
+          <button className="bg-rose-500 hover:bg-rose-600 text-white px-10 py-4 rounded-none cursor-pointer font-bold uppercase tracking-wider transition-all duration-300 shadow-xl hover:shadow-2xl">
             Shop Now
           </button>
         </div>
