@@ -12,7 +12,7 @@ const CateringCollection = () => {
       title: 'Wedding Catering',
       description: 'Exquisite culinary experiences crafted for your special day with personalized menus',
       icon: UtensilsCrossed,
-      image: 'https://images.unsplash.com/photo-1555244162-803834f70033?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2015/10/27/1192-143842659_large.mp4',
       features: ['Custom Menus', 'Live Stations', 'International Cuisine', 'Professional Staff'],
       color: 'bg-rose-500'
     },
@@ -21,7 +21,7 @@ const CateringCollection = () => {
       title: 'Floral Decor',
       description: 'Breathtaking floral arrangements that transform venues into enchanting spaces',
       icon: Flower2,
-      image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2025/05/10/278182_tiny.mp4',
       features: ['Fresh Flowers', 'Custom Designs', 'Centerpieces', 'Bouquets'],
       color: 'bg-pink-500'
     },
@@ -30,7 +30,7 @@ const CateringCollection = () => {
       title: 'Stage Decoration',
       description: 'Stunning stage setups that create the perfect backdrop for your memorable moments',
       icon: Sparkles,
-      image: 'https://images.unsplash.com/photo-1519167758481-83f29da8c8d0?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2019/11/22/29338-374868363_large.mp4',
       features: ['Grand Stages', 'Backdrops', 'Draping', 'Custom Themes'],
       color: 'bg-purple-500'
     },
@@ -39,7 +39,7 @@ const CateringCollection = () => {
       title: 'Lighting',
       description: 'Magical ambiance through professional lighting design that sets the perfect mood',
       icon: Lightbulb,
-      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2022/07/01/122739-726192561_large.mp4',
       features: ['LED Lighting', 'Uplighting', 'Dance Floor', 'Outdoor Lighting'],
       color: 'bg-amber-500'
     },
@@ -48,7 +48,7 @@ const CateringCollection = () => {
       title: 'Furniture Rental',
       description: 'Premium furniture pieces to complement your event aesthetic and guest comfort',
       icon: Gift,
-      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2024/12/12/246411_large.mp4',
       features: ['Elegant Seating', 'Tables', 'Lounge Sets', 'Bar Counters'],
       color: 'bg-blue-500'
     },
@@ -57,7 +57,7 @@ const CateringCollection = () => {
       title: 'Theme Decor',
       description: 'Complete thematic transformations bringing your vision to life with attention to detail',
       icon: Sparkles,
-      image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop',
+      video: 'https://cdn.pixabay.com/video/2024/07/24/222831_large.mp4',
       features: ['Custom Themes', 'Props', 'Signage', 'Photo Booths'],
       color: 'bg-indigo-500'
     }
@@ -91,11 +91,14 @@ const CateringCollection = () => {
                 onMouseEnter={() => setHoveredService(service.id)}
                 onMouseLeave={() => setHoveredService(null)}
               >
-                {/* Image Container */}
-                <div className={`relative overflow-hidden ${isLarge ? 'h-96' : 'h-80'}`}>
-                  <img
-                    src={service.image}
-                    alt={service.title}
+                {/* Video Container */}
+                <div className={`relative overflow-hidden ${isLarge ? 'h-96' : 'h-96'}`}>
+                  <video
+                    src={service.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   
@@ -142,23 +145,7 @@ const CateringCollection = () => {
           })}
         </div>
 
-        {/* Bottom CTA Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-12 text-center shadow-2xl">
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Plan Your Perfect Event?
-          </h3>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Let our expert team help you create an unforgettable experience tailored to your vision
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
-              Get a Quote
-            </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
-              View Portfolio
-            </button>
-          </div>
-        </div>
+    
       </div>
     </div>
   );

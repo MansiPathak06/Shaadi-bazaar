@@ -135,21 +135,21 @@ const HeroPage = () => {
           </div>
 
           {/* Navigation Arrows - Hidden on mobile, visible on lg+ */}
-          <button
+          {/* <button
             onClick={prevSlide}
             className="hidden lg:block absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white p-3 md:p-4 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-white/50"
             aria-label="Previous slide"
           >
             <ChevronLeft size={24} />
-          </button>
+          </button> */}
 
-          <button
+          {/* <button
             onClick={nextSlide}
             className="hidden lg:block absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-md text-white p-3 md:p-4 rounded-full transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-white/50"
             aria-label="Next slide"
           >
             <ChevronRight size={24} />
-          </button>
+          </button> */}
 
           {/* Slide Indicators - Responsive sizing */}
           <div className="absolute bottom-4 sm:bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 sm:gap-3">

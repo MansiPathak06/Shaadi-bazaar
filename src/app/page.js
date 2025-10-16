@@ -10,6 +10,7 @@ import WeddingVenuesComponent from "./components/WeddingVenuesComponent";
 import WeddingServices from "./components/WeddingServices";
 import BeautyServices from "./components/BeautyServices";
 import AccessoriesCollection from "./components/AccessoriesCollection";
+import CateringCollection from "./components/CateringCollection";
 
 
 const page = () => {
@@ -17,10 +18,10 @@ const page = () => {
     <div className="bg-gradient-to-b from-rose-100 to-white">
       <Hero />
       <WeddingVenuesComponent />
-      <WeddingServices />
+      
       <BeautyServices />
       <AccessoriesCollection/>
-      
+      <CateringCollection/>
       <OutfitsCollection />
       <FootwearCollection />
       <Accessories />
