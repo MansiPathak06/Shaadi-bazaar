@@ -8,14 +8,14 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-yellow-50 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-slate-50 via-purple-50 to-yellow-50 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
       <div className="absolute top-40 left-20 w-72 h-72 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
+        <div className="grid lg:grid-cols-2 gap-16 items-center pt-16">
 
           {/* Product Info - Left Side */}
           <div className="space-y-8 lg:order-1">
@@ -37,7 +37,7 @@ const HeroSection = () => {
                 </span>
                 <br />
                 <span className="text-slate-600 font-light text-4xl md:text-5xl">
-                  Hair Accessories
+                  Perfumes
                 </span>
               </h1>
             </div>
@@ -90,27 +90,6 @@ const HeroSection = () => {
               </button>
             </div>
 
-            {/* Trust Indicators */}
-            <div className="flex items-center gap-6 pt-6 text-sm text-slate-500">
-              <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-purple-500 rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-yellow-500 rounded-full border-2 border-white"></div>
-                  <div className="w-8 h-8 bg-pink-500 rounded-full border-2 border-white"></div>
-                </div>
-                <span>2.4k+ happy customers</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <span>4.9/5 rating</span>
-              </div>
-            </div>
           </div>
 
           {/* Image Collage - Right Side */}
@@ -125,7 +104,7 @@ const HeroSection = () => {
                   <div className="col-span-6 row-span-3 relative rounded-2xl overflow-hidden shadow-2xl">
                     <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-50 opacity-20"></div>
                     <img
-                      src="https://images.unsplash.com/photo-1594736797933-d0d7ee2dbaa5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      src="https://i.pinimg.com/1200x/4a/1e/0d/4a1e0d304377a5fbdbb3f834c7049494.jpg"
                       alt="Premium Hair Accessories Collection"
                       className="w-full h-full object-cover"
                     />
@@ -145,7 +124,7 @@ const HeroSection = () => {
                   {/* Bottom Left Image */}
                   <div className="col-span-3 row-span-3 relative rounded-xl overflow-hidden shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="https://i.pinimg.com/736x/f9/24/2f/f9242f0314065f30a1fc447f3b7e3caf.jpg"
                       alt="Gold Leaf Hair Accessories"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
@@ -158,7 +137,7 @@ const HeroSection = () => {
                   {/* Bottom Right Image */}
                   <div className="col-span-3 row-span-3 relative rounded-xl overflow-hidden shadow-lg">
                     <img
-                      src="https://images.unsplash.com/photo-1583900985737-6d0495555783?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                      src="https://i.pinimg.com/736x/a0/9a/aa/a09aaa6cdf4ec9f652255469f32de38a.jpg"
                       alt="Floral Hair Accessories"
                       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     />
@@ -190,11 +169,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-slate-400 rounded-full mt-2"></div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
@@ -213,17 +192,17 @@ const ProductCard = () => {
       reviews: 24,
       description: "A delicate blend of jasmine and rose petals",
       discount: "25% OFF",
-      image: "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/1200x/ca/b6/8a/cab68af03c337e752bf912fe506d625d.jpg",
       category: "Floral"
     },
     {
       id: 2,
-      name: "Golden Luxury Scent",
+      name: "Black Opium",
       price: 95,
       rating: 4,
       reviews: 18,
       description: "Rich amber and vanilla notes with gold essence",
-      image: "https://images.unsplash.com/photo-1594736797933-d0d6183d4d8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/736x/60/87/da/6087da31c1cb3899d97692d5d3041a9e.jpg",
       category: "Luxury"
     },
     {
@@ -233,7 +212,7 @@ const ProductCard = () => {
       rating: 5,
       reviews: 32,
       description: "Bold and passionate with red berry undertones",
-      image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59d75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/1200x/49/d5/b6/49d5b684543f071a77d44c19f7eb6e78.jpg",
       category: "Bold"
     },
     {
@@ -243,26 +222,28 @@ const ProductCard = () => {
       rating: 4,
       reviews: 15,
       description: "Warm amber with hints of citrus and musk",
-      image: "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/1200x/81/77/09/817709ef79d8b01cdea638ef51061bb3.jpg",
       category: "Warm"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 to-purple-50 min-h-screen">
+    <section className="pt-30 px-4 bg-gradient-to-br from-slate-50 to-purple-50">
+
+
+
+      <div className="text-center mb-16">
+        <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+          Signature Scents
+        </h2>
+        <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Where Elegance Meets Essence</p>
+      </div>
+
+
+
+
       <div className="max-w-7xl mx-auto">
-        {/* Filter Buttons */}
-        <div className="flex justify-center gap-3 mb-16">
-          <button className="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300">
-            Popular
-          </button>
-          <button className="bg-white/80 backdrop-blur-sm text-slate-700 px-8 py-3 rounded-full border border-white/50 font-medium hover:bg-white transition-all duration-300">
-            New Arrivals
-          </button>
-          <button className="bg-white/80 backdrop-blur-sm text-slate-700 px-8 py-3 rounded-full border border-white/50 font-medium hover:bg-white transition-all duration-300">
-            Best Seller
-          </button>
-        </div>
+
 
         {/* Product Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -358,7 +339,7 @@ const ProductCard = () => {
                     </div>
 
                     {/* Action Button */}
-                    <button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white py-3 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl hover:from-purple-700 hover:to-purple-800 transform hover:scale-[1.02] transition-all duration-300">
+                    <button className="w-full  bg-gradient-to-r from-rose-500 to-pink-500 text-white py-3 px-6 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl hover:from-rose-600 hover:to-pink-600 transform hover:scale-[1.02] transition-all duration-300 cursor-pointer">
                       Add to Cart
                     </button>
                   </div>
@@ -369,10 +350,32 @@ const ProductCard = () => {
         </div>
 
         {/* Load More Button */}
-        <div className="text-center mt-12">
-          <button className="bg-white/80 backdrop-blur-sm border border-white/50 text-slate-700 px-12 py-4 rounded-2xl font-semibold hover:bg-white hover:shadow-lg transition-all duration-300">
-            Load More Products
+        <div className='flex justify-center py-12'>
+          <button
+            className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+          >
+            {/* Button text */}
+            <span className="relative z-10 flex items-center gap-2">
+              View More Products
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </span>
+
+            {/* Hover effect overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
+
         </div>
       </div>
     </section>
@@ -381,41 +384,50 @@ const ProductCard = () => {
 
 const PromoBanner = () => {
   const perfumeImages = [
-    "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80",
-    "https://images.unsplash.com/photo-1594736797933-d0d6183d4d8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80",
-    "https://images.unsplash.com/photo-1588405748880-12d1d2a59d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80",
-    "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80",
-    "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80",
-    "https://images.unsplash.com/photo-1610461888750-10beb8d0f7c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=400&q=80"
+    "https://i.pinimg.com/736x/24/de/e1/24dee15905bb470828bc7b00f6ef7bf0.jpg",
+    "https://i.pinimg.com/736x/a5/a4/ce/a5a4ce62c07cbec5e7ff392312e32490.jpg",
+    "https://i.pinimg.com/736x/3e/77/9b/3e779b383fb7485e38aec70eca305159.jpg",
+    "https://i.pinimg.com/736x/90/7f/44/907f441e95563f4a95ed67c14dfda702.jpg",
+    "https://i.pinimg.com/736x/55/6a/c6/556ac687dc379515110888e38d0b3875.jpg",
+    "https://i.pinimg.com/1200x/52/ab/df/52abdfefbc5f1c465e85b291be61a468.jpg"
   ];
 
   return (
-    <section className="relative py-24 px-4 bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 overflow-hidden">
+    <section className="relative px-4 bg-white overflow-hidden">
       {/* Background Elements */}
-      <div className="max-w-7xl mx-auto relative">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto relative py-16">
+        {/* Main Heading */}
 
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            Luxury Fragrance Collection
+          </h2>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Premium perfumes crafted for modern sophistication</p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
-          <div className="space-y-8 text-white lg:order-1">
+          <div className="space-y-8 text-gray-800 lg:order-1">
             {/* Badge */}
-            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 text-sm font-medium shadow-xl">
-              <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse shadow-lg shadow-yellow-400/50"></div>
-              <span className="uppercase tracking-wider font-bold">Celebrate Your Scent</span>
+            <div className="inline-flex items-center gap-3 bg-gray-100 border border-gray-200 rounded-full px-6 py-3 text-sm font-medium shadow-lg">
+              <div className="w-3 h-3 bg-rose-400 rounded-full animate-pulse shadow-lg shadow-rose-400/30"></div>
+              <span className="uppercase tracking-wider font-bold text-gray-700">Celebrate Your Scent</span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-4">
               <h2 className="text-5xl md:text-7xl font-bold leading-tight">
-                <span className="text-white">Save</span>{' '}
-                <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent font-black text-6xl md:text-8xl">
+                <span className="text-gray-800">Save</span>{' '}
+                <span className="bg-gradient-to-r from-rose-400 via-rose-500 to-rose-400 bg-clip-text text-transparent font-black text-6xl md:text-8xl">
                   25%
                 </span>
                 <br />
-                <span className="text-white/90 font-light text-3xl md:text-4xl">
+                <span className="text-gray-700 font-light text-3xl md:text-4xl">
                   On All Premium
                 </span>
                 <br />
-                <span className="bg-gradient-to-r from-purple-200 via-white to-purple-200 bg-clip-text text-transparent font-light text-3xl md:text-4xl">
+                <span className="bg-gradient-to-r from-gray-600 via-gray-700 to-gray-600 bg-clip-text text-transparent font-light text-3xl md:text-4xl">
                   Collections
                 </span>
               </h2>
@@ -423,36 +435,36 @@ const PromoBanner = () => {
 
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-6">
-              <div className="flex items-center gap-3 text-white/80">
-                <div className="w-8 h-8 bg-green-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-green-400/30">
-                  <svg className="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-3 text-gray-700">
+                <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center border border-green-200">
+                  <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <span className="font-medium">Free worldwide shipping</span>
               </div>
 
-              <div className="flex items-center gap-3 text-white/80">
-                <div className="w-8 h-8 bg-blue-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-blue-400/30">
-                  <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-3 text-gray-700">
+                <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center border border-blue-200">
+                  <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <span className="font-medium">Limited time offer</span>
               </div>
 
-              <div className="flex items-center gap-3 text-white/80">
-                <div className="w-8 h-8 bg-purple-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-purple-400/30">
-                  <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-3 text-gray-700">
+                <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center border border-purple-200">
+                  <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <span className="font-medium">Authentic products</span>
               </div>
 
-              <div className="flex items-center gap-3 text-white/80">
-                <div className="w-8 h-8 bg-orange-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-orange-400/30">
-                  <svg className="w-4 h-4 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-center gap-3 text-gray-700">
+                <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center border border-orange-200">
+                  <svg className="w-4 h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -462,59 +474,37 @@ const PromoBanner = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <button className="group relative bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
+              <button className="group relative bg-gradient-to-r from-rose-500 via-rose-400 to-rose-500 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 overflow-hidden">
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   SHOP NOW
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-rose-600 via-rose-500 to-rose-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
-              <button className="border-2 border-white/30 backdrop-blur-sm text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-white/50 transition-all duration-300 hover:scale-105">
+              <button className="border-2 border-gray-300 text-gray-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-50 hover:border-gray-400 transition-all duration-300 hover:scale-105">
                 View Collection
               </button>
             </div>
 
-            {/* Timer/Urgency Element */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 shadow-xl">
-              <div className="text-white/70 text-sm mb-2">🔥 Limited Time Offer Ends In:</div>
-              <div className="flex gap-4 text-white font-bold">
-                <div className="text-center">
-                  <div className="text-2xl">02</div>
-                  <div className="text-xs text-white/60">DAYS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl">14</div>
-                  <div className="text-xs text-white/60">HOURS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl">35</div>
-                  <div className="text-xs text-white/60">MINS</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl">42</div>
-                  <div className="text-xs text-white/60">SECS</div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Product Showcase - Right Side */}
           <div className="relative lg:order-2">
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-yellow-400/20 to-orange-400/20 rounded-full filter blur-2xl"></div>
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full filter blur-2xl"></div>
+              <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-rose-100 to-rose-200 rounded-full filter blur-2xl opacity-60"></div>
+              <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full filter blur-2xl opacity-60"></div>
 
               {/* Product Grid */}
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
+              <div className="relative bg-gray-50 border border-gray-200 rounded-3xl p-8 shadow-xl">
                 <div className="grid grid-cols-3 gap-6">
                   {perfumeImages.map((image, i) => (
                     <div
                       key={i}
-                      className="group relative bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105"
+                      className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 border border-gray-100"
                     >
                       <div className="aspect-[3/4] relative overflow-hidden">
                         <img
@@ -525,18 +515,18 @@ const PromoBanner = () => {
                         />
 
                         {/* Overlay on Hover */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
 
                         {/* Quick Action Button */}
                         <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                          <button className="w-full bg-white/90 backdrop-blur-sm text-slate-800 py-2 px-3 rounded-xl text-xs font-semibold hover:bg-white transition-all duration-200">
+                          <button className="w-full bg-white text-gray-800 py-2 px-3 rounded-xl text-xs font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg">
                             Quick View
                           </button>
                         </div>
 
                         {/* Discount Badge */}
                         {i < 3 && (
-                          <div className="absolute top-2 right-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
+                          <div className="absolute top-2 right-2 bg-gradient-to-r from-rose-500 to-rose-400 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg">
                             25% OFF
                           </div>
                         )}
@@ -547,33 +537,14 @@ const PromoBanner = () => {
 
                 {/* Collection Info */}
                 <div className="mt-6 text-center">
-                  <div className="text-white/90 font-semibold text-lg mb-2">Premium Collection 2025</div>
-                  <div className="text-white/70 text-sm">Featuring 50+ exclusive fragrances</div>
+                  <div className="text-gray-800 font-semibold text-lg mb-2">Premium Collection 2025</div>
+                  <div className="text-gray-600 text-sm">Featuring 50+ exclusive fragrances</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Stats Section */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="text-center text-white">
-            <div className="text-3xl font-bold mb-2">50+</div>
-            <div className="text-white/70 text-sm">Premium Brands</div>
-          </div>
-          <div className="text-center text-white">
-            <div className="text-3xl font-bold mb-2">10K+</div>
-            <div className="text-white/70 text-sm">Happy Customers</div>
-          </div>
-          <div className="text-center text-white">
-            <div className="text-3xl font-bold mb-2">24/7</div>
-            <div className="text-white/70 text-sm">Customer Support</div>
-          </div>
-          <div className="text-center text-white">
-            <div className="text-3xl font-bold mb-2">99%</div>
-            <div className="text-white/70 text-sm">Satisfaction Rate</div>
-          </div>
-        </div>
       </div>
     </section>
   );
@@ -588,7 +559,7 @@ const SpecialOffers = () => {
       originalPrice: 149,
       price: 99,
       discount: "33% OFF",
-      image: "https://images.unsplash.com/photo-1610461888750-10beb8d0f7c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80",
+      image: "https://i.pinimg.com/736x/da/69/35/da693571eba99547975bc24af5f6b769.jpg",
       badge: "Bestseller",
       rating: 5,
       reviews: 127
@@ -599,7 +570,7 @@ const SpecialOffers = () => {
       originalPrice: 99,
       price: 75,
       discount: "24% OFF",
-      image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80",
+      image: "https://i.pinimg.com/736x/48/5f/24/485f2406119e73a4b13b976618e655ae.jpg",
       badge: "Limited Edition",
       rating: 4,
       reviews: 89
@@ -610,7 +581,7 @@ const SpecialOffers = () => {
       originalPrice: 169,
       price: 120,
       discount: "29% OFF",
-      image: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80",
+      image: "https://i.pinimg.com/1200x/49/d5/b6/49d5b684543f071a77d44c19f7eb6e78.jpg",
       badge: "New Arrival",
       rating: 5,
       reviews: 203
@@ -626,27 +597,13 @@ const SpecialOffers = () => {
 
       <div className="max-w-7xl mx-auto relative">
         {/* Header Section */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-rose-200/50 rounded-full px-6 py-2 text-sm font-medium text-rose-700 mb-6">
-            <svg className="w-4 h-4 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-            </svg>
-            SPECIAL COLLECTION
-          </div>
 
-          <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-rose-600 via-pink-600 to-rose-700 bg-clip-text text-transparent">
-              Rose & Pink
-            </span>
-            <br />
-            <span className="text-slate-700 font-light text-3xl md:text-4xl">
-              Featured Fragrances
-            </span>
+
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+            Featured Fragrances
           </h2>
-
-          <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed">
-            Indulge in our enchanting collection of rose-inspired perfumes, where romance meets elegance
-          </p>
+          <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Experience rose-inspired elegance with a touch of romance</p>
         </div>
 
         {/* Featured Products Grid */}
@@ -733,7 +690,7 @@ const SpecialOffers = () => {
                   </div>
 
                   {/* Add to Cart Button */}
-                  <button className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-3 px-6 rounded-2xl font-semibold shadow-lg hover:shadow-xl hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:scale-[1.02]">
+                  <button className="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-3 px-6 rounded-2xl font-semibold shadow-lg hover:shadow-xl hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:scale-[1.02] cursor-pointer">
                     Add to Cart
                   </button>
                 </div>
@@ -745,36 +702,36 @@ const SpecialOffers = () => {
         {/* Deal Sections */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Big Deal Card */}
-          <div className="relative bg-gradient-to-br from-rose-600 via-rose-700 to-pink-700 text-white p-10 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative bg-white border border-gray-200 text-gray-800 p-10 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             {/* Background Pattern */}
-
+            <div className="absolute inset-0 bg-gradient-to-br from-rose-50 to-pink-50 opacity-50"></div>
 
             {/* Floating Rose Icon */}
-            <div className="absolute top-6 right-6 w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-              <svg className="w-8 h-8 text-white/80" fill="currentColor" viewBox="0 0 20 20">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-rose-100 border border-rose-200 rounded-full flex items-center justify-center shadow-lg">
+              <svg className="w-8 h-8 text-rose-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
               </svg>
             </div>
 
             <div className="relative z-10 space-y-6">
-              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-bold">
-                <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 bg-rose-100 border border-rose-200 rounded-full px-4 py-2 text-sm font-bold text-rose-700">
+                <span className="w-2 h-2 bg-rose-500 rounded-full animate-pulse"></span>
                 LIMITED TIME OFFER
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-gray-800">
                 Rose Collection
                 <br />
-                <span className="bg-gradient-to-r from-yellow-300 to-yellow-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-rose-500 to-rose-600 bg-clip-text text-transparent">
                   50% OFF
                 </span>
               </h3>
 
-              <p className="text-white/90 text-lg leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 Save up to 50% on all rose-inspired fragrances. Limited stock available.
               </p>
 
-              <button className="group bg-white text-rose-600 px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <button className="group bg-gradient-to-r from-rose-500 to-rose-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl hover:from-rose-600 hover:to-rose-700 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <span className="flex items-center gap-2">
                   SHOP ROSES
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -786,35 +743,36 @@ const SpecialOffers = () => {
           </div>
 
           {/* Best Collection Card */}
-          <div className="relative bg-gradient-to-br from-pink-600 via-pink-700 to-rose-700 text-white p-10 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative bg-white border border-gray-200 text-gray-800 p-10 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             {/* Background Pattern */}
+            <div className="absolute inset-0 bg-gradient-to-br from-pink-50 to-rose-50 opacity-50"></div>
 
             {/* Floating Sparkle Icon */}
-            <div className="absolute top-6 right-6 w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-              <svg className="w-8 h-8 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="absolute top-6 right-6 w-16 h-16 bg-pink-100 border border-pink-200 rounded-full flex items-center justify-center shadow-lg">
+              <svg className="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3l14 9-14 9V3z" />
               </svg>
             </div>
 
             <div className="relative z-10 space-y-6">
-              <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-bold">
-                <span className="w-2 h-2 bg-pink-300 rounded-full animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 bg-pink-100 border border-pink-200 rounded-full px-4 py-2 text-sm font-bold text-pink-700">
+                <span className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></span>
                 PREMIUM COLLECTION
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-bold leading-tight">
+              <h3 className="text-3xl md:text-4xl font-bold leading-tight text-gray-800">
                 Pink Paradise
                 <br />
-                <span className="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
                   Buy 2 Get 1 Free
                 </span>
               </h3>
 
-              <p className="text-white/90 text-lg leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed">
                 Get 2 premium pink fragrances and receive the 3rd one absolutely free this month.
               </p>
 
-              <button className="group bg-gradient-to-r from-yellow-400 to-orange-400 text-slate-800 px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <button className="group bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-800 px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl hover:from-yellow-500 hover:to-orange-500 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <span className="flex items-center gap-2">
                   SHOP PINK
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -826,20 +784,6 @@ const SpecialOffers = () => {
           </div>
         </div>
 
-        {/* Bottom CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-white/50 shadow-xl">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">
-              Can't decide? Try our Rose & Pink Discovery Set
-            </h3>
-            <p className="text-slate-600 mb-6">
-              Get 5 miniature rose and pink fragrances to find your perfect scent
-            </p>
-            <button className="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Shop Discovery Set - $39
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
@@ -858,7 +802,7 @@ const FeaturedProducts = () => {
       description: "Delicate jasmine petals with morning dew essence",
       category: "Bestseller",
       badge: "Limited Edition",
-      image: "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/736x/51/71/01/517101d984706eb66d532062d2265be2.jpg",
       featured: true
     },
     {
@@ -869,7 +813,7 @@ const FeaturedProducts = () => {
       reviews: 18,
       description: "Rich amber notes with 24k gold infusion",
       category: "Luxury",
-      image: "https://images.unsplash.com/photo-1594736797933-d0d6183d4d8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      image: "https://i.pinimg.com/736x/c6/90/8d/c6908dd94a1a6e2dd6e49297fe11700b.jpg"
     },
     {
       id: 3,
@@ -879,7 +823,7 @@ const FeaturedProducts = () => {
       reviews: 32,
       description: "Bold red berry fusion with velvet undertones",
       category: "Popular",
-      image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59d75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      image: "https://i.pinimg.com/736x/0c/60/85/0c6085772c1fe2992f851618349470c7.jpg"
     },
     {
       id: 4,
@@ -889,7 +833,7 @@ const FeaturedProducts = () => {
       reviews: 15,
       description: "Warm sunset amber with citrus highlights",
       category: "Premium",
-      image: "https://images.unsplash.com/photo-1615634260167-c8cdede054de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80",
+      image: "https://i.pinimg.com/1200x/96/5c/9d/965c9dc974b337adc88209354151b417.jpg",
       featured: true
     },
     {
@@ -900,7 +844,7 @@ const FeaturedProducts = () => {
       reviews: 28,
       description: "Deep night blooms with mysterious allure",
       category: "New",
-      image: "https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      image: "https://i.pinimg.com/1200x/c0/14/8d/c0148d004f5eadf6047bdec538a31e97.jpg"
     },
     {
       id: 6,
@@ -910,12 +854,12 @@ const FeaturedProducts = () => {
       reviews: 22,
       description: "Creamy vanilla bean with soft musk base",
       category: "Classic",
-      image: "https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+      image: "https://i.pinimg.com/736x/ef/3d/2a/ef3d2a7d1ef71b7f7a7f22ef2f077b47.jpg"
     },
   ];
   return (
     <>
-      <section className="py-24 px-4 bg-gradient-to-br from-slate-50 via-purple-50/30 to-yellow-50/30 relative overflow-hidden">
+      <section className="pt-18 px-4 bg-gradient-to-br from-slate-50 via-purple-50/30 to-yellow-50/30 relative overflow-hidden">
         {/* Background Elements */}
         {/* <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23f1f5f9" fill-opacity="0.3"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div> */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full filter blur-3xl"></div>
@@ -923,53 +867,21 @@ const FeaturedProducts = () => {
 
         <div className="max-w-7xl mx-auto relative">
           {/* Header Section */}
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-purple-200/50 rounded-full px-6 py-2 text-sm font-medium text-purple-700 mb-6">
-              <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
-              CURATED COLLECTION
-            </div>
-
-            <h2 className="text-6xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-slate-800 via-purple-800 to-slate-800 bg-clip-text text-transparent">
-                Featured
-              </span>
-              <br />
-              <span className="text-slate-600 font-light text-4xl md:text-5xl">
-                Fragrances
-              </span>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              The Essence of Elegance
             </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Let your scent tell a story of passion and allure</p>
+          </div>v
 
-            <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed">
-              Discover our most coveted scents, carefully selected for their exceptional quality and timeless appeal
-            </p>
-          </div>
 
-          {/* Modern Filter Tabs */}
-          <div className="flex justify-center mb-16">
-            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-2 border border-white/50 shadow-xl">
-              <div className="flex gap-1">
-                <button className="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-xl font-semibold shadow-lg transition-all duration-300 hover:shadow-xl">
-                  Popular
-                </button>
-                <button className="px-8 py-3 text-slate-600 hover:text-slate-800 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">
-                  New Arrivals
-                </button>
-                <button className="px-8 py-3 text-slate-600 hover:text-slate-800 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">
-                  Best Sellers
-                </button>
-                <button className="px-8 py-3 text-slate-600 hover:text-slate-800 hover:bg-white/50 rounded-xl font-medium transition-all duration-300">
-                  Limited Edition
-                </button>
-              </div>
-            </div>
-          </div>
 
           {/* Modern Bento Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">
-            {products.map((product, index) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {products.map((product) => {
               // Create varied card sizes for bento grid effect
               const isLarge = product.featured;
-              const cardClass = isLarge ? "lg:col-span-2 lg:row-span-2" : "";
+              const cardClass = isLarge ? "md:col-span-2 md:row-span-2" : "";
 
               return (
                 <div
@@ -978,7 +890,7 @@ const FeaturedProducts = () => {
                 >
                   <div className="relative h-full flex flex-col">
                     {/* Image Section */}
-                    <div className={`relative overflow-hidden ${isLarge ? 'h-96' : 'h-64'}`}>
+                    <div className={`relative overflow-hidden ${isLarge ? 'h-80' : 'h-48'}`}>
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4 bg-gradient-to-r from-black/70 to-black/50 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-lg">
                         {product.category}
@@ -1049,12 +961,12 @@ const FeaturedProducts = () => {
                       </h3>
 
                       {/* Description */}
-                      <p className={`text-slate-600 mb-6 leading-relaxed ${isLarge ? 'text-base' : 'text-sm'}`}>
+                      <p className={`text-slate-600 mb-6 leading-relaxed flex-1 ${isLarge ? 'text-base' : 'text-sm'}`}>
                         {product.description}
                       </p>
 
                       {/* Price and Action */}
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between mt-auto">
                         <div className="flex items-center gap-2">
                           <span className={`font-bold text-slate-800 ${isLarge ? 'text-2xl' : 'text-xl'}`}>
                             ${product.price}
@@ -1066,7 +978,7 @@ const FeaturedProducts = () => {
                           )}
                         </div>
 
-                        <button className={`bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl hover:from-purple-700 hover:to-purple-800 transition-all duration-300 hover:scale-105 ${isLarge ? 'px-8 py-4 text-lg' : 'px-6 py-3'}`}>
+                        <button className={` bg-gradient-to-r from-rose-500 to-pink-500 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl hover:from-rose-600 hover:to-pink-600 transition-all duration-300 hover:scale-105 cursor-pointer ${isLarge ? 'px-8 py-4 text-lg' : 'px-6 py-3'}`}>
                           Add to Cart
                         </button>
                       </div>
@@ -1077,11 +989,34 @@ const FeaturedProducts = () => {
             })}
           </div>
 
+
           {/* Bottom CTA Section */}
-          <div className="text-center mt-16">
-            <button className="bg-white/70 backdrop-blur-sm border border-white/50 text-slate-700 px-12 py-4 rounded-2xl font-semibold text-lg hover:bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
-              View All Collections
+          <div className='flex justify-center py-12'>
+            <button
+              className="group relative px-8 py-3 bg-neutral-900 text-white font-semibold rounded-lg overflow-hidden transition-all duration-300 hover:bg-neutral-800 hover:shadow-xl hover:scale-105"
+            >
+              {/* Button text */}
+              <span className="relative z-10 flex items-center gap-2">
+                View More Products
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </span>
+
+              {/* Hover effect overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
+
           </div>
         </div>
       </section>
