@@ -26,29 +26,45 @@ const PartyWear = () => {
       image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1200&q=80&fit=crop",
       bgColor: "bg-rose-100",
     },
+    {
+      id: 3,
+      badge: "NEW ARRIVALS",
+      title: "ROYAL ATTIRE",
+      subtitle: "Explore Now",
+      image: "https://i.pinimg.com/736x/0c/af/5c/0caf5c0cddff39457311615553e43f3c.jpg",
+      bgColor: "bg-amber-100",
+    },
+    {
+      id: 4,
+      badge: "LIMITED OFFER",
+      title: "TRADITIONAL ELEGANCE",
+      subtitle: "Discover More",
+      image: "https://i.pinimg.com/1200x/d4/da/40/d4da40d79efee895e398fe254b3c441e.jpg",
+      bgColor: "bg-emerald-100",
+    },
   ];
 
   // Shop Categories
   const shopCategories = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80&fit=crop",
-      title: "Women Fashion",
+      image: "https://i.pinimg.com/736x/b1/4b/d6/b14bd60a16dfcd5629a79a9c2b29d159.jpg",
+      title: "Designer Gowns",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800&q=80&fit=crop",
-      title: "Trendy Shoes",
+      image: "https://i.pinimg.com/736x/6d/07/d5/6d07d540fdd46e95923426790efb6829.jpg",
+      title: "Sequined Dresses",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80&fit=crop",
-      title: "Outerwear",
+      image: "https://i.pinimg.com/736x/45/7b/a3/457ba35035def53237f8046ef7542510.jpg",
+      title: "Stylish Indo-Western Sets",
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=800&q=80&fit=crop",
-      title: "Accessories",
+      image: "https://i.pinimg.com/1200x/0e/cb/e2/0ecbe21126ef270085a4c814924967d8.jpg",
+      title: "Classic Suit Sets",
     },
   ];
 
@@ -248,7 +264,7 @@ const PartyWear = () => {
                         src={slide.image}
                         alt={slide.title}
                         fill
-                        className="object-cover rounded-2xl shadow-2xl"
+                        className="object-cover rounded-2xl shadow-2xl object-top"
                         priority
                         sizes="(max-width: 1024px) 100vw, 50vw"
                       />
@@ -282,11 +298,10 @@ const PartyWear = () => {
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`h-2 rounded-full transition-all ${
-                currentSlide === idx
-                  ? "bg-rose-500 w-8"
-                  : "bg-gray-400 w-2"
-              }`}
+              className={`h-2 rounded-full transition-all ${currentSlide === idx
+                ? "bg-rose-500 w-8"
+                : "bg-gray-400 w-2"
+                }`}
               aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
@@ -315,9 +330,12 @@ const PartyWear = () => {
       {/* Shop by Categories Section */}
       <section className="py-12 sm:py-16">
         <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-            SHOP BY CATEGORIES
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
+              Discover Your Style
+            </h2>
+            <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Your style journey starts here</p>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
             {shopCategories.map((category) => (
               <div
@@ -328,7 +346,7 @@ const PartyWear = () => {
                   src={category.image}
                   alt={category.title}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover group-hover:scale-110 object-top transition-transform duration-500"
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent">
@@ -428,11 +446,10 @@ const PartyWear = () => {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-3 rounded-full font-semibold uppercase text-sm transition-all duration-300 ${
-                    selectedCategory === category
-                      ? "bg-rose-500 text-white shadow-lg"
-                      : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
-                  }`}
+                  className={`px-6 py-3 rounded-full font-semibold uppercase text-sm transition-all duration-300 ${selectedCategory === category
+                    ? "bg-rose-500 text-white shadow-lg"
+                    : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
+                    }`}
                 >
                   {category}
                 </button>
@@ -490,11 +507,10 @@ const PartyWear = () => {
                     {[...Array(5)].map((_, idx) => (
                       <Star
                         key={idx}
-                        className={`w-4 h-4 ${
-                          idx < Math.floor(product.rating)
-                            ? "fill-yellow-400 text-yellow-400"
-                            : "text-gray-300"
-                        }`}
+                        className={`w-4 h-4 ${idx < Math.floor(product.rating)
+                          ? "fill-yellow-400 text-yellow-400"
+                          : "text-gray-300"
+                          }`}
                       />
                     ))}
                     <span className="text-sm text-gray-600 ml-1">
