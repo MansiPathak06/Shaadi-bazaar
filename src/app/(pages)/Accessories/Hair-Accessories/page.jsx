@@ -218,39 +218,43 @@ const HairAccessoriesPage = () => {
         </section>
 
         {/* Category Filter Section */}
-        <section className="bg-white py-8 border-b border-gray-200 sticky top-0 z-40 shadow-sm">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap justify-center gap-3">
-              {categories.map((category) => {
-                const IconComponent = category.icon;
-                return (
-                  <button
-                    key={category.id}
-                    onClick={() => setActiveCategory(category.id)}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-md ${activeCategory === category.id
-                      ? "bg-rose-600 text-white"
-                      : "bg-rose-50 text-rose-700 hover:bg-rose-100"
-                      }`}
-                  >
-                    <IconComponent className="w-4 h-4" />
-                    {category.name}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+
 
         {/* Products Grid Section */}
         <section className="py-16 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-rose-50">
           <div className="max-w-7xl mx-auto">
 
-            <div className="text-center mb-16">
+
+
+            <div className="text-center my-10">
               <h2 className="text-4xl md:text-6xl mb-3 font-light text-neutral-800 tracking-tight uppercase">
                 featured collection
               </h2>
               <p className="text-neutral-700 text-lg tracking-widest uppercase mb-2">Handpicked accessories to complete your bridal look</p>
             </div>
+
+            <section className="bg-white py-8 border-b border-gray-200 sticky top-0 z-40 shadow-sm">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-wrap justify-center gap-3">
+                  {categories.map((category) => {
+                    const IconComponent = category.icon;
+                    return (
+                      <button
+                        key={category.id}
+                        onClick={() => setActiveCategory(category.id)}
+                        className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-sm hover:shadow-md ${activeCategory === category.id
+                          ? "bg-rose-600 text-white"
+                          : "bg-rose-50 text-rose-700 hover:bg-rose-100"
+                          }`}
+                      >
+                        <IconComponent className="w-4 h-4" />
+                        {category.name}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => (

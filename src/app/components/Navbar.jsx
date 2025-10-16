@@ -43,20 +43,36 @@ const Navbar = () => {
       heading: "Add A Little Spark To Your Style!",
       hasMegaMenu: true,
       dropdowns: [
-        { name: "Jewellery", icon: Sparkles, link: "/Accessories/Jewellery" },
+        {
+          name: "Jewellery",
+          icon: Sparkles,
+          link: "/accessories/jewellery"
+        },
         {
           name: "Bags & Purses",
           icon: ShoppingBag,
-          link: "/Accessories/BagsAndPurses",
+          link: "/accessories/bagsandpurses",
         },
         {
           name: "Hair Accessories",
           icon: Scissors,
-          link: "/Accessories/Hair-Accessories",
+          link: "/accessories/hair-accessories",
         },
-        { name: "Shoes", icon: Footprints, link: "/Accessories/Shoes" },
-        { name: "Watches", icon: Watch, link: "/Accessories/Watches" },
-        { name: "Perfumes", icon: FlaskConical, link: "/Accessories/Perfumes" },
+        {
+          name: "Shoes",
+          icon: Footprints,
+          link: "/accessories/shoes"
+        },
+        {
+          name: "Watches",
+          icon: Watch,
+          link: "/accessories/watches"
+        },
+        {
+          name: "Perfumes",
+          icon: FlaskConical,
+          link: "/accessories/perfumes"
+        },
       ],
     },
     {
@@ -68,28 +84,32 @@ const Navbar = () => {
         {
           name: "Bridal Wear",
           icon: Sparkles,
-          link: "/Outfits/BridalWear",
+          link: "/outfits/bridalwear",
         },
-        { name: "Groom Wear", icon: Gift, link: "/Outfits/GroomWear" },
+        {
+          name: "Groom Wear",
+          icon: Gift,
+          link: "/outfits/groomwear"
+        },
         {
           name: "Party Wear",
           icon: Sparkles,
-          link: "/Outfits/PartyWear",
+          link: "/outfits/partywear",
         },
         {
           name: "Traditional Wear",
           icon: Gift,
-          link: "/Outfits/TraditionalWear",
+          link: "/outfits/traditionalwear",
         },
         {
           name: "Western Wear",
           icon: Sparkles,
-          link: "/Outfits/WesternWear",
+          link: "/outfits/westernwear",
         },
         {
           name: "Kids Outfits",
           icon: Gift,
-          link: "/Outfits/KidsOutfits",
+          link: "/outfits/kidsoutfits",
         },
       ],
     },
@@ -102,34 +122,34 @@ const Navbar = () => {
         {
           name: "Wedding Catering",
           icon: Utensils,
-          link: "/CateringAndDecor/WeddingCatering",
+          link: "/cateringanddecor/weddingcatering",
         },
         {
           name: "Floral Decor",
           icon: Flower,
-          link: "/CateringAndDecor/FloralDecor",
+          link: "/cateringanddecor/floraldecor",
         },
         {
           name: "Stage Decoration",
           icon: Flower,
-          link: "/CateringAndDecor/StageDecoration",
+          link: "/cateringanddecor/stagedecoration",
         },
         {
           name: "Lightning",
           icon: Sparkles,
-          link: "/CateringAndDecor/Lightning",
+          link: "/cateringanddecor/lightning",
         },
         {
           name: "Furniture Rental",
           icon: Gift,
-          link: "/CateringAndDecor/FurnitureRental",
-          link: "/CateringAndDecor/FurnitureRental",
+          link: "/cateringanddecor/furniturerental",
+   
         },
         {
           name: "Theme Decor",
           icon: Flower,
-          link: "/CateringAndDecor/ThemeDecor",
-          link: "/CateringAndDecor/ThemeDecor",
+          link: "/cateringanddecor/themedecor",
+
         },
       ],
     },
@@ -142,33 +162,33 @@ const Navbar = () => {
         {
           name: "Hotels",
           icon: Plane,
-          link: "/Accommodation/Hotels"
+          link: "/accommodation/hotels"
         },
 
         {
           name: "Resorts",
           icon: Plane,
-          link: "/Accommodation/Resorts"
+          link: "/accommodation/resorts"
         },
         {
           name: "Guest Houses",
           icon: Plane,
-          link: "/Accommodation/GuestHouses",
+          link: "/accommodation/guesthouses",
         },
         {
           name: "Banquet Halls",
           icon: MapPin,
-          link: "/Accommodation/BanquetHalls",
+          link: "/accommodation/banquetHalls",
         },
         {
           name: "Farmhouses",
           icon: MapPin,
-          link: "/Accommodation/Farmhouses",
+          link: "/accommodation/farmhouses",
         },
         {
           name: "Beach Properties",
           icon: Plane,
-          link: "/Accommodation/BeachProperties",
+          link: "/accommodation/beachproperties",
         },
       ],
     },
@@ -182,32 +202,32 @@ const Navbar = () => {
         {
           name: "Outdoor Venues",
           icon: MapPin,
-          link: "/pages/VenueAndLocation/OutdoorVenues",
+          link: "/venuelocation/outdoorvenues",
         },
         {
           name: "Indoor Venues",
           icon: MapPin,
-          link: "/pages/VenueAndLocation/IndoorVenues",
+          link: "/venuelocation/indoorvenues",
         },
         {
           name: "Destination Wedding",
           icon: Plane,
-          link: "/pages/VenueAndLocation/DestinationWedding",
+          link: "/venuelocation/destinationwedding",
         },
         {
           name: "Banquet Halls",
           icon: MapPin,
-          link: "/pages/VenueAndLocation/BanquetHalls",
+          link: "/venuelocation/banquethalls",
         },
         {
           name: "Gardens",
           icon: Flower,
-          link: "/pages/VenueAndLocation/Gardens",
+          link: "/venuelocation/gardens",
         },
         {
           name: "Beach Venues",
           icon: Plane,
-          link: "/pages/VenueAndLocation/BeachVenues",
+          link: "/venuelocation/beachvenues",
         },
       ],
     },
@@ -220,32 +240,32 @@ const Navbar = () => {
         {
           name: "Bridal Makeup",
           icon: Sparkles,
-          link: "/BeautyAndStyling/BridalMakeup",
+          link: "/beautyandstyling/bridalmakeup",
         },
         {
           name: "Hair Styling",
           icon: Sparkles,
-          link: "/BeautyAndStyling/HairStyling",
+          link: "/beautyandstyling/hairstyling",
         },
         {
           name: "Mehendi Artists",
           icon: Sparkles,
-          link: "/BeautyAndStyling/MehendiArtists",
+          link: "/beautyandstyling/mehendiartists",
         },
         {
           name: "Spa Services",
           icon: Sparkles,
-          link: "/BeautyAndStyling/SpaServices",
+          link: "/beautyandstyling/spaservices",
         },
         {
           name: "Grooming",
           icon: Sparkles,
-          link: "/BeautyAndStyling/Grooming",
+          link: "/beautyandstyling/grooming",
         },
         {
           name: "Nail Art",
           icon: Sparkles,
-          link: "/BeautyAndStyling/NailArt",
+          link: "/beautyandstyling/nailart",
         },
       ],
     },
@@ -258,22 +278,22 @@ const Navbar = () => {
         {
           name: "Wedding Planning",
           icon: Calendar,
-          link: "/pages/EventPlanning/WeddingPlanning",
+          link: "/eventplanning/weddingplanning",
         },
         {
           name: "Destination Wedding",
           icon: Plane,
-          link: "/pages/EventPlanning/DestinationWedding",
+          link: "/Eventplanning/destinationwedding",
         },
         {
           name: "Engagement Planning",
           icon: Calendar,
-          link: "/pages/EventPlanning/EngagementPlanning",
+          link: "/eventplanning/engagementplanning",
         },
         {
           name: "Cocktail Planning",
           icon: Calendar,
-          link: "/pages/EventPlanning/CocktailPlanning",
+          link: "/eventplanning/cocktailplanning",
         },
       ],
     },
@@ -282,12 +302,6 @@ const Navbar = () => {
       icon: Clipboard,
       hasMegaMenu: false,
       link: "/blogs",
-    },
-    {
-      name: "Contact Us",
-      icon: Mail,
-      hasMegaMenu: false,
-      link: "/contact",
     },
   ];
 
